@@ -1,77 +1,73 @@
-# SCUBA's self-hosted Nextcloud-snap server
+<h1 align="center">SCUBA's self-hosted Nextcloud-snap server</h1>
 
-For self-hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server](https://ubuntu.com/download/server) and [LXD](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) to create an [LXC-container](https://ubuntu.com/server/docs/containers-lxc) for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap). There's a great community behind Nesxtcloud-snap and support is fantastic. The greatness of Linux together with the correct hardware enables anyone to run a 24/7 nextcloud server.
+<p align="center" width="100%">
+    <img width="33%" src="https://www.scubamuc.de/bilder/scubuntu-logo-nogradient-400x400.png" alt="scubamuc">
+</p>
 
-I'm neither a Linux crack nor a full time admin... My day job is software support for a leading WMS. I'm an avid scuba diver and enjoy Linux and FOSS.
+For self-hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server](https://ubuntu.com/download/server) and [LXD](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) to create an [LXC-container](https://ubuntu.com/server/docs/containers-lxc) for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap). There's a great community behind Nesxtcloud-snap and support is fantastic. The greatness of Linux together with good hardware enables anyone to run a 24/7 nextcloud server. 
 
-**This is my personal Wiki containing helpful notes and scripts for self hosting Nextcloud server**
+I'm neither a Linux crack nor an admin... so my goal is a simple setup with ample ressources for 5 family users, low cost, low energy footprint and low maintenence. My day job is software support for a leading WMS. I'm an avid scuba diver and enjoy Linux and FOSS.
 
 ---
+# 1. System specs
 
-# 1\. System specs
-
-## 1\.1 Hardware
-
+## 1.1 Hardware
 **Requirements:**
+* small, quiet, good ressources, low energy footprint
+* install and forget, uptime 24/7
+* redundancy, failover and backup
+* up to 5 users
+* multiple services (Nextcloud, Pihole, NAS, VPN)
 
-* cheap, small & quiet
-* good system specs, low power consumption, uptime 24/7
-* install and forget
-* up to 15 users
-* stackable 1xServer & 1xBackup
+>**2x Lenovo ThinkCentre M92p Tiny**
+>  * Formfactor: SFF
+>  * CPU: Intel Core i5-3470T
+>  * PW: 16 Watt TDP
+>  * RAM: 16GB
+>  * SSD: 500GB
 
-> **2x Lenovo ThinkCentre M92p Tiny**
->
-> * Formfactor: SFF
-> * CPU: Intel Core i5-3470T
-> * PW: 16 Watt TDP
-> * RAM: 16GB
-> * SSD: 500GB
-> * PSU: 65 Watt external
+* stackable redundant 1xServer & 1xBackup
 
-![M92P-Stacked](https://github.com/scubamuc/scubas_nextcloud-snap-wiki/blob/main/m92p-stacked%230.png)
+<img src="https://github.com/scubamuc/scubas_nextcloud-snap-wiki/blob/main/m92p-stacked%230.png" width="400">
 
-## 1\.2 OS & Software
-
+## 1.2 OS & Software
 **Requirements:**
+* [Ubuntu Server LTS](https://ubuntu.com/download/server) (_easy setup, easy administration, automated updates & updgrades, automated backup_)
+* [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) (_great community, great support_)
+* [LXD-Server manager](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (_multiple LXC containers_)
+* Installed Packages:
+ `htop, lnav, mc, openssh-server, sysstat, cockpit`
+* Installed Snaps: 
+ `lxd, lxdmosaic,`
 
-* [Ubuntu Server LTS](https://ubuntu.com/download/server) (*easy setup, easy administration, automated updates & updgrades, automated backup*)
-* [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) (*great community, great support*)
-* [LXD-Server manager](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (*multiple LXC containers*)
-* Installed Packages: `htop, lnav, mc, openssh-server, sysstat, cockpit`
-* Installed Snaps: `lxd, lxdmosaic,`
-
-### LXD-Server Setup
-
-* Bridged network (*IP from DHCP*)
-* Multiple LXC-Containers
+### LXD-Server setup
+* Bridged network (_IP from DHCP_)
+* Multiple LXC-Containers (Nextcloud, Pihole, NAS, VPN)
 * Scripted automatic rotating snapshots (daily) **0 downtime 24/7**
 * Scripted automatic rotating backup to LXD-Backup-Server (weekly) **0 downtime 24/7**
 
-### LXD-Backup-Server Setup
-
+### LXD-Backup-Server setup
 * WOL `ctr-wake` (weekly) LXD-Server backup `rsync` & lxdmosaic
-* Bridged network (*IP from DHCP*)
-* multiple LXC-Containers
+* WOL *manual* failover
+* Bridged network (_IP from DHCP_)
+* Multiple *synchronized* LXC-Containers (Nextcloud, Pihole, NAS, VPN)
 * Scripted automatic rotating Backup to NAS (monthly)
 
----
+----
+# 2. Procedure
 
-# 2\. Procedure
-
-## 2\.1 Install Nextcloud-snap container on LXD-Server
+## 2.1 Install Nextcloud-snap container on LXD-Server
 
 * prepare LXD-Server with bridged Networking
 * prepare LXC-Container with Ubuntu-Server 22.04
-* install optional packages in the LXC-Container:
+* install (optional) packages in LXC-Container:
 
-1. `sudo apt uptade && sudo apt upgrade`
-2. `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
-3. `sudo snap install nextcloud`
-4. follow instructions: https://github.com/nextcloud-snap/nextcloud-snap
+ 1. `sudo apt uptade && sudo apt upgrade` 
+ 2. `sudo snap install nextcloud`
+ 3.  (optional) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
+ 4.  follow instructions: https://github.com/nextcloud-snap/nextcloud-snap
 
 * set FQDN in `/etc/hosts` in container
-
 ```
 127.0.0.1       localhost
 127.0.1.1       your.domain.xyz SERVERNAME
@@ -83,15 +79,12 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
+----
+# 3. Backup, Restore & Export, Import
 
----
-
-# 3\. Backup, Restore & Export, Import
-
-## 3\.1 Nextcloud-snap Export
+## 3.1 Nextcloud-snap Export
 
 ### Backup Nextcloud-snap with nextcloud.export
-
 * nextcloud.export
 * compress backup
 * move compressed backup
@@ -108,7 +101,7 @@ Nextcloud-snap Export may be scripted, see example below:
 3. snapshots are kept for `30` days
 4. save script in `$USER/bin` as `snapbackup.sh` and make executable
 5. set preference variables
-6. create root-cronjob for weekly execution ( `0 1 * * 0 su $USER /home/$USER/bin/snapbackup.sh` )
+6. create root-cronjob for weekly execution ( ``` 0 1 * * 0 su $USER /home/$USER/bin/snapbackup.sh ``` )
 
 ```
 #!/bin/bash
@@ -149,19 +142,7 @@ sudo find $SOURCE/ -name "*.tar.gz" -exec mv '{}' $TARGET/ \;
 sudo find $TARGET/ -name "*.tar.gz" -mtime +$RETENTION -exec rm -f {} \; 
 
 exit
-do
-    if [ ! "$i" == "." ]; then
-      sudo tar -czf ${i}-$BACKUPNAME.tar.gz ${i}
-    fi
-done
 
-## find and move compressed backup file to $TARGET
-sudo find $SOURCE/ -name "*.tar.gz" -exec mv '{}' $TARGET/ \;
-
-## find and rotate/delete old backups
-sudo find $TARGET/ -name "*.tar.gz" -mtime +$RETENTION -exec rm -f {} \; 
-
-exit
 ```
 
 #### Restore Nextcloud-snap with nextcloud.import
@@ -171,16 +152,14 @@ exit
 
 1. copy/move compressed backup file to `/var/snap/nextcloud/common`
 2. uncompress backup file in `/var/snap/nextcloud/common`
-3. issue command `sudo nextcloud.import "PATH/TO/DIRECTORY`
+3. issue command `sudo nextcloud.import "PATH/TO/DIRECTORY `
 
----
-
-## 3\.2 Nextcloud-snap Snapshot
+----
+## 3.2 Nextcloud-snap Snapshot
 
 ### Backup Nextcloud-snap with Snap snapshot
 
 [snapshot documentation](https://snapcraft.io/docs/snapshots)
-
 * snap stop nextcloud
 * snap save nextcloud
 * snap start nextcloud
@@ -197,9 +176,9 @@ Nextcloud-snap Snap snapshot may be scripted, see example below:
 3. snapshots are kept for `30` days
 4. save script in `$USER/bin` as `snapbackup.sh` and make executable
 5. set preference variables
-6. create root-cronjob for weekly execution ( `0 1 * * 0 su $USER /home/$USER/bin/snapbackup.sh` )
+6. create root-cronjob for weekly execution  ( ``` 0 1 * * 0 su $USER /home/$USER/bin/snapbackup.sh ``` )
 
-```
+```` 
 #!/bin/bash
 ##############################################################
 ## Nextcloud-snap backup with Snap snapshot -- SCUBA --
@@ -247,14 +226,14 @@ echo "$(timestamp) -- Snapbackup $SNAPNAME Ende " >> "$LOG" ; ## end log
 echo "" >> "$LOG" ;  ## log linefeed 
 
 exit
-```
-
+````
 #### Restore Nextcloud-snap Snap snapshot with snap.restore
 
 * when moving to new device, be sure to install nextcloud-snap first
 * snap restore replaces previous installation incl. certs, DB and data
 * see documentation in `man snap` and [Snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
 
-1. copy \*.zip from backup media to `/var/lib/snapd/snapshots`
+1. copy *.zip from backup media to `/var/lib/snapd/snapshots`
 2. discover snapshot-ID using `snap saved`
-3. issue command `sudo snap restore "snapshot-ID"`
+3. issue command `sudo snap restore "snapshot-ID" `
+
