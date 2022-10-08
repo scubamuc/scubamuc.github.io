@@ -29,7 +29,7 @@ I'm neither a Linux crack nor a full time admin... My day job is software suppor
 > * SSD: 500GB
 > * PSU: 65 Watt external
 
-![M92P-Stacked](https://github.com/scubamuc/scubas_nextcloud-snap-wiki/blob/main/m92p-stacked%230.png)
+![M92P-Stacked](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc-wiki/m92p-stacked%230.png)
 
 ## 1\.2 OS & Software
 
