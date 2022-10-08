@@ -28,6 +28,8 @@ I'm neither a Linux crack nor an admin... so my goal is a simple setup with ampl
 
 * stackable redundant 1xServer & 1xBackup
 
+<img src="https://github.com/scubamuc/scubas_nextcloud-snap-wiki/blob/main/m92p-stacked%230.png" width="400">
+
 ## 1.2 OS & Software
 **Requirements:**
 * [Ubuntu Server LTS](https://ubuntu.com/download/server) (_easy setup, easy administration, automated updates & updgrades, automated backup_)
