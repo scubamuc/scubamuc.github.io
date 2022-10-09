@@ -31,8 +31,8 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ## 1.2 OS & Software
 **Requirements:**
-* [Ubuntu Server LTS](https://ubuntu.com/download/server) (_easy setup, easy administration, automated updates & updgrades, automated backup_)
-* [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) (_great community, great support_)
+* [Ubuntu Server LTS](https://ubuntu.com/download/server) (_easy setup & administration, automated updates & updgrades_)
+* [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) (_easy setup & automated updates_)
 * [LXD-Server manager](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (_multiple LXC containers_)
 * Installed Packages:
  `htop, lnav, mc, openssh-server, sysstat, cockpit`
