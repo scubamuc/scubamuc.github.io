@@ -15,7 +15,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 **Requirements:**
 * affordable, good ressources, low energy footprint
 * install and forget, uptime 24/7
-* redundancy, cold standby and backup
+* redundancy, failover and backup
 * up to 5 users
 * multiple services (Nextcloud, FW, VPN, DNS, Proxy)
 
