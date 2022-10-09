@@ -15,7 +15,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 **Requirements:**
 * affordable, good ressources, low energy footprint
 * install and forget, uptime 24/7
-* redundancy, failover and backup
+* redundancy, cold standby and backup
 * up to 5 users
 * multiple services (Nextcloud, FW, VPN, DNS, Proxy)
 
@@ -43,14 +43,15 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * Bridged network (_IP from DHCP_)
 * Multiple LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
 * Scripted automatic rotating snapshots (daily) **0 downtime 24/7**
-* Scripted automatic rotating backup to LXD-Backup-Server (weekly)
+* Scripted automatic synchronisation to LXD-Backup-Server (weekly)
+* Scripted automatic rotating Backup to NAS (monthly)
 
 ### LXD-Backup-Server setup
-* WOL `ctr-wake` (weekly) LXD-Server backup `rsync`
-* WOL *manual* failover
+* Identical setup to LXD-Server -- cold standby
 * Bridged network (_IP from DHCP_)
 * Multiple *synchronized* LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
-* Scripted automatic rotating Backup to NAS (monthly)
+* WOL `ctr-wake` (weekly) synchronisation
+* WOL *manual* failover
 
 ----
 # 2. Procedure
