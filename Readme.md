@@ -17,7 +17,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * install and forget, uptime 24/7
 * redundancy, failover and backup
 * up to 5 users
-* multiple services (Nextcloud, NAS, VPN, DNS, Proxy)
+* multiple containers (Nextcloud, NAS, VPN, DNS, Proxy)
 
 >**2x Lenovo ThinkCentre M92p Tiny**
 >  * Formfactor: SFF
