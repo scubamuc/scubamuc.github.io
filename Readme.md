@@ -28,7 +28,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 * stackable redundant 1xServer & 1xBackup
 
-<img src="https://github.com/scubamuc/scubas_nextcloud-snap-wiki/blob/main/m92p-stacked%230.png" width="400">
+<img src="https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/m92p-stacked%230.png" width="400">
 
 ## 1.2 OS & Software
 **Requirements:**
