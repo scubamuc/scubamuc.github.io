@@ -2,6 +2,6 @@
 
 ## Nutzung auf eigene Vertantwortung !!
 
-### Hier sind meine persönliche hilfreichen Skripte
+### Hier sind meine persönlichen hilfreichen Skripte
 
 ### Hierfür gibt es keine Hilfe oder Erklärungen
