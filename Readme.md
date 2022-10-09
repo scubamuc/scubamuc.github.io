@@ -20,7 +20,6 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * multiple services (Nextcloud, FW, VPN, DNS, Proxy)
 
 >**2x Lenovo ThinkCentre M92p Tiny**
->  * Formfactor: SFF
 >  * CPU: Intel Core i5-3470T
 >  * PW: 16 Watt TDP
 >  * RAM: 16GB
