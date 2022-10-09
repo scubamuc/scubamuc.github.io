@@ -1,7 +1,7 @@
 # SCUBA's Skripte
 
-## Nutzung auf eigen Vertantwortung !!
+## Nutzung auf eigene Vertantwortung !!
 
 ### Hier sind meine persönliche hilfreichen Skripte
 
-### Hierfür gibt es keine weitere Hilfe oder Erklärungen
+### Hierfür gibt es keine Hilfe oder Erklärungen
