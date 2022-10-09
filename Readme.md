@@ -43,7 +43,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * Bridged network (_IP from DHCP_)
 * Multiple LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
 * Scripted automatic rotating snapshots (daily) **0 downtime 24/7**
-* Scripted automatic rotating backup to LXD-Backup-Server (weekly) **0 downtime 24/7**
+* Scripted automatic rotating backup to LXD-Backup-Server (weekly)
 
 ### LXD-Backup-Server setup
 * WOL `ctr-wake` (weekly) LXD-Server backup `rsync` & lxdmosaic
