@@ -58,7 +58,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 ## 2.1 Install Nextcloud-snap container on LXD-Server
 
 * prepare LXD-Server with bridged Networking
-* prepare LXC-Container with Ubuntu-Server 22.04
+* prepare LXC-Container with [Ubuntu-Server](https://ubuntu.com/download/server)
 * install (optional) packages in LXC-Container:
 
  1. `sudo apt uptade && sudo apt upgrade` 
@@ -66,7 +66,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
  3.  (optional) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
  4.  follow instructions: https://github.com/nextcloud-snap/nextcloud-snap
 
-* set FQDN in `/etc/hosts` in container
+* set FQDN in `/etc/hosts` in Nextcloud-snap container
 ```
 127.0.0.1       localhost
 127.0.1.1       your.domain.xyz SERVERNAME
