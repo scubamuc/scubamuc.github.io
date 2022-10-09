@@ -17,7 +17,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * install and forget, uptime 24/7
 * redundancy, failover and backup
 * up to 5 users
-* multiple services (Nextcloud, NAS, VPN, DNS, Proxy)
+* multiple services (Nextcloud, FW, VPN, DNS, Proxy)
 
 >**2x Lenovo ThinkCentre M92p Tiny**
 >  * Formfactor: SFF
@@ -42,15 +42,15 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ### LXD-Server setup
 * Bridged network (_IP from DHCP_)
-* Multiple LXC-Containers (Nextcloud, NAS, VPN, DNS, Proxy)
+* Multiple LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
 * Scripted automatic rotating snapshots (daily) **0 downtime 24/7**
-* Scripted automatic rotating backup to LXD-Backup-Server (weekly) **0 downtime 24/7**
+* Scripted automatic rotating backup to LXD-Backup-Server (weekly)
 
 ### LXD-Backup-Server setup
 * WOL `ctr-wake` (weekly) LXD-Server backup `rsync` & lxdmosaic
 * WOL *manual* failover
 * Bridged network (_IP from DHCP_)
-* Multiple *synchronized* LXC-Containers (Nextcloud, NAS, VPN, DNS, Proxy)
+* Multiple *synchronized* LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
 * Scripted automatic rotating Backup to NAS (monthly)
 
 ----
