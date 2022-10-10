@@ -81,7 +81,7 @@ ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
 ----
-# 3. Backup, Restore & Export, Import
+# 3. Export, Import -- Backup, Restore
 
 ## 3.1 Nextcloud-snap Export
 
