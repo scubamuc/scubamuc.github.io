@@ -83,7 +83,7 @@ ff02::2 ip6-allrouters
 ----
 # 3. Export, Import -- Backup, Restore
 
-## 3.1 Nextcloud-snap Export
+## 3.1 Nextcloud-snap export & import
 
 ### Backup Nextcloud-snap with nextcloud.export
 * nextcloud.export
@@ -156,7 +156,7 @@ exit
 3. issue command `sudo nextcloud.import "PATH/TO/DIRECTORY `
 
 ----
-## 3.2 Nextcloud-snap Snapshot
+## 3.2 Nextcloud-snap snapshot & restore
 
 ### Backup Nextcloud-snap with Snap snapshot
 
