@@ -60,7 +60,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 * prepare LXD-Server with bridged Networking
 * prepare LXC-Container with [Ubuntu-Server](https://ubuntu.com/download/server)
-* install Nextcloud-snap in LXC-Container
+* install [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-Container
 * install (optional) packages in LXC-Container
 
  1. `sudo apt uptade && sudo apt upgrade` 
