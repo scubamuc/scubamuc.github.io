@@ -59,7 +59,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 ## 2.1 Install Nextcloud-snap container on LXD-Server
 
 * prepare [LXD-Server](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) with bridged Networking
-* prepare [LXC-container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu-Server](https://ubuntu.com/download/server)
+* prepare [LXC-Container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu-Server](https://ubuntu.com/download/server)
 * install [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-Container
 * install (optional) packages in LXC-Container
 
