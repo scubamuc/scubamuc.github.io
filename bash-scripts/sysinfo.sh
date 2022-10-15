@@ -77,20 +77,21 @@ echo ''
 echo '       ----------------------------------   '
 echo '       System Dienste und Meldungen!             '
 echo ''
-	echo -ne "	 Nextcloud Dienst: "; ps -ef | grep 'nextcloud' >/dev/null && echo "läuft!" || echo "gestoppt!" ## Nextcloud Status
 	echo -ne "	System Läuft seit: "; uptime -p ; #check wie lange läuft System schon
-##	echo -ne "	 Letzter Neustart: "; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
-##	echo     "	   System Updates? " $CheckUpdates ; #prüfe nach ob Updates verfügbar sind
-##	echo     "	  System Neustart? " $CheckReboot ; #prüfe nach ob reboot erforderlich ist
-echo ''
-echo '       ----------------------------------   '
-echo '       LXC Container Status!		  '
-echo ''
-lxc list status=running
+	echo -ne "	 Letzter Neustart: "; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
+	echo     "	   System Updates? " $CheckUpdates ; #prüfe nach ob Updates verfügbar sind
+	echo     "	  System Neustart? " $CheckReboot ; #prüfe nach ob reboot erforderlich ist
 echo ''
 echo '       ==================================   '
 echo '       Gesamtspeicher auf dem System!       '
 echo ''
         sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL
 echo ''
-
+	free -m
+echo ''
+echo ''
+read -p "  System Upgrade mit Enter... Strg+c für Ende..."
+        clear
+echo ''
+        AptUpdate
+exit
