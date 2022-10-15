@@ -4,9 +4,9 @@
 ##############################################################
 # Script Beschreibung #
 ##############################################################
-# Dieses Skript dient zur Übersicht über die Platzverhältnisse
-# auf dem Nextcloud Server. Es werden zusätzliche Systemwerte
-# angezeigt!
+# Mit SysInfo wird ein Systemüberblick ausgegeben. 
+# Es werden zusätzliche Systemwerte angezeigt und abschließend
+# eine Option zum Systemupdate abgefragt.
 ##############################################################
 # VARIABLEN #
 ##############################################################
