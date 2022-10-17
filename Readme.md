@@ -121,3 +121,17 @@ This works fine as weekly automatic (cronjob as root) job and for random backups
 This works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
 
 [Nextcloud-snap Snap snapshot](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md) may be scripted
+
+## restore snapshot using snap restore 
+
+* when moving to new device, be sure to install nextcloud-snap first
+* snap restore replaces previous installation incl. certs, DB and data
+* see documentation in `man snap` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
+
+1\. copy \*.zip from backup media to `/var/lib/snapd/snapshots`
+
+2\. discover snapshot-ID using `snap saved`
+
+3\. issue command `sudo snap restore "snapshot-ID"`
+
+----
