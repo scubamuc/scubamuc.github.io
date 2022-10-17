@@ -14,7 +14,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 ## 1.1 Hardware
 **Requirements:**
 * affordable (refurbished)
-* good ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate-power-consumption.md)
+* good ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
 * install and forget, uptime 24/7
 * redundancy, failover and backup
 * up to 5 users
@@ -22,7 +22,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 >**2x Lenovo ThinkCentre M92p Tiny**
 >  * CPU: Intel Core i5-3470T
->  * PSU: [16W/12W load/idle](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate-power-consumption.md)
+>  * PSU: [16W/12W load/idle](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
 >  * RAM: 16GB
 >  * SSD: 500GB
 
