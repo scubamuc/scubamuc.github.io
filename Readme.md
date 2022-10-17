@@ -66,7 +66,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
  1. `sudo apt uptade && sudo apt upgrade` 
  2. `sudo snap install nextcloud`
- 3.  follow instructions: https://github.com/nextcloud-snap/nextcloud-snap
+ 3.  follow instructions: [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
  4.  (optional) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
 
 * set FQDN in `/etc/hosts` in Nextcloud-snap container
