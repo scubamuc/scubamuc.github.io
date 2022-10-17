@@ -96,6 +96,19 @@ This works fine as weekly automatic (cronjob as root) job and for random backups
 
 [Nextcloud-snap Export](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md) may be scripted
 
+---
+
+## restore export using nextcloud.import
+
+* when moving to new device, be sure to install nextcloud-snap first
+* nextcloud.import replaces previous installation incl. DB and data
+
+1\. copy/move compressed backup file to `/var/snap/nextcloud/common`
+
+2\. uncompress backup file in `/var/snap/nextcloud/common`
+
+3\. issue command ` $ sudo nextcloud.import PATH TO DIRECTORY`
+
 ----
 ## 3.2 Nextcloud-snap snapshot & restore
 
