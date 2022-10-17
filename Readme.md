@@ -169,7 +169,7 @@ exit
 
 This works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
 
-Nextcloud-snap Snap snapshot may be scripted, see example below:
+[Nextcloud-snap Snap snapshot](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md) may be scripted, see example below:
 
 **Rotating Nextcloud-snap Snap snapshot script to media incl. logging:**
 
