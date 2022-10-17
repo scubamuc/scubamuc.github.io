@@ -22,7 +22,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 >**2x Lenovo ThinkCentre M92p Tiny**
 >  * CPU: Intel Core i5-3470T
->  * PW: 16W/12W load/idle
+>  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
 >  * SSD: 500GB
 
