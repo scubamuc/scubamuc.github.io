@@ -13,7 +13,8 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ## 1.1 Hardware
 **Requirements:**
-* affordable, good ressources, low energy footprint
+* affordable (refurbished)
+* good ressources, low energy footprint
 * install and forget, uptime 24/7
 * redundancy, failover and backup
 * up to 5 users
