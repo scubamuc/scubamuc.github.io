@@ -94,7 +94,7 @@ ff02::2 ip6-allrouters
 
 This works fine as weekly automatic (cronjob as root) job and for random backups. Compressed backup may be moved wherever.
 
-Nextcloud-snap Export may be scripted, see example below:
+[Nextcloud-snap Export](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md) may be scripted, see example below:
 
 **Rotating nextcloud.export script:**
 
