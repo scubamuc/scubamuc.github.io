@@ -96,8 +96,6 @@ This works fine as weekly automatic (cronjob as root) job and for random backups
 
 [Nextcloud-snap Export](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md) may be scripted
 
----
-
 ## restore export using nextcloud.import
 
 * when moving to new device, be sure to install nextcloud-snap first
