@@ -6,6 +6,8 @@
 ##############################################################
 # Dieses Skript dient zur Übersicht über den Nextcloud-snap 
 # Server. Es werden zusätzliche Systemwerte angezeigt!
+# Installierte Snaps: nextcloud
+# Zusätzliche Pakete: sysstat
 ##############################################################
 # VARIABLEN #
 ##############################################################
@@ -65,8 +67,6 @@ echo '       System Dienste und Meldungen!             '
 echo ''
 	echo -ne "	 Nextcloud Dienst:	"; snap services nextcloud.apache | grep 'nextcloud' >/dev/null && echo "läuft!" || echo "gestoppt!"
 	echo -ne "	   Nextcloud Cron:	"; snap services nextcloud.nextcloud-cron | grep -oPw 'aktiv' >/dev/null && echo "läuft!" || echo "gestoppt!"
-##	echo -ne "	    Coturn Server:	"; ps -C turnserver >/dev/null && echo "läuft!" || echo "gestoppt!"
-##	echo -ne "	    X11VNC Server:	"; ps -C x11vnc >/dev/null && echo "läuft!" || echo "gestoppt!"
 	echo -ne "	System Läuft seit:	"; uptime -p ; #check wie lange läuft System schon
 	echo -ne "	 Letzter Neustart:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
 	echo	 "	   System Updates?	"$CheckUpdate ; #prüfe nach ob updates verfügbar sind
@@ -100,10 +100,6 @@ echo ''
 	sudo free -tmh
 echo ''
         sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT
-# echo ''
-#       sudo df -ah /dev/sda1 &&
-#       sudo df -ah /dev/sda2 &&
-#       sudo df -ah /media/DATAHOME &&
 echo ''
 echo '  Größen werden ermittelt, bitte warten...          '
 echo ''
