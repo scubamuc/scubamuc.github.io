@@ -35,10 +35,10 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) (_easy setup & automated updates_)
 * [LXD-Server manager](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (_multiple LXC containers_)
 * _Optional_ LXD-Server management GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
-* Installed Packages:
+* Required packages:
  `htop, lnav, mc, openssh-server, sysstat, cockpit`
-* Installed Snaps: 
- `lxd, lxdmosaic,`
+* Required snaps: 
+ `Nextcloud, lxd, lxdmosaic,`
 
 ### LXD-Server setup
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
