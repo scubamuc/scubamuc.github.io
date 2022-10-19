@@ -40,7 +40,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
  `lxd, lxdmosaic,`
 
 ### LXD-Server setup
-* Bridged network (_IP from DHCP_)
+* [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (daily) **0 downtime 24/7**
 * Scripted automatic synchronisation to LXD-Backup-Server (weekly)
@@ -48,7 +48,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ### LXD-Backup-Server setup
 * Identical setup to LXD-Server -- cold standby
-* Bridged network (_IP from DHCP_)
+* [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple *synchronized* LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
 * WOL `ctr-wake` (weekly) synchronisation
 * WOL *manual* failover
