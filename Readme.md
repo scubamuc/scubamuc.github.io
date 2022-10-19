@@ -13,12 +13,13 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ## 1.1 Hardware
 **Requirements:**
-* affordable (refurbished)
+* affordable (_refurbished_)
+* linux compatible hardware
 * good ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
 * install and forget, uptime 24/7
 * redundancy, failover and backup
 * up to 5 users
-* multiple services (Nextcloud, FW, VPN, DNS, Proxy)
+* multiple services (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
 >**2x Lenovo ThinkCentre M92p Tiny - stackable redundant 1xServer & 1xBackup**
@@ -42,7 +43,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ### LXD-Server setup
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
-* Multiple LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
+* Multiple LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (daily) **0 downtime 24/7**
 * Scripted automatic synchronisation to LXD-Backup-Server (weekly `rsync`)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating Backup to NAS (monthly)
@@ -50,7 +51,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 ### LXD-Backup-Server setup
 * Identical setup to LXD-Server -- cold standby
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
-* Multiple *synchronized* LXC-Containers (Nextcloud, FW, VPN, DNS, Proxy)
+* Multiple *synchronized* LXC-containers (Nextcloud, FW, VPN, DNS, Proxy)
 * WOL `ctr-wake` (weekly) synchronisation
 * WOL *manual* failover
 
@@ -60,9 +61,9 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 ## 2.1 Install Nextcloud-snap container on LXD-Server
 
 * prepare [LXD-Server](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) with [bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
-* prepare [LXC-Container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu-Server](https://ubuntu.com/download/server)
-* install [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-Container
-* install (_optional_) packages in LXC-Container
+* prepare [LXC-container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu-Server](https://ubuntu.com/download/server)
+* install [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-container
+* install (_optional_) packages in LXC-container
 * See helpful notes in [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
 * See helpful bash-scripts in [scripts repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
 
