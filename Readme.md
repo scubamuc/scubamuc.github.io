@@ -25,8 +25,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 >  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
 >  * SSD: 500GB
-
-<img src="https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/images/m92p-stacked%230.png" width="400">
+> <img src="https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/images/m92p-stacked%230.png" width="400">
 
 ## 1.2 OS & Software
 **Requirements:**
