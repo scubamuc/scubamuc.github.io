@@ -1,1 +1,1 @@
-## nextcloud-snap notes / wiki
+## Nextcloud-snap notes / wiki
