@@ -38,7 +38,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * Installed Packages:
  `htop, lnav, mc, openssh-server, sysstat, cockpit`
 * Installed Snaps: 
- `lxd, lxdmosaic,`
+ `Nextcloud, lxd, lxdmosaic,`
 
 ### LXD-Server setup
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
