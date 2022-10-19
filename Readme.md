@@ -97,7 +97,7 @@ ff02::2 ip6-allrouters
 
 This works fine as weekly automatic (cronjob as root) job and for random backups. Compressed backup may be moved wherever.
 
-[Nextcloud-snap Export](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md) may be scripted
+[Nextcloud-snap Export Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md)
 
 ## Restore export using nextcloud.import
 
@@ -123,7 +123,7 @@ This works fine as weekly automatic (cronjob as root) job and for random backups
 
 This works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
 
-[Nextcloud-snap Snap snapshot](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md) may be scripted
+[Nextcloud-snap Snap snapshot Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
 ## Restore Snap snapshot using Snap restore 
 
