@@ -70,7 +70,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
  5.  [set FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in Nextcloud-snap container
 
 * See helpful notes in my [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
-* See helpful bash-scripts in my [script repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
+* See helpful bash-scripts in my [scripts repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
 
 ----
 # 3. Export, Import -- Backup, Restore
