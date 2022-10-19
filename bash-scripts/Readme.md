@@ -1,4 +1,4 @@
 ## simply bash scripts
 
 see remarks in skripts.  
-use at own risk.
+use at own risk. 
