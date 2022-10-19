@@ -1,3 +1,4 @@
-simple scripts
+## simply bash scripts
 
-see remarks in skripts. no discussion. use at own risk.
+see remarks in skripts.  
+use at own risk.
