@@ -13,12 +13,11 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ## 1.1 Hardware
 **Requirements:**
-* Affordable (_refurbished_)
+* Affordable, efficiant (_refurbished system_)
 * Linux compatible hardware
-* Good ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
-* Install and forget, uptime 24/7
-* Redundancy, failover and backup
-* Up to 5 users
+* Ample ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
+* Install and forget - (_uptime 24/7_)
+* Redundancy - (_failover / backup_)
 * Multiple services (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
