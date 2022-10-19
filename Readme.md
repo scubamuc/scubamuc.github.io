@@ -66,7 +66,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * See helpful notes in [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
 * See helpful bash-scripts in [scripts repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
 
- 1. `sudo apt uptade && sudo apt upgrade` 
+ 1. `sudo apt update && sudo apt upgrade` 
  2. `sudo snap install nextcloud`
  3.  follow instructions: [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
  4.  (_optional_) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
