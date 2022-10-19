@@ -62,24 +62,13 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * prepare [LXC-Container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu-Server](https://ubuntu.com/download/server)
 * install [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-Container
 * install (optional) packages in LXC-Container
+* [set FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in Nextcloud-snap container
 
  1. `sudo apt uptade && sudo apt upgrade` 
  2. `sudo snap install nextcloud`
  3.  follow instructions: [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
  4.  (optional) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
 
-* set FQDN in `/etc/hosts` in Nextcloud-snap container
-```
-127.0.0.1       localhost
-127.0.1.1       your.domain.xyz SERVERNAME
-
-# The following lines are desirable for IPv6 capable hosts
-::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-```
 * See helpful notes in my [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
 * See helpful bash-scripts in my [script repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
 
