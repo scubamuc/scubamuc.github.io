@@ -32,7 +32,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ## 1.2 OS & Software
 **Requirements:**
-* [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & administration, automated updates & updgrades_)
+* [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & administration, unattended updates & updgrades_)
 * [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) (_easy setup & automated updates_)
 * [LXD-Server manager](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (_multiple LXC containers_)
 * _Optional_ LXD-Server management GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
