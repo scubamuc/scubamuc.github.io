@@ -1,7 +1,3 @@
-# SCUBA's Skripte
+simple scripts
 
-## Nutzung auf eigene Vertantwortung !!
-
-### Hier sind meine persönlichen hilfreichen Skripte
-
-### Hierfür gibt es keine Hilfe oder Erklärungen
+see remarks in skripts. no discussion. use at own risk.
