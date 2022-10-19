@@ -81,8 +81,8 @@ ff00::0 ip6-mcastprefix
 ff02::1 ip6-allnodes
 ff02::2 ip6-allrouters
 ```
-* See further notes in my [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
-* See som bash-scripts in my [script repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
+* See helpful notes in my [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
+* See helpful bash-scripts in my [script repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
 
 ----
 # 3. Export, Import -- Backup, Restore
