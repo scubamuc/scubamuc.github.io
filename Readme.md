@@ -20,12 +20,14 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * up to 5 users
 * multiple services (Nextcloud, FW, VPN, DNS, Proxy)
 
+----
 >**2x Lenovo ThinkCentre M92p Tiny - stackable redundant 1xServer & 1xBackup**
 >  * CPU: Intel Core i5-3470T
 >  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
 >  * SSD: 500GB
 > <img src="https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/images/m92p-stacked%230.png" width="400">
+----
 
 ## 1.2 OS & Software
 **Requirements:**
