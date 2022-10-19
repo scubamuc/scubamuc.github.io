@@ -22,7 +22,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 >**2x Lenovo ThinkCentre M92p Tiny - stackable redundant 1xServer & 1xBackup**
 >  * CPU: Intel Core i5-3470T
->  * PSU: [16W/12W load/idle](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
+>  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
 >  * SSD: 500GB
 
