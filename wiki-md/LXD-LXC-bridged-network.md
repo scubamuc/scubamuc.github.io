@@ -14,7 +14,7 @@ $ sudo nmcli con add type bridge-slave ifname eno1 master br0
 $ nmcli connection show
 ```
 
-** deactivate STP:**
+**deactivate STP:**
 
 ```
 $ sudo nmcli con modify br0 bridge.stp no 
