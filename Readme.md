@@ -17,7 +17,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * Linux compatible hardware
 * Ample ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md), 5+ users
 * Install and forget - (_uptime 24/7_)
-* Redundancy - (_failover / backup_)
+* Redundancy - (_failover, cold-standby / backup_)
 * Multiple services (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
@@ -48,7 +48,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating Backup to NAS (_monthly_)
 
 ### LXD-Backup-Server setup
-* Identical setup to LXD-Server -- cold standby
+* Identical setup to LXD-Server -- cold-standby
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple *synchronized* LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
 * WOL `ctr-wake` (_weekly_) synchronisation
