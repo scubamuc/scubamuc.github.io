@@ -21,8 +21,6 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * Multiple services (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
->  Example:
->
 >**2x Lenovo ThinkCentre M92p Tiny - stackable 1xServer & 1xBackup** (_refurbished_)
 >  * CPU: Intel Core i5-3470T
 >  * PSU: 16W/12W load/idle
