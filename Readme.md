@@ -15,10 +15,10 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 **Requirements:**
 * Affordable, efficient, small 
 * Linux compatible
-* Ample ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md), 5+ users
+* Ample ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md) - (_5+ users_)
 * Install and forget - (_uptime 24/7_)
 * Redundancy - (_failover, cold-standby & backup_)
-* Multiple services (_Nextcloud, FW, VPN, DNS, Proxy_)
+* Multiple services - (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
 >**2x Lenovo ThinkCentre M92p Tiny - stackable 1xServer & 1xBackup** (_refurbished_)
