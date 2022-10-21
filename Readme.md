@@ -13,7 +13,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 
 ## 1.1 Hardware
 **Requirements:**
-* Affordable, efficient, small formfactor (_refurbished system_)
+* Affordable, efficient, small formfactor 
 * Linux compatible hardware
 * Ample ressources, [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md), 5+ users
 * Install and forget - (_uptime 24/7_)
@@ -21,7 +21,9 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 * Multiple services (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
->**2x Lenovo ThinkCentre M92p Tiny - stackable 1xServer & 1xBackup**
+>  Example:
+>
+>**2x Lenovo ThinkCentre M92p Tiny - stackable 1xServer & 1xBackup** (_refurbished_)
 >  * CPU: Intel Core i5-3470T
 >  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
