@@ -14,7 +14,7 @@ I'm neither a Linux crack nor an admin... so my goal is a simple safe and reliab
 ## 1.1 Hardware
 **Requirements:**
 * Affordable, efficient, small 
-* [low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
+* [Low energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
 * Linux compatible
 * Ample ressources  - (_5+ users_)
 * Install and forget - (_uptime 24/7_)
