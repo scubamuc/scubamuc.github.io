@@ -8,7 +8,7 @@
 
 ## Set cron configuration:
 
-standard value =10 in minutes
+value =10 in minutes
 
 `sudo snap set nextcloud nextcloud.cron-interval=10`
 
