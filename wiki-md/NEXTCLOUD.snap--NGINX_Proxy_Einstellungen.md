@@ -1,11 +1,9 @@
-# NGINX Proxy Manager Settings
+# NGINX Proxy Manager Settings for Nextcloud-snap
 
-## For Nextcloud-snap
-
-### 1. Setup NGINX Proxy Manager
-### 2. Get SSL Certificates from LetsEncrypt
-### 3. Add Proxy Host
-### 4. Add advanced settings
+## 1. Setup NGINX Proxy Manager
+## 2. Get SSL Certificates from LetsEncrypt
+## 3. Add Proxy Host
+## 4. Add advanced settings
 
 **Proxy Host "advanced" settings:**
 
@@ -19,22 +17,20 @@ location = /.well-known/caldav {
       return 301 $scheme://$host:$server_port/remote.php/dav;
 }
 ```
-### 5. Edit Nextcloud-snap `config.php`
-
-#### Nextcloud.snap -- edit config.php
+## 5. Edit Nextcloud-snap config.php
 
 edit the config.php by hand:
 
 ```
 sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php. 
 ```
-
-#### add trusted proxy
+add the following lines:
 
 ```
 'trusted_proxies' => 
   array (
     0 => '192.168.2.xxx',
     1 => '192.168.2.xxx',
+    (
 ```
 ----
