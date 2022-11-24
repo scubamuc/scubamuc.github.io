@@ -7,9 +7,9 @@
 
 **Proxy Host "advanced" settings:**
 
-```
-nano /etc/nginx/sites-enabled/vhost.conf
+copy the following lines and paste in advanced settings
 
+```
 location = /.well-known/carddav {
       return 301 $scheme://$host:$server_port/remote.php/dav;
 }
