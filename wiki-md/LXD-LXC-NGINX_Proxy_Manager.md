@@ -44,7 +44,7 @@ Dieses Skript funktioniert laut Entwickler mit *Alpine, Debian and Ubuntu*.
 
 ![grafik](https://user-images.githubusercontent.com/54933878/203949132-10bd621d-2e2d-45d3-8415-73e63f99993c.png)
 
-5. Siehe dazu auch besondere Einstellung für **Nextcloud-snap** (einfügen, abspeichern)
+5. Besondere Einstellung für **Nextcloud** (einfügen, abspeichern)
 
 ```
 location = /.well-known/carddav {return 301 $scheme://$host:$server_port/remote.php/dav;}
