@@ -8,7 +8,8 @@ Der Vorteil von NGINX im LXC Container ist klar. Einfache Verwaltung und einfach
 
 Weitestgehend unbekannt ist ein Installationsskript um einen NGINX Proxy Manager in einem neu erstellten LXC Container zu installieren.
 
-Dieses Skript funktioniert *nur* mit *Alpine, Debian and Ubuntu .* HINWEIS: Paketmanager von Debian und Ubuntu werden zerschossen… daher ALPINE Linux.
+Dieses Skript funktioniert laut Entwickler *nur* mit *Alpine, Debian and Ubuntu .* 
+**HINWEIS**: Paketmanager von *Debian* und *Ubuntu* werden zerschossen… daher ist ALPINE Linux vorzuziehen.
 
 1. Einen Container mit Alpine Linux 3.1.x wird erstellt und aktualisiert
 2. Anschließend erhält der Container eine IP-Adresse von DHCP
