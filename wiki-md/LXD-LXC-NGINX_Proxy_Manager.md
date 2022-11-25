@@ -9,7 +9,7 @@ Weitestgehend unbekannt ist ein Installationsskript um einen NGINX Proxy Manager
 Dieses Skript funktioniert laut Entwickler mit *Alpine, Debian and Ubuntu*. 
 **HINWEIS**: Paketmanager von *Debian* und *Ubuntu* werden zerschossen… daher ist ALPINE Linux vorzuziehen.
 
-1. Einen Container mit Alpine Linux 3.1.x wird erstellt und aktualisiert
+1. Einen Container mit Alpine Linux 3.16.0 wird erstellt und aktualisiert
 2. Anschließend erhält der Container eine IP-Adresse von DHCP
 3. IP-Adresse ind DHCP statisch festlegen, im Router und Port 80 und Port 443 für das Gerät freigeben
 4. Anmeldung im Alpine Linux Container mittels LXC-Shell als root
