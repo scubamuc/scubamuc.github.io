@@ -31,5 +31,6 @@ add the following lines:
   
 ```
 ----
-Details for installing NGINX proxy manager in LXC:
+Installing NGINX proxy manager in LXC:
+
 (https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-NGINX_Proxy_Manager.md)
