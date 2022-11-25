@@ -30,7 +30,7 @@ Dieses Skript funktioniert laut Entwickler mit *Alpine, Debian and Ubuntu*.
    ```
 7. Anschließend erfolgt eine Aufforderung zum Ändern des Benutzernamens und Passwort.
 
-   Es ist empfehlenswert eine tatsächliche Email-Adresse der Domain zu nehmen die verwendet werden soll, Bsp. `benutzer@meine.domain.de`. Dies erleichter die Erstellung von Zertifikaten im späteren Verlauf.
+   Es ist empfehlenswert eine tatsächliche Email-Adresse der Domain zu nehmen die verwendet werden soll, Bsp. `benutzer@meine.domain.de`. Dies erleichtert die Erstellung von Zertifikaten im späteren Verlauf.
 
 ## Installationsskript
 
