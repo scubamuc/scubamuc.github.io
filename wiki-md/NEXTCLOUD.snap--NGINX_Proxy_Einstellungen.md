@@ -1,6 +1,6 @@
 # NGINX Proxy Manager Settings for Nextcloud-snap
 
-## * Setup NGINX Proxy Manager
+## * Setup NGINX Proxy Manager (https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-NGINX_Proxy_Manager.md)
 ## * Get SSL Certificates from LetsEncrypt
 ## * Add Proxy Host
 ## * Add advanced settings
