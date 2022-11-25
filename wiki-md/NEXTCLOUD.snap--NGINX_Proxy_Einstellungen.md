@@ -25,8 +25,8 @@ add the following lines:
 ```
   'trusted_proxies' => 
   array (
-    0 => '192.168.2.200',
-    1 => '192.168.2.10',
+    0 => '192.168.2.xxx',
+    1 => '192.168.2.xxx',
   ),
   
 ```
