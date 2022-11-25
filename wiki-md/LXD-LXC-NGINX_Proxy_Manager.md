@@ -2,8 +2,6 @@
 
 <https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager>
 
-<https://github.com/ej52/proxmox-scripts/blob/main/lxc/nginx-proxy-manager/README.md>
-
 Der Vorteil von NGINX im LXC Container ist klar. Einfache Verwaltung und einfache Sicherung sowie Snapshots des laufenden Containers.
 
 Weitestgehend unbekannt ist ein Installationsskript um einen NGINX Proxy Manager in einem neu erstellten LXC Container zu installieren.
