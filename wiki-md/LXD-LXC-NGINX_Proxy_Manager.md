@@ -49,12 +49,8 @@ Dieses Skript funktioniert laut Entwickler mit *Alpine, Debian and Ubuntu*.
 5. Siehe dazu auch besondere Einstellung für **Nextcloud-snap**
 
 ```
-location = /.well-known/carddav {
-      return 301 $scheme://$host:$server_port/remote.php/dav;
-}
-location = /.well-known/caldav {
-      return 301 $scheme://$host:$server_port/remote.php/dav;
-}
+location = /.well-known/carddav {return 301 $scheme://$host:$server_port/remote.php/dav;}
+location = /.well-known/caldav {return 301 $scheme://$host:$server_port/remote.php/dav;}
 ```
 
 
