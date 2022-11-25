@@ -10,12 +10,8 @@
 copy the following lines and paste in advanced settings
 
 ```
-location = /.well-known/carddav {
-      return 301 $scheme://$host:$server_port/remote.php/dav;
-}
-location = /.well-known/caldav {
-      return 301 $scheme://$host:$server_port/remote.php/dav;
-}
+location = /.well-known/carddav {return 301 $scheme://$host:$server_port/remote.php/dav;}
+location = /.well-known/caldav {return 301 $scheme://$host:$server_port/remote.php/dav;}
 ```
 ## * Edit Nextcloud-snap config.php
 
