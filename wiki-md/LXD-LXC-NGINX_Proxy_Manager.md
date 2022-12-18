@@ -1,55 +1,76 @@
-# Nginx Proxy Manager in LXC
+# Setup Nginx Proxy Manager in LXC
 
 <https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager>
 
-Der Vorteil von NGINX im LXC Container ist klar. Einfache Verwaltung und einfache Sicherung sowie Snapshots des laufenden Containers.
+Using NGINX Proxy Manager for configuring your reverse proxy has a couple of advantages:
+ + Simple setup
+ + Easy maintenance
+ + Easy certificate management
+ + GUI in Browser
 
-Weitestgehend unbekannt ist ein Installationsskript um einen NGINX Proxy Manager in einem neu erstellten LXC Container zu installieren.
+## Requirements ##
+This script should work on *Debian* and *Ubuntu* according to the [description](https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager), but Alpine Linux works fine and has a very small footprint.
 
-Dieses Skript funktioniert laut Entwickler mit *Alpine, Debian and Ubuntu*. 
-**HINWEIS**: Paketmanager von *Debian* und *Ubuntu* werden zerschossen… daher ist ALPINE Linux vorzuziehen.
-
-1. Einen Container mit Alpine Linux 3.16.0 wird erstellt und aktualisiert
-2. Anschließend erhält der Container eine IP-Adresse von DHCP
-3. IP-Adresse ind DHCP statisch festlegen, im Router und Port 80 und Port 443 für das Gerät freigeben
-4. Anmeldung im Alpine Linux Container mittels LXC-Shell als root
-5. Ausführen des u.g. Installationsskript:
+## Procedure ##
+1. create *Alpine Linux 3.xx.0* container
+2. ensure  (_IP from DHCP_) [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
+3. configure router to ensure static IP from DHCP, forward port 80 and port 443
+4. access container using LXC-shell
+5. update and upgrade *Alpine Linux 3.xx.0*
+6. run installation script:
 
    ```
    wget --no-cache -qO - https://raw.githubusercontent.com/ej52/proxmox/main/lxc/nginx-proxy-manager/setup.sh | sh
    
    ```
-6. Anschließend wird die Proxy Manager Admin Seite (*IP.DES.SERVERS:**81***) im Browser aufgerufen
+7. access **Nginx Proxy Manager** admin panel (*IP.OF.SERVER:**81***) using local browser
 
    ```
-   Benutzername: admin@example.com 
-   Passwort: changeme
+   User: admin@example.com 
+   Pass: changeme
    
    ```
-7. Anschließend erfolgt eine Aufforderung zum Ändern des Benutzernamens und Passwort.
+8. Change user and password as requested.
 
-   Es ist empfehlenswert eine tatsächliche Email-Adresse der Domain zu nehmen die verwendet werden soll, Bsp. `benutzer@meine.domain.de`. Dies erleichtert die Erstellung von Zertifikaten im späteren Verlauf.
+----
 
-## NGINX Proxy Manager verwendung
+## NGINX Proxy Manager configuration for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
 
-1. Es ist sinnvoll zuerst ein Zertifikat im Reiter *SSL Certificates* anzulegen
+1. Get your certificates in the tab *SSL Certificates*
 
 ![grafik](https://user-images.githubusercontent.com/54933878/203948256-a7d0a63d-a5a8-4317-bc0d-a352237cbd20.png)
 
-3. Anschließend einen neuen *Proxy Host* anlegen
+2. Add a new *Proxy Host* for your machine
 
 ![grafik](https://user-images.githubusercontent.com/54933878/203948648-ce03c4a9-22d5-498c-8a05-82ea62778156.png)
 
-4. Besondere einstellungen des *Proxy Host* werden im Reiter *Advanced* vorgenommen
+3. *Advanced* settings for *Proxy Host* may be necessary
 
-![grafik](https://user-images.githubusercontent.com/54933878/203949132-10bd621d-2e2d-45d3-8415-73e63f99993c.png)
+![grafik](https://user-images.githubusercontent.com/54933878/208299781-930c748e-d411-42a4-811e-f2ccc4fa41b6.png)
 
-5. Besondere Einstellung für **Nextcloud** (einfügen, abspeichern)
+For [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) the following settings will work (copy & past & save)
 
 ```
 location = /.well-known/carddav {return 301 $scheme://$host:$server_port/remote.php/dav;}
 location = /.well-known/caldav {return 301 $scheme://$host:$server_port/remote.php/dav;}
 ```
+----
 
+## * Edit Nextcloud-snap config.php
 
+edit the config.php by hand:
+
+```
+sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php. 
+```
+add the following lines:
+
+```
+  'trusted_proxies' => 
+  array (
+    0 => '192.168.2.xxx',
+    1 => '192.168.2.xxx',
+  ),
+  
+```
 
