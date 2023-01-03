@@ -31,3 +31,4 @@ This script should work on *Debian* and *Ubuntu* according to the [description](
    
    ```
 8. Change user and password as requested.
+9. [Settings for Nextcloud-snap](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--NGINX_Proxy_Settings.md)
