@@ -16,6 +16,6 @@ value =10 in minutes
 
 `sudo snap restart nextcloud.nextcloud-cron`
 
-## Cron fails after Update:
+## Cron fails after update:
 
 `sudo nextcloud.occ background:cron`
