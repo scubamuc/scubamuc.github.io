@@ -81,7 +81,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 ### Backup Nextcloud-snap with nextcloud.export
 * nextcloud.export
 * compress backup
-* move compressed backup
+* move compressed backup (backup directory: '/var/snap/nextcloud/common/backups')
 * remove old backups from directory
 
 This works fine as weekly automatic (cronjob as root) job and for random backups. Compressed backup may be moved wherever.
@@ -93,7 +93,7 @@ This works fine as weekly automatic (cronjob as root) job and for random backups
 * when moving to new device, be sure to install nextcloud-snap first
 * nextcloud.import replaces previous installation incl. DB and data
 
-1\. copy/move compressed backup file to `/var/snap/nextcloud/common`
+1\. copy/move compressed backup file to `/var/snap/nextcloud/common` (restore directory: '/var/snap/nextcloud/common')
 
 2\. uncompress backup file in `/var/snap/nextcloud/common`
 
