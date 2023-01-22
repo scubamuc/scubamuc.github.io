@@ -81,7 +81,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 ### Backup Nextcloud-snap with nextcloud.export
 * nextcloud.export
 * compress backup
-* move/copy compressed backup in backup directory: `/var/snap/nextcloud/common/backups` to wherever
+* move/copy compressed backup from backup directory: `/var/snap/nextcloud/common/backups` to wherever
 * remove old backups from directory
 
 This works fine as weekly automatic (cronjob as root) job and for random backups. Compressed backup may be moved wherever.
