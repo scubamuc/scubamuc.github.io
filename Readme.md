@@ -48,7 +48,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 * Scripted automatic synchronisation to LXD-Backup-Server (_weekly_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating Backup to NAS (_monthly_)
 
-### LXD-Backup-Server setup
+### LXD-backup-server setup
 * Identical setup to LXD-server -- cold-standby
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple *synchronized* LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
@@ -61,7 +61,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 ## 2.1 Install Nextcloud-snap container on LXD-server
 
 * Prepare [LXD-server](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) with [bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
-* Prepare [LXC-container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu-Server](https://ubuntu.com/download/server)
+* Prepare [LXC-container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu Server](https://ubuntu.com/download/server)
 * Install [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-container
 * Install (_optional_) packages in LXC-container
 * See helpful notes in [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
