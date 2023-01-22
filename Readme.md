@@ -84,7 +84,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 * move/copy compressed backup from backup directory: `/var/snap/nextcloud/common/backups` to wherever
 * remove old backups from directory
 
-This works fine as weekly automatic (cronjob as root) job and for random backups. Compressed backup may be moved wherever.
+This works fine as weekly automatic cronjob (as root) and for random backups. Compressed backup may be moved wherever.
 
 [Nextcloud-snap Export Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md)
 
@@ -108,9 +108,9 @@ This works fine as weekly automatic (cronjob as root) job and for random backups
 * snap stop nextcloud 
 * snap save nextcloud 
 * snap start nextcloud 
-* find snapshot in `/var/lib/snapd/snapshots` and move to wherever
+* find snapshot in `/var/lib/snapd/snapshots` and copy/move to wherever
 
-This works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
+This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media.
 
 [Nextcloud-snap Snap snapshot Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
@@ -120,10 +120,10 @@ This works fine as weekly automatic (cronjob as root) job and has the added conv
 * snap restore replaces previous installation incl. certs, DB and data
 * see documentation in `man snap` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
 
-1\. copy \*.zip from backup media to `/var/lib/snapd/snapshots`
+1\. copy compressed file (\*.zip) from backup media to `/var/lib/snapd/snapshots`
 
 2\. discover snapshot-ID using `snap saved`
 
-3\. issue command `sudo snap restore "snapshot-ID"`
+3\. issue command `sudo snap restore "snapshot-ID"` 
 
 ----
