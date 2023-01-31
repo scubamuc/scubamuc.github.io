@@ -28,6 +28,9 @@ RETENTION="30" ## file retention in days
 
 ##############################################################
 
+## must be root, enter sudo password
+sudo pwd
+
 ## create backup with nextcloud.export ##
 sudo nextcloud.export ; ## nextcloud.export, see options
 
