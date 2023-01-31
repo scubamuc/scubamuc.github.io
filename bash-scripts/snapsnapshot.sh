@@ -29,6 +29,9 @@ timestamp()
 # SCRIPT #
 ##############################################################
 
+## must be root, enter sudo password
+sudo pwd
+
 ## start log  
 echo "********************************************************" >> "$LOG" ; ## log seperator
 echo "$(timestamp) -- Snapbackup $SNAPNAME Start" >> "$LOG" ; ## start log
