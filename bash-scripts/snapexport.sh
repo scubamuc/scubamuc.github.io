@@ -44,6 +44,6 @@ done
 sudo find $SOURCE/ -name "*.tar.gz" -exec mv '{}' $TARGET/ \;
 
 ## find and rotate/delete old backups
-sudo find $ZIEL/ -name "*.tar.gz" -mtime +$RETENTION -exec rm -f {} \; 
+sudo find $TARGET/ -name "*.tar.gz" -mtime +$RETENTION -exec rm -f {} \; 
 
 exit
