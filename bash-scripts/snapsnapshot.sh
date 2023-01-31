@@ -11,7 +11,7 @@
 
 SNAPNAME="nextcloud"
 TARGET="/media/SNAPBACKUP"  ## target directory
-LOG="/media/SNAPBACKUP/snapbackup-nc.log"  ## logfile
+LOG="$TARGET/snapbackup-nc.log"  ## logfile
 SOURCE="/var/lib/snapd/snapshots" ## source directory
 RETENTION="30" ## retention in days
 
