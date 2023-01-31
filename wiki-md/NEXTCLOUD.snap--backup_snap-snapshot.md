@@ -51,7 +51,7 @@ RETENTION="30" ## retention in days
 # FUNCTIONS #
 ##############################################################
 
-## Timestamp für Log ##
+## Timestamp for Log ##
 timestamp()
 {
  date +"%Y-%m-%d %T"
