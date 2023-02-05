@@ -127,7 +127,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 3\. issue command `sudo snap restore "snapshot-ID"` 
 
 ----
-## 3.3 LXD--LXC-container snapshot / backup & restore
+## 3.3 LXC-container snapshot / backup & restore
 
 ### Backup LXC-container with LXD snapshot/image & restore scripted or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
