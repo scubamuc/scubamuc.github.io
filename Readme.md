@@ -129,7 +129,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 ----
 ## 3.3 LXC-container snapshot / backup & restore
 
-### Backup LXC-container with LXD snapshot/image & restore scripted or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+### Backup LXC-container with snapshot/image & restore [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
 ![grafik](https://user-images.githubusercontent.com/54933878/216815478-9a58192c-b769-487d-b781-09593a4ec2c9.png)
 
