@@ -127,3 +127,14 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 3\. issue command `sudo snap restore "snapshot-ID"` 
 
 ----
+## 3.3 LXD--LXC-container snapshot / backup & restore
+
+
+### Backup LXC-container with LXD snapshot/image & restore scripted or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+
+![grafik](https://user-images.githubusercontent.com/54933878/216815165-53f40c91-a78b-40e0-ad74-4d58ae467c74.png)
+
+* LXC container snapshot / [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+* LXC container image from snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
+* LXC image copy/move to eherever [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
+* LXC image rotate [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
