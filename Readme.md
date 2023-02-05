@@ -22,7 +22,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 * Multiple services - (_Nextcloud, FW, VPN, DNS, Proxy_)
 
 ----
->**2x Lenovo ThinkCentre M92p Tiny - stackable 1xServer & 1xBackup** (_refurbished_)
+>**2x Lenovo ThinkCentre M92p Tiny (_refurbished_) - stackable 1xServer & 1xBackup** 
 >  * CPU: Intel Core i5-3470T
 >  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
@@ -45,7 +45,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (_daily_) **0 downtime 24/7**
-* Scripted automatic synchronisation to LXD-Backup-Server (_weekly_)
+* Scripted automatic synchronisation to LXD-backup-server (_weekly_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating backup to NAS (_monthly_)
 
 ### LXD-backup-server setup
