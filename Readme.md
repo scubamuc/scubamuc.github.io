@@ -45,7 +45,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (_daily_) **0 downtime 24/7**
-* [Scripted](https://github.com/scubamuc/scubamuc.github.io/edit/scubamuc/Readme.md#33-lxd--lxc-container-snapshot--backup--restore) automatic synchronisation to LXD-backup-server (_weekly_)
+* [Scripted](https://github.com/scubamuc/scubamuc.github.io/edit/scubamuc/Readme.md#backup-lxc-container-with-snapshotimage--restore-in-shell-scripted-or-gui-lxdmosaic) automatic synchronisation to LXD-backup-server (_weekly_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating backup to NAS (_monthly_)
 
 ### LXD-backup-server setup
