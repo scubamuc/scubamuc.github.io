@@ -140,7 +140,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 ### Restore LXC-container in shell or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
-* `lxc image import $PATH/to//$IMAGENAME.tar.gz --alias $IMAGENAME`
+* `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
 * `lxc launch $IMAGENAME $CONTAINERNAME`
 
 ----
