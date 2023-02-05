@@ -137,3 +137,10 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 * LXC container image from snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
 * LXC image copy/move to wherever [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
 * LXC image rotate [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
+
+### Restore LXC-container with LXD restore or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+
+* lxc image import $PATH/to//$IMAGENAME.tar.gz --alias $IMAGENAME'
+* lxc launch $IMAGENAME $CONTAINERNAME
+
+----
