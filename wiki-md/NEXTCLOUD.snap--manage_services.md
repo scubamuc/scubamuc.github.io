@@ -46,7 +46,7 @@ Example:
 
 Example:
 
-`sudo snap start nextcloud.cron`
+`sudo snap start nextcloud.nextcloud-cron`
 
 ## Restart Nextcloud-snap service
 
@@ -54,7 +54,7 @@ Example:
 
 Example:
 
-`sudo snap restart nextcloud.cron`
+`sudo snap restart nextcloud.nextcloud-cron`
 
 ## Stop Nextcloud-snap service
 
@@ -62,7 +62,7 @@ Example:
 
 Example:
 
-`sudo snap stop nextcloud.cron
+`sudo snap stop nextcloud.nextcloud-cron`
 
 ## Disable Nextcloud-snap service
 
