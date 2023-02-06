@@ -1,18 +1,18 @@
 # Nextcloud-snap Logs
 
-Nextcloud-snap Logs befinden sich in folgenden Verzeichnissen:
+Nextcloud-snap logs locations:
 
 ```
-Logs für Nextcloud:/var/snap/nextcloud/common/nextcloud/data/nextcloud.log
-Logs für Apache2: /var/snap/nextcloud/current/apache/logs/
-Logs für Redis: /var/snap/nextcloud/current/redis/redis.log
-Logs für PHP-FPM: /var/snap/nextcloud/current/php/php-fpm.log
-Logs für Certbot:/var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
-Logs für MySQL:/var/snap/nextcloud/current/mysql/localhost.sexy.domain
+Logs for Nextcloud:/var/snap/nextcloud/common/nextcloud/data/nextcloud.log
+Logs for Apache2: /var/snap/nextcloud/current/apache/logs/
+Logs for Redis: /var/snap/nextcloud/current/redis/redis.log
+Logs for PHP-FPM: /var/snap/nextcloud/current/php/php-fpm.log
+Logs for Certbot:/var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
+Logs for MySQL:/var/snap/nextcloud/current/mysql/localhost.sexy.domain
 ```
 
-Logs ansehen mit folgendem Befehl, Bsp. \`nextcloud.log\`:
+View logs with your favorite logviewer:
 
 ```
-sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
+sudo lnav /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
 ```
