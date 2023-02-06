@@ -1,45 +1,57 @@
-# Snap Dienste verwalten
+# Manage Nextcloud-snap services
 
 <https://snapcraft.io/docs/service-management>
 
 ---
 
-##### Eine Übersicht über bestehende Snap Dienste erhalten:
+## View Snap services for Nextcloud-snap
 
 `sudo snap services $SNAPNAME`
 
-Bsp. *nextcloud*
+Example:
 
 `sudo snap services nextcloud`
 
-##### Eine Übersicht über Dienste-Logs erhalten:
+## View service-logs for Nextcloud-snap
 
 `sudo snap logs $SNAPNAME`
 
-Bsp. *nextcloud-cron*
+Example:
 
 `sudo snap logs nextcloud.nextcloud-cron`
 
-##### Snap Dienste mit get und set konfigurieren
+## Manage Nextcloud-snap service using "get" und "set" 
 
-**Dienst Konfiguration anzeigen mit "get":**
+**View configuration with "get":**
 
-`sudo snap get nextcloud $DIENST $EINSTELLUNG`
+`sudo snap get nextcloud $SERVICE $SETTING`
 
-Bsp. *nextcloud-cron*
+Example:
 
 `sudo snap get nextcloud.nextcloud.cron-interval`
 
-**Dienst Konfigurieren mit "set":**
+**Configure service with "set":**
 
-`sudo snap set nextcloud $DIENST $EINSTELLUNG=xxx`
+`sudo snap set nextcloud $SERVICE $SETTING=xxx`
 
-Bsp. *nextcloud-cron*
+Example:
 
 `sudo snap set nextcloud.nextcloud.cron-interval=10`
 
-## disable renew-certs
+## Disable Nextcloud-snap service
 
-```
-sudo snap stop --disable certbot.renew
-```
+`sudo snap stop --disable $SERVICE`
+
+Example:
+
+`sudo snap stop --disable nextcloud.renew-certs`
+
+
+## Enable Nextcloud-snap service
+
+`sudo snap start --enable $SERVICE`
+
+Example:
+
+`sudo snap start --enable nextcloud.renew-certs
+`
