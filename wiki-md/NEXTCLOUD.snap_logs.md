@@ -1,6 +1,6 @@
-# Nextcloud-snap Logs
+# Nextcloud-snap logs
 
-Nextcloud-snap logs locations:
+Nextcloud-snap log locations:
 
 ```
 Logs for Nextcloud:/var/snap/nextcloud/common/nextcloud/data/nextcloud.log
