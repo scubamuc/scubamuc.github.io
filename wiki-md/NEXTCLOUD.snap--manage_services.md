@@ -48,6 +48,13 @@ Example:
 
 `sudo snap start nextcloud.cron`
 
+## Restart Nextcloud-snap service
+
+`sudo snap start $SERVICE`
+
+Example:
+
+`sudo snap restart nextcloud.cron`
 
 ## Stop Nextcloud-snap service
 
