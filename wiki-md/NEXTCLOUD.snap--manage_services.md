@@ -38,6 +38,25 @@ Example:
 
 `sudo snap set nextcloud.nextcloud.cron-interval=10`
 
+----
+
+## Start Nextcloud-snap service
+
+`sudo snap start $SERVICE`
+
+Example:
+
+`sudo snap start nextcloud.cron`
+
+
+## Stop Nextcloud-snap service
+
+`sudo snap stop $SERVICE`
+
+Example:
+
+`sudo snap stop nextcloud.cron
+
 ## Disable Nextcloud-snap service
 
 `sudo snap stop --disable $SERVICE`
@@ -45,7 +64,6 @@ Example:
 Example:
 
 `sudo snap stop --disable nextcloud.renew-certs`
-
 
 ## Enable Nextcloud-snap service
 
