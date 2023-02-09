@@ -2,7 +2,7 @@
 
 ## Nextcloud.occ commands/functions
 
-Nextcloud.occ management console requires root or sudo privileges
+Nextcloud.occ management console requires root privileges
 
 ```
 $ sudo nextcloud.occ
