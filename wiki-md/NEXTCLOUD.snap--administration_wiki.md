@@ -1,6 +1,4 @@
-# Nextcloud-snap administration
-
-## Nextcloud.occ management console 
+# Nextcloud.occ management console 
 
 Nextcloud.occ management console requires root privileges and is accessed in the server shell
 
