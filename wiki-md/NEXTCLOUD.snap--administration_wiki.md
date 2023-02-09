@@ -16,7 +16,7 @@ $ sudo nextcloud.occ status
 $ sudo nextcloud.occ list
 ```
 
-### View apps in Nexcloud / view status of apps
+### View apps in Nexcloud
 
 ```
 $ nextcloud.occ app:list
