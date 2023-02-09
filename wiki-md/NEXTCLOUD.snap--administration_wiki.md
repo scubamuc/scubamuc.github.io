@@ -22,16 +22,6 @@ $ sudo nextcloud.occ list
 
 ```
 $ nextcloud.occ app:list
-Enabled:
-  - accessibility: 1.1.0
-  - activity: 2.8.2
-  - calendar: 1.6.4
-  - cloud_federation_api: 0.1.0
-  - comments: 1.5.0
-  - dav: 1.8.1
-  - federatedfilesharing: 1.5.0
-  - federation: 1.5.0
-[..]
 ```
 
 ### Enable / disable apps
@@ -51,8 +41,6 @@ $ nextcloud.occ app:update appname
 
 ```
 $ nextcloud.occ app:update --all
-spreed new version available: 5.0.3
-spreed updated
 ```
 
 ### Reset user password
