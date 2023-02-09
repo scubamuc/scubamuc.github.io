@@ -90,5 +90,6 @@ INFO: Backup path `/var/snap/nextcloud/common/backups/yyymmdd-hhmmss`.
 
 `$ sudo nextcloud.import full/path/to/export/yyymmdd-hhmmss` see `--help` for options
 
+- include full path `/var/snap/nextcloud/common/backups/yyymmdd-hhmmss` required for restore
 
 ----
