@@ -1,18 +1,16 @@
 # Nextcloud.snap administration
 
-----
-
-### View status
-```
-$ sudo nextcloud.occ status
-```
-
 ## Nextcloud.occ commands/functions
 
 Nextcloud.occ management console requires root or sudo privileges
 
 ```
 $ sudo nextcloud.occ
+```
+
+### View status
+```
+$ sudo nextcloud.occ status
 ```
 
 ### View list of functions 
