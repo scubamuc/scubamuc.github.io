@@ -1,48 +1,26 @@
-# Nextcloud.snap Befehle / Funktionen
+# Nextcloud.snap administration
 
-## Datensicherung/Export
+----
 
-Ein Datenexport der Nextcloud.snap Instanz erstellen um auf eine neue Instanz zu importieren:
-
-`$ sudo nextcloud.export`
-
-Das Backup inkl. DB und Apps liegt anschließend in /var/snap/nextcloud/common/backups/yyymmdd-hhmmss Die Sicherung kann anschließend verpackt werden (tar bzw. tar.gz) und abgespeichert werden.
-
-## Datenwiederherstellung/Import
-
-Die exportierten Daten in eine neue Nextcloud.snap Instanz zu importieren: `$ sudo nextcloud.import`
-
-HINWEIS: Ggf. hier den Pfad **/var/snap/nextcloud/common/backups/yyymmdd-hhmmss** zur letzten Sicherung angeben
-
-### Beispiel:
-
-`$ sudo nextcloud.import /var/snap/nextcloud/common/backups/yyymmdd-hhmmss`
-
-## Nextcloud.occ Befehle / Funktionen
-
-Nextcloud.occ Tools und Befehle sind über die Cli mit adminrechten erreichbar.
-
-Eine Nextcloud.occ -- Administration erhält man mit;
-
-```
-$ sudo nextcloud.occ list
-```
-
-Eine Statusübersicht erhält man mit;
-
+### View status
 ```
 $ sudo nextcloud.occ status
 ```
 
-### Berechtigung
+## Nextcloud.occ commands/functions
 
-Die meisten nextcloud.occ Befehele erfordern Adminrechte; sudo
+Nextcloud.occ management console requires root or sudo privileges
 
 ```
 $ sudo nextcloud.occ
 ```
 
-### Verfügbare Apps in Nexcloud suchen / Status der Apps feststellen
+### View list of functions 
+```
+$ sudo nextcloud.occ list
+```
+
+### View apps in Nexcloud / view status of apps
 
 ```
 $ nextcloud.occ app:list
@@ -58,20 +36,20 @@ Enabled:
 [..]
 ```
 
-### Apps aktivieren oder deaktivieren:
+### Enable / disable apps
 
 ```
 $ nextcloud.occ app:disable appname
 $ nextcloud.occ app:enable appname
 ```
 
-### Apps aktualisieren:
+### Update apps
 
 ```
 $ nextcloud.occ app:update appname
 ```
 
-### Alle Apps aktualisieren:
+#### update all apps
 
 ```
 $ nextcloud.occ app:update --all
@@ -79,7 +57,7 @@ spreed new version available: 5.0.3
 spreed updated
 ```
 
-### Benutzer Passwort zurücksetzen
+### Reset user password
 
 ```
 $ nextcloud.occ user:resetpassword USERNAME
@@ -88,32 +66,29 @@ Confirm the new password:
 Successfully reset password for USERNAME
 ```
 
-### Benutzer hinzufügen
+### Add user
 
 ```
 $ nextcloud.occ user:add USERNAME
 ```
 
-### Andere Beispiele; HINWEIS ":"
-
-```
-$ nextcloud.occ app:list
-$ nextcloud.occ user:add
-$ nextcloud.occ maintenance:repair
-```
-
-### Nextcloud Status abfragen
-
-```
-$ nextcloud.occ status
-  - installed: true
-  - version: 15.0.7.0
-  - versionstring: 15.0.7
-  - edition:
-```
-
-### Nextcloud reparieren
+### Repair Nextcloud
 
 ```
 sudo nextcloud.occ maintenance:repair
 ```
+----
+## Backup/Export
+
+Export Nextcloud-snap incl. database, apps and configuration:
+
+`$ sudo nextcloud.export` see `--help` for options
+
+INFO: Backup path `/var/snap/nextcloud/common/backups/yyymmdd-hhmmss`.
+
+## Restore/Import
+
+`$ sudo nextcloud.import full/path/to/export/yyymmdd-hhmmss` see `--help` for options
+
+
+----
