@@ -1,6 +1,6 @@
 # Nextcloud.snap administration
 
-## Nextcloud.occ (own cloud console) commands/functions
+## Nextcloud.occ (**o**wn **c**loud **c**onsole) commands/functions
 
 Nextcloud.occ management console requires root privileges
 
