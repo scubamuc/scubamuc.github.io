@@ -13,7 +13,7 @@ $ sudo nextcloud.occ
 $ sudo nextcloud.occ status
 ```
 
-### View list of functions 
+### List console functions 
 ```
 $ sudo nextcloud.occ list
 ```
