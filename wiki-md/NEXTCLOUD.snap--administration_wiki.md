@@ -1,4 +1,4 @@
-# Nextcloud.snap administration
+# Nextcloud-snap administration
 
 ## Nextcloud.occ (*own cloud console*) commands
 
