@@ -59,7 +59,7 @@ $ nextcloud.occ user:add USERNAME
 ### Repair Nextcloud
 
 ```
-sudo nextcloud.occ maintenance:repair
+$ sudo nextcloud.occ maintenance:repair
 ```
 ----
 ## Backup/Export
