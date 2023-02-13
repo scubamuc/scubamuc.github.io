@@ -17,4 +17,4 @@ In a Linux environment you can bypass Snap confinement in [Nextcloud-snap](https
 
 ![grafik](https://user-images.githubusercontent.com/54933878/218519969-ff6ae69f-1f29-4f2a-b1c7-a5429cebdac1.png)
 
-In a self-hosted environment where SSH is available locally, yet blocked externally (firewall/router), connecting to local servers from your locally hosted [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) instance is simple. Even looping back to the your home directory is possible using SFTP.
+In a self-hosted environment where SSH is available locally, yet blocked externally (firewall/router), connecting to local servers from your self-hosted [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) instance is simple. Even looping back to the your home directory is possible using SFTP.
