@@ -54,7 +54,7 @@ Schon ist dein [Raspberry Pi](https://www.raspberrypi.org) Server installiert.
 
 Nachdem du deinen [Raspberry Pi](https://www.raspberrypi.org) Server jetzt gestartet hast und zum laufen gebracht hast, musst du dich darauf verbinden um Bsp. den Namen des Servers festzulegen und die Standard Passwörter zu ändern. Du bist nämlich jetzt ein **LINUX-System-Administrator**... so einfach geht das.
 
-Um herauszufinden ob und wie dein [Raspberry Pi](https://www.raspberrypi.org) Server mit deinem Netzwerk verbunden ist, kannst du einfach deinen Router fragen. Wenn du dich an deinem Router anmeldest, siehst du in deinem Netzwerk den [Raspberry Pi](https://www.raspberrypi.org) Server und seine **IP-Adresse**. Diese Daten schreibst du dir am besten auf. Du erkennst den [Raspberry Pi](https://www.raspberrypi.org) Server am Rechnernamen "**XUBUNTU-PI**". Die **IP-Adresse** sollte im Router sichtbar sein.
+Um herauszufinden ob und wie dein [Raspberry Pi](https://www.raspberrypi.org) Server mit deinem Netzwerk verbunden ist, kannst du einfach deinen Router fragen. Wenn du dich an deinem Router anmeldest, siehst du in deinem Netzwerk den [Raspberry Pi](https://www.raspberrypi.org) Server und seine **IP-Adresse**. Diese Daten schreibst du dir am besten auf. Du erkennst den [Raspberry Pi](https://www.raspberrypi.org) Server am Rechnernamen. Die **IP-Adresse** sollte im Router sichtbar sein.
 
 Du kannst dich jetzt mit Bsp. [PuTTy](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) oder einem anderen SSH-Client von Windows aus mit dem Gerät verbinden, oder von einem anderen LINUX Rechner aus direkt per [SSH](https://wiki.ubuntuusers.de/SSH/) auf den [Raspberry Pi](https://www.raspberrypi.org) Server zugreifen.
 
