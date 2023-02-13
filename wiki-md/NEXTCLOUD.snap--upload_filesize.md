@@ -1,4 +1,4 @@
-\#Nextcloud.snap -- set upload filesize#
+# Nextcloud.snap -- set upload filesize
 
 Since snap manages the app, one is not able to directly commit changes, it has to do through snap itself. Given the options and commands available in this app, one can just replace underscores with dashes after php in the name of the parameter, like:
 
