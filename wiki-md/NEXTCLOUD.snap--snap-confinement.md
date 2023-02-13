@@ -12,24 +12,21 @@ So unless you allow the [Nextcloud snap to **access removable media**](https://g
 
 So what can you do to access youre home directory from within the snap?
 
-::: info
-This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home directory.
-
-:::
+> INFO: 
+> 
+>This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home >directory.
+>
 
 ## Bypass Snap confinement with SSH
 
-::: success
 **sftp to the rescue**
-
-:::
 
 In a Linux environment you will be able to bypass Snap confinement by using SSH/SFTP in Nextcloud-snap. 
 
 [Enable external storage support](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) and happily connect to any local SSH server or directory using SFTP:
 
-![grafik.png](.attachments.20447712/grafik.png)
+![grafik](https://user-images.githubusercontent.com/54933878/218519969-ff6ae69f-1f29-4f2a-b1c7-a5429cebdac1.png)
 
-Consider a self-hosting environment, where SSH ports is closed for external access (firewall/router) locally however SSH is available. 
+In a [self-hosted](https://scubamuc.github.io/) environment, where SSH is not available for external access (firewall/router) locally however SSH is available. 
 
-Thus connecting to local servers from a locally hosted Nextcloud-snap is simple and even looping back to the home directory using SFTP is possible.
+Thus connecting to local servers from a locally hosted Nextcloud-snap is simple and even looping back to the home directory is possible using SFTP.
