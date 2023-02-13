@@ -8,7 +8,7 @@ So unless you allow the [Nextcloud snap to **access removable media**](https://g
 
 > INFO: 
 > 
->This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home directory.
+>This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home directory or any other directory outside of the confinement
 >
 
 ## Bypass Snap confinement with SSH
