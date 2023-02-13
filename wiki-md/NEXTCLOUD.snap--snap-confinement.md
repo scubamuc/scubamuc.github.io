@@ -2,9 +2,7 @@
 
 <https://snapcraft.io/docs/snap-confinement>
 
-Snap confinement is a **security feature** which only works on Ubuntu OS. If you're using any non-Ubuntu OS with **snapd** installed this **feature** is entirely broken.
-
-This is the reason [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) is not supported on non-Ubuntu OS.
+Snap confinement is a **security feature** which only works on Ubuntu OS. If you're using any non-Ubuntu OS with **snapd** installed this **feature** is entirely broken. This is the reason [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) is not supported on non-Ubuntu OS.
 
 So unless you allow the [Nextcloud snap to **access removable media**](https://github.com/nextcloud-snap/nextcloud-snap#removable-media) in `/mnt` or `/media` you will not be able to access any other directory outside of the confinement. Snap confinement is a great security feature, but what can you do to access your home directory from within your Nextcloud-snap instance?
 
