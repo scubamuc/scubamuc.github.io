@@ -44,9 +44,9 @@ Am einfachsten ist es eine fertige Betriebssystem-Kopie... auch "*Image*" genann
 
 Zunächst steckst du die SDHC-Speicherkarte (meistens mit Adapter) in den Kartenleser deines normalen Notebook/PC und brennst quasi das *Image* auf die SDHC-Speicherkarte. Das *Image* wird mit dem Programm [**Belena-Etcher**](https://www.balena.io/etcher/) auf die SDHC-Speicherkarte kopiert.
 
-Das *Image* gibt es als Datei zum Download. Lade dir die Datei herunter. Anschließend startest du das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) und brennst das *Image* auf die SDHC-Speicherkarte. Das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) führt dich durch die nötigen Schritte.
+Das *Image* gibt es als Datei zum Download. Lade dir das entsprechende Image https://ubuntu.com/download/raspberry-pi herunter. Anschließend startest du das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) und installierst das *Image* auf die SDHC-Speicherkarte. Das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) führt dich durch die nötigen Schritte.
 
-Anschließend steckst du die fertig gebrannte SDHC-Speicherkarte in deinen [Raspberry Pi](https://www.raspberrypi.org) hinein. Verbinde nun deinen [Raspberry Pi](https://www.raspberrypi.org) mit deinem Netzwerk über ein Netzwerkkabel. Am besten mit einem Netzwerkkabel direkt am Router. Natürlich braucht der [Raspberry Pi](https://www.raspberrypi.org) auch Strom damit er starten kann. Der [Raspberry Pi](https://www.raspberrypi.org) sollte nun erfolgreich starten.
+Anschließend steckst du die vorbereitete SDHC-Speicherkarte in deinen [Raspberry Pi](https://www.raspberrypi.org) hinein. Verbinde nun deinen [Raspberry Pi](https://www.raspberrypi.org) mit deinem Netzwerk über ein Netzwerkkabel. Am besten mit einem Netzwerkkabel direkt am Router. Natürlich braucht der [Raspberry Pi](https://www.raspberrypi.org) auch Strom damit er starten kann. Der [Raspberry Pi](https://www.raspberrypi.org) sollte nun erfolgreich starten.
 
 Schon ist dein [Raspberry Pi](https://www.raspberrypi.org) Server installiert.
 
@@ -61,15 +61,8 @@ Du kannst dich jetzt mit Bsp. [PuTTy](https://www.chiark.greenend.org.uk/~sgtath
 **SSH Verbindung aufbauen**; (je nach Client unterschidlich)
 
 * Host/Server: `IP-ADRESSE`
-* Benutzer: `pi`
-* Passwort: `himbeere`
-
-Wer es eher grafisch mag, kann sich mit einem VNC-Client auf die grafische Oberfläche des [Raspberry Pi](https://www.raspberrypi.org) verbinden.
-
-* Host/Server: `IP-ADRESSE`
-* Benutzer: `pi`
-* Passwort: `himbeere`
-* VNC-Passwort=`himbeere`
+* Benutzer: `ubuntu`
+* Passwort: `ubuntu`
 
 ## 3\. Schritt, Nextcloud installieren
 
