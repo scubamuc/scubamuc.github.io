@@ -8,20 +8,18 @@ This is the reason [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-
 
 Generally snap confinement prevents the Linux kernel from allowing the Snap to touch your home directory or any other directory outside of the confined snap.
 
-So unless you allow the [Nextcloud snap to **access removable media**](https://github.com/nextcloud-snap/nextcloud-snap#removable-media) in `/mnt` or `/media` you will not be able to access any other directory. Confinement is a great security feature, but what can you do to access youre home directory from within your Nextcloud-snap instance?
+So unless you allow the [Nextcloud snap to **access removable media**](https://github.com/nextcloud-snap/nextcloud-snap#removable-media) in `/mnt` or `/media` you will not be able to access any other directory. Confinement is a great security feature, but what can you do to access your home directory from within your Nextcloud-snap instance?
 
 > INFO: 
 > 
->This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home >directory.
+>This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home directory.
 >
 
 ## Bypass Snap confinement with SSH
 
 **sftp to the rescue**
 
-In a Linux environment you will be able to bypass Snap confinement by using SSH/SFTP in Nextcloud-snap. 
-
-[Enable external storage support](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) and happily connect to any local SSH server or directory using SFTP:
+In a Linux environment you can bypass Snap confinement by using the [external storage app](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) to access any directory using SFTP. 
 
 ![grafik](https://user-images.githubusercontent.com/54933878/218519969-ff6ae69f-1f29-4f2a-b1c7-a5429cebdac1.png)
 
