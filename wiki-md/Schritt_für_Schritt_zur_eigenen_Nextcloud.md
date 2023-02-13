@@ -40,11 +40,11 @@ Die Entwickler der [Nextcloud](https://nextcloud.com/athome) möchten, dass Ihre
 
 Um deinen [Raspberry Pi](https://www.raspberrypi.org) starten zu können, musst du ein Betriebssystem auf eine SDHC-Speicherkarte kopieren. Die SDHC-Speicherkarte funktioniert dann wie eine Festplatte für den [Raspberry Pi](https://www.raspberrypi.org).
 
-Am einfachsten ist es eine fertige Betriebssystem-Kopie... auch "*Image*" genannt, auf eine SDHC-Speicherkarte zu kopieren. Ich habe so ein "*Image"* erzeugt und stelle es [hier](https://cloud.rauschkolb.de/index.php/apps/files?dir=/XT-LINOS/RASPI-IMAGE) sehr gerne zur Verfügung.
+Am einfachsten ist es eine fertige Betriebssystem-Kopie... auch "*Image*" genannt, auf eine SDHC-Speicherkarte zu kopieren.
 
 Zunächst steckst du die SDHC-Speicherkarte (meistens mit Adapter) in den Kartenleser deines normalen Notebook/PC und brennst quasi das *Image* auf die SDHC-Speicherkarte. Das *Image* wird mit dem Programm [**Belena-Etcher**](https://www.balena.io/etcher/) auf die SDHC-Speicherkarte kopiert.
 
-Das *Image* findest du in [**diesem Ordner**](https://cloud.rauschkolb.de/index.php/apps/files?dir=/XT-LINOS/RASPI-IMAGE) ganz unten als Dtei zum Download. Lade dir die Datei **xubuntu-18.04-Raspi234-IMAGE-20191229.img.gz ​ ​**herunter. Anschließend startest du das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) und brennst das *Image* auf die SDHC-Speicherkarte. Das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) führt dich durch die nötigen Schritte.
+Das *Image* gibt es als Datei zum Download. Lade dir die Datei herunter. Anschließend startest du das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) und brennst das *Image* auf die SDHC-Speicherkarte. Das Programm [**Belena-Etcher**](https://www.balena.io/etcher/) führt dich durch die nötigen Schritte.
 
 Anschließend steckst du die fertig gebrannte SDHC-Speicherkarte in deinen [Raspberry Pi](https://www.raspberrypi.org) hinein. Verbinde nun deinen [Raspberry Pi](https://www.raspberrypi.org) mit deinem Netzwerk über ein Netzwerkkabel. Am besten mit einem Netzwerkkabel direkt am Router. Natürlich braucht der [Raspberry Pi](https://www.raspberrypi.org) auch Strom damit er starten kann. Der [Raspberry Pi](https://www.raspberrypi.org) sollte nun erfolgreich starten.
 
