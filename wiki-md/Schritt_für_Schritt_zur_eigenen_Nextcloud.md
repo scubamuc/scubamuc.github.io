@@ -38,6 +38,8 @@ Die Entwickler der [Nextcloud](https://nextcloud.com/athome) möchten, dass Ihre
 
 ## 1\. Schritt, Raspberry Pi Server starten
 
+https://ubuntu.com/tutorials/how-to-install-ubuntu-on-your-raspberry-pi#1-overview
+
 Um deinen [Raspberry Pi](https://www.raspberrypi.org) starten zu können, musst du ein Betriebssystem auf eine SDHC-Speicherkarte kopieren. Die SDHC-Speicherkarte funktioniert dann wie eine Festplatte für den [Raspberry Pi](https://www.raspberrypi.org).
 
 Am einfachsten ist es eine fertige Betriebssystem-Kopie... auch "*Image*" genannt, auf eine SDHC-Speicherkarte zu kopieren.
