@@ -17,7 +17,7 @@ So unless you allow the [Nextcloud snap to **access removable media**](https://g
 
 ## Bypass Snap confinement with SSH
 
-**sftp to the rescue**
+### SFTP to the rescue
 
 In a Linux environment you can bypass Snap confinement by using the [external storage app](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) to access any directory using SFTP. 
 
