@@ -1,4 +1,4 @@
-# Snap confinement
+# Snap confinement in [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) 
 
 <https://snapcraft.io/docs/snap-confinement>
 
