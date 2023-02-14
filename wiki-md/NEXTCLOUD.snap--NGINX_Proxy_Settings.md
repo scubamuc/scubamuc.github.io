@@ -47,8 +47,7 @@ add the following lines:
   'trusted_proxies' => 
   array (
     0 => 'your.nginx.proxy.ip',
-    1 => '192.168.2.xxx',
-  ),
+   ),
   
 ```
 ----
