@@ -12,8 +12,6 @@ Snap confinement is a great security feature, but what can you do to access your
 
 ### SFTP to the rescue
 
-In a Linux environment you can bypass Snap confinement in [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) by using the [external storage app](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) to access any **local non-root** directory using SFTP. 
+In a self-hosted environment where SSH is available locally, yet blocked externally (firewall/router), you can bypass Snap confinement in [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) by connecting to local servers via SFTP using [external storage app](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) to access any **local non-root** directory. Even looping back to the your home directory is possible using SFTP.
 
 ![grafik](https://user-images.githubusercontent.com/54933878/218519969-ff6ae69f-1f29-4f2a-b1c7-a5429cebdac1.png)
-
-In a self-hosted environment where SSH is available locally, yet blocked externally (firewall/router), connecting to local servers from your self-hosted [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) instance is simple. Even looping back to the your home directory is possible using SFTP.
