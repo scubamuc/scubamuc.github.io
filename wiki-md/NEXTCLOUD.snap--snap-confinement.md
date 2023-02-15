@@ -12,6 +12,6 @@ Snap confinement is a great security feature on **Ubuntu**, but what can you do 
 
 ### SFTP to the rescue
 
-In a self-hosted environment where SSH is available locally, yet blocked externally (firewall/router), you can bypass Snap confinement in [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) by connecting to local servers via SFTP using [external storage app](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) to access any **local non-root** directory. Thus looping back to the your home directory.
+In a self-hosted environment on **Ubuntu** where SSH is available on the local network, yet blocked externally (firewall/router), you can bypass Snap confinement in [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) by connecting to local servers via SFTP using [external storage app](https://docs.nextcloud.com/server/25/admin_manual/configuration_files/external_storage_configuration_gui.html#enabling-external-storage-support) to access any **local non-root** directory. Thus looping back to the your home directory.
 
 ![grafik](https://user-images.githubusercontent.com/54933878/218519969-ff6ae69f-1f29-4f2a-b1c7-a5429cebdac1.png)
