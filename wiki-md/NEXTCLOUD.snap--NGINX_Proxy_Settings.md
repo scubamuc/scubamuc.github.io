@@ -1,16 +1,16 @@
 # NGINX Proxy Manager Settings for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
 
 ### * [Install NGINX Proxy Manager in LXD/LXC container](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-NGINX_Proxy_Manager.md)
-### * Configure NGINX Proxy Manager for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
+### * Configure NGINX Proxy Manager for Nextcloud-snap
 ### * Get *SSL Certificates*
 ### * Add Proxy Host
 ### * Add advanced settings
-### * Configure [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
+### * Configure Nextcloud-snap
 
 ----
 ----
 
-#### NGINX Proxy Manager configuration for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
+#### NGINX Proxy Manager configuration for Nextcloud-snap
 
 1. Get your certificates in the tab *SSL Certificates*
 
@@ -27,14 +27,14 @@
 ![grafik](https://user-images.githubusercontent.com/54933878/208299781-930c748e-d411-42a4-811e-f2ccc4fa41b6.png)
 ----
 
-For [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap) the following settings will work (copy & past & save)
+For Nextcloud-snap
 
 ```
 location = /.well-known/carddav {return 301 $scheme://$host:$server_port/remote.php/dav;}
 location = /.well-known/caldav {return 301 $scheme://$host:$server_port/remote.php/dav;}
 ```
 ----
-#### Configure [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
+#### Configure Nextcloud-snap
 
 edit the config.php by hand:
 
