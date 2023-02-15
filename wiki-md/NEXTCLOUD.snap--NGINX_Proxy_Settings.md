@@ -1,4 +1,4 @@
-# NGINX Proxy Manager Settings for [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
+# NGINX Proxy Manager Settings for Nextcloud-snap
 
 ### * [Install NGINX Proxy Manager in LXD/LXC container](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-NGINX_Proxy_Manager.md)
 ### * Configure NGINX Proxy Manager for Nextcloud-snap
