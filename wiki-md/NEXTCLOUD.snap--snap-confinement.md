@@ -1,6 +1,6 @@
 # Snap confinement in Nextcloud-snap 
 
-[Snap confinement](https://snapcraft.io/docs/snap-confinement) is an Ubuntu **security feature**. This is the reason [Nextcloud-snap is not supported on non-Ubuntu distributions](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro). So unless you allow the Nextcloud snap to [**access removable media**](https://github.com/nextcloud-snap/nextcloud-snap#removable-media) in `/mnt` or `/media` you will not be able to access any other directory outside of the confinement. 
+[Snap confinement](https://snapcraft.io/docs/snap-confinement) is an **Ubuntu security feature**. This is the reason [Nextcloud-snap is not supported on non-**Ubuntu** distributions](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro). So unless you allow the Nextcloud snap to [**access removable media**](https://github.com/nextcloud-snap/nextcloud-snap#removable-media) in `/mnt` or `/media` you will not be able to access any other directory outside of the confinement on **Ubuntu**. 
 
 > INFO: 
 > 
