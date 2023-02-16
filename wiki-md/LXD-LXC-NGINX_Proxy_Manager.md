@@ -17,6 +17,9 @@ This script should work on *Debian* and *Ubuntu* according to the [description](
 3. configure router to ensure static IP from DHCP, forward port 80 and port 443
 4. access container using LXC-shell
 5. update and upgrade *Alpine Linux 3.xx.0*
+   ```
+   apk update && apk upgrade
+   ```
 6. run installation script:
 
    ```
