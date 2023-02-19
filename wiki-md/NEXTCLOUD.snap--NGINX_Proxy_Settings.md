@@ -1,4 +1,4 @@
-## NGINX Proxy Manager
+# NGINX Proxy Manager
 
 [Install NGINX Proxy Manager in LXD/LXC container](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-NGINX_Proxy_Manager.md)
 
