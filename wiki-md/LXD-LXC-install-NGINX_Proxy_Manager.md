@@ -1,4 +1,4 @@
-# Install Nginx Proxy Manager in LXC
+# Install NGINX Proxy Manager in LXC
 
 <https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager>
 
