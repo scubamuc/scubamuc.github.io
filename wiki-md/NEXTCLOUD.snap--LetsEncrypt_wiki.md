@@ -1,4 +1,4 @@
-# Enable LetsEncrypt Nextcloud-snap
+# Enable LetsEncrypt in Nextcloud-snap
 
 Enable LetsEncrypt for Nextcloud-Snap:
 
@@ -8,15 +8,24 @@ sudo nextcloud.enable-https lets-encrypt
 
 Enter mailaddress and domain/subdomain
 
-# Self signed certificate
+# Disable LetsEncrypt in Nextcloud-snap
 
-Enable self signed certificate:
+Disable LetsEncrypt for Nextcloud-Snap:
 
 ```
-sudo /snap/bin/nextcloud.enable-https self-signed
+sudo nextcloud.disable-https lets-encrypt
 ```
 
-## Check renew service
+## Disable renew service in Nextcloud-snap
+Due to a sanpd [issue](https://forum.snapcraft.io/t/cant-mask-or-disable-snap-services-why-etc-systemd-instead-of-lib-systemd/33385) it may be necessary to disable the renewal-service manually.
+
+`sudo snap stop --disable $SERVICE`
+
+Example:
+
+`sudo snap stop --disable nextcloud.renew-certs`
+
+## Check renew service in Nextcloud-snap
 
 Renew service `renew-certs.service` is automated in Nextcloud-snap.
 
@@ -26,30 +35,13 @@ Check renewal by issuing:
 sudo journalctl -u snap.nextcloud.renew-certs.service
 ```
 
-**HINWEIS**: Wenn Nextcloud-snap hinter einem Reverse-Proxy ist, kann es zu Problemen bei der Zertifikatserneuerung kommen. **Workaround:** den Reverse-Proxy umgehen und ggf. direkten Zugriff auf die Cloud ermöglichen.
+# Self signed certificate in Nextcloud-snap
 
-## Log
-
-View letsencrypt log in Netxtcloud-snap:
+Enable self signed certificate:
 
 ```
-sudo less /var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
+sudo /snap/bin/nextcloud.enable-https self-signed
 ```
-----
-# Disable LetsEncrypt Nextcloud-snap
-
-Disable LetsEncrypt for Nextcloud-Snap:
-
-```
-sudo nextcloud.disable-https lets-encrypt
-```
-## Disable Nextcloud-snap service
-
-`sudo snap stop --disable $SERVICE`
-
-Example:
-
-`sudo snap stop --disable nextcloud.renew-certs`
 
 # Change Nextcloud Lets Encrypt Domain
 
@@ -75,10 +67,10 @@ $ sudo rm -rf /var/snap/nextcloud/current/certs
 $ sudo nextcloud.enable-https lets-encrypt
 ```
 
----
+# LetsEncrypt Log
 
-### View lets Encrypt logs:
+View letsencrypt log in Netxtcloud-snap:
 
 ```
-$ sudo journalctl -u snap.nextcloud.renew-certs
+sudo less /var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
 ```
