@@ -8,12 +8,6 @@ sudo nextcloud.enable-https lets-encrypt
 
 Enter mailaddress and domain/subdomain
 
-**HINWEIS**: Die **Portfreigabe** in der **Fritzbox** muss für die Einrichtung von LetsEncrypt complett offen sein. Folgende Option im Router muss für die Einrichtung **vorübergehend** aktiv sein;
-
-**Dieses Gerät komplett für den Internetzugriff über IPv4 freigeben (Exposed Host).**
-
-Anschließend werden nur noch die Ports 80 und 443 freigegeben.
-
 # Self signed certificate
 
 Enable self signed certificate:
@@ -40,4 +34,51 @@ View letsencrypt log in Netxtcloud-snap:
 
 ```
 sudo less /var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
+```
+----
+# Disable LetsEncrypt Nextcloud-snap
+
+Disable LetsEncrypt for Nextcloud-Snap:
+
+```
+sudo nextcloud.disable-https lets-encrypt
+```
+## Disable Nextcloud-snap service
+
+`sudo snap stop --disable $SERVICE`
+
+Example:
+
+`sudo snap stop --disable nextcloud.renew-certs`
+
+# Change Nextcloud Lets Encrypt Domain
+
+1. Disable Lets Encrypt
+2. Remove all current Certificates
+3. Get new Certificates
+
+* **disable HTTPS** (this just removes a symlink, it doesn’t remove any certs):
+
+```
+$ sudo nextcloud.disable-https
+```
+
+* **remove all/any certificates** that are there (this includes self-signed certs, Let’s Encrypt certs, everything). Make sure you get this command right, you don’t want to delete anything else in the current/ dir:
+
+```
+$ sudo rm -rf /var/snap/nextcloud/current/certs
+```
+
+* pretend you’re **enabling HTTPS** for the first time, using only the domains you want:
+
+```
+$ sudo nextcloud.enable-https lets-encrypt
+```
+
+---
+
+### View lets Encrypt logs:
+
+```
+$ sudo journalctl -u snap.nextcloud.renew-certs
 ```
