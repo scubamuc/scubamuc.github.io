@@ -10,7 +10,7 @@ Logs for Certbot:   `/var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.
 Logs for MySQL:     `/var/snap/nextcloud/current/mysql/localhost.sexy.domain`
 ```
 
-View logs: `less` is `more`, from `head` to `tail` with `cat` or `bat` but `lnav` is the way to go!
+Viewing logs: `less` is `more`, from `head` to `tail` with `cat` or `bat` but `lnav` is the way to go!
 
 ```
 sudo lnav /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
