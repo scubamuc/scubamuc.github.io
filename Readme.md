@@ -73,7 +73,7 @@ I'm neither a developer nor an admin... so my goal is a simple safe and reliable
  4.  (_optional_) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
  5.  [set FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
  6.  get your Lets-Encrypt certificate
- 7.  configure Nextcloud and enjoy
+ 7.  configure Nextcloud and regain control over your data
 
 ----
 # 3. Export, Import -- Backup, Restore
