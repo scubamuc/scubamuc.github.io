@@ -1,4 +1,4 @@
-# Nextcloud-snap security & setup warnings in overview
+# Nextcloud-snap security & setup warning
 
 ## Imagick PHP module not enabled
 
