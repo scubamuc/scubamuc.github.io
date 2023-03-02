@@ -2,7 +2,8 @@
 
 ## Imagick PHP module not enabled
 
-This warning is only that, a warning.
+This warning is **only** a warning. It appears when the themeing app is activated in Nextcloud-snap. 
+It appears as though the themeing app works fine without the Imagik PHP module enabled, but this may differ from system to system.
 
 ![grafik](https://user-images.githubusercontent.com/54933878/222382272-e264ee39-f632-464a-a112-1d4d2f816afa.png)
 
