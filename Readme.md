@@ -43,7 +43,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 
 ### LXD-server setup
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
-* Multiple LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
+* Multiple LXC-containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (_daily_) **0 downtime 24/7**
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io#33-lxc-container-snapshot--backup--restore) automatic synchronisation to LXD-backup-server (_weekly_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating backup to NAS (_monthly_)
@@ -51,7 +51,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 ### LXD-backup-server setup
 * Identical setup to LXD-server -- cold-standby
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
-* Multiple *synchronized* LXC-containers (Nextcloud, Webserver, FW, VPN, DNS, Proxy)
+* Multiple *synchronized* LXC-containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
 * WOL `ctr-wake` (_weekly_) synchronisation
 * WOL (_manual_) failover
 
