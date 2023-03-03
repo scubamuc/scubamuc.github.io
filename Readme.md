@@ -19,7 +19,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 * Ample ressources  - (_5+ users_)
 * Install and forget - (_uptime 24/7_)
 * Redundancy - (_failover, cold-standby & backup_)
-* Multiple services - (_Nextcloud, FW, VPN, DNS, Proxy_)
+* Multiple services - (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
 
 ----
 >**2x Lenovo ThinkCentre M92p Tiny (_refurbished_) - stackable 1xServer & 1xBackup** 
@@ -51,7 +51,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 ### LXD-backup-server setup
 * Identical setup to LXD-server -- cold-standby
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
-* Multiple *synchronized* LXC-containers (_Nextcloud, FW, VPN, DNS, Proxy_)
+* Multiple *synchronized* LXC-containers (Nextcloud, Webserver, FW, VPN, DNS, Proxy)
 * WOL `ctr-wake` (_weekly_) synchronisation
 * WOL (_manual_) failover
 
