@@ -66,14 +66,9 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 * Install (_optional_) packages in LXC-container
 * See helpful notes in [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
 * See helpful bash-scripts in [scripts repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
-
- 1. `sudo apt update && sudo apt upgrade` 
- 2. `sudo snap install nextcloud`
- 3.  follow instructions: [Nextcloud-snap](https://github.com/nextcloud-snap/nextcloud-snap)
- 4.  (_optional_) `sudo apt install htop lnav mc openssh-server openssh-sftp-server rclone sshfs sysstat`
- 5.  [set FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
- 6.  get your Lets-Encrypt certificate `nextcloud.enable-https`
- 7.  configure Nextcloud and regain control over your data
+* [Set FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
+* Get your [Lets-Encrypt certificate](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) `nextcloud.enable-https`
+* Configure Nextcloud and regain control over your data
 
 ----
 # 3. Export, Import -- Backup, Restore
