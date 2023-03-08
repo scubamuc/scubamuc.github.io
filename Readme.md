@@ -67,7 +67,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 * See helpful notes in [personal wiki](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
 * See helpful bash-scripts in [scripts repo](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/bash-scripts)
 * [Set FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
-* Get your [Lets-Encrypt certificate](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) `nextcloud.enable-https`
+* Get your [Lets-Encrypt certificate](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) `nextcloud.enable-https lets-encrypt`
 * Configure Nextcloud and regain control over your data
 
 ----
