@@ -1,4 +1,4 @@
-# Install NGINX Proxy Manager in LXC
+# Install NGINX Proxy Manager in LXD/LXC
 
 <https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager>
 
@@ -12,7 +12,7 @@ Using NGINX Proxy Manager for configuring your reverse proxy has a couple of adv
 This script should work on *Debian* and *Ubuntu* according to the [description](https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager), but Alpine Linux works fine and has a very small footprint.
 
 ## Procedure ##
-1. create *Alpine Linux 3.xx.0* container
+1. create *Alpine Linux 3.xx.0* LXC container
 2. ensure  (_IP from DHCP_) [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
 3. configure router to ensure static IP from DHCP, forward port 80 and port 443
 4. access container using LXC-shell
