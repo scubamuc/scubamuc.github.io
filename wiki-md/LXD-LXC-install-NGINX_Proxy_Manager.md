@@ -1,8 +1,8 @@
-# Install NGINX Proxy Manager in LXD/LXC
+# Install NGINX Proxy Manager in LXC container
 
 <https://github.com/ej52/proxmox-scripts/tree/main/lxc/nginx-proxy-manager>
 
-Using NGINX Proxy Manager for configuring your reverse proxy has a couple of advantages:
+NGINX Proxy Manager advantages:
  + Simple setup
  + Easy maintenance
  + Easy certificate management
