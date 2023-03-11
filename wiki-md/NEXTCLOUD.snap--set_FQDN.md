@@ -16,5 +16,5 @@ ff02::2 ip6-allrouters
 ```
 or per command:
 ```
-$ sudo sed -i '2i\127.0.1.1 your.domain.xyz SERVERNAME\' /etc/hosts
+$ sudo sed -i '2i\127.0.1.1    your.domain.xyz SERVERNAME\' /etc/hosts
 ```
