@@ -3,19 +3,19 @@
 # current host name is $hostn
 hostn=$(cat /etc/hostname)
 
-# display curren host name
+# display current host name
 echo "Your current hostname is: $hostn"
 
-# request new hostname $neuerhost
+# request new hostname $newhost
 echo "Enter your new hostname: "
-read neuerhost
+read newhost
 
 # add new host name in /etc/hosts & /etc/hostname
-sudo sed -i "s/$hostn/$neuerhost/g" /etc/hosts
-sudo sed -i "s/$hostn/$neuerhost/g" /etc/hostname
+sudo sed -i "s/$hostn/$newhost/g" /etc/hosts
+sudo sed -i "s/$hostn/$newhost/g" /etc/hostname
 
 # display new host name
-echo "Your ne host name is $neuerhost"
+echo "Your new host name is $newhost"
 
 # confirm new host name
 read -s -n 1 -p "Press any key to confirm new host name"
