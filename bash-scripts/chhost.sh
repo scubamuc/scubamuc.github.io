@@ -1,26 +1,26 @@
 #!/bin/bash
-# neuen Rechnernamen eintragen
-# bestehender Rechnername ist $hostn
+# change host name
+# current host name is $hostn
 hostn=$(cat /etc/hostname)
 
-# zeige den bestehenden Rechnernamen
-echo "Der derzeitige Rechnername ist $hostn"
+# display curren host name
+echo "Your current hostname is: $hostn"
 
-# Abfrage nach neuem Rechnernamen $neuerhost
-echo "Gebe den neuen Rechnernamen ein: "
+# request new hostname $neuerhost
+echo "Enter your new hostname: "
 read neuerhost
 
-# Rechnernamen eintragen in /etc/hosts & /etc/hostname
+# add new host name in /etc/hosts & /etc/hostname
 sudo sed -i "s/$hostn/$neuerhost/g" /etc/hosts
 sudo sed -i "s/$hostn/$neuerhost/g" /etc/hostname
 
-# zeige den veränderten Rechnenamen
-echo "Der neue Rechnernamen ist $neuerhost"
+# display new host name
+echo "Your ne host name is $neuerhost"
 
-# neuen Rechnernamen übernehmen
-read -s -n 1 -p "Übernehmen mit beliebiger Taste"
+# confirm new host name
+read -s -n 1 -p "Press any key to confirm new host name"
 sudo hostname -F /etc/hostname 
 
-# mit beliebiger Taste neustarten
-read -s -n 1 -p "Beliebige Taste zum Neustart"
+# restart system if required
+read -s -n 1 -p "Press any key to reboot system"
 sudo reboot
