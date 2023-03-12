@@ -74,3 +74,6 @@ View letsencrypt log in Netxtcloud-snap:
 ```
 sudo cat /var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
 ```
+
+# Reverse proxy for LetsEncrypt 
+Handle certificates with [reverse Proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) or [NGINX-Proxy-Manager](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--NGINX_Proxy_Settings.md#nginx-proxy-manager)
