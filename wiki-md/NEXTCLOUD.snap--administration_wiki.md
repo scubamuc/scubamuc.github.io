@@ -1,6 +1,7 @@
-# Nextcloud.occ management console 
+# Nextcloud.occ management console in Nextcloud-snap
 
 **OCC** (**O**wn **C**loud **C**onsole) is a commandline management interface requiring root privileges and is accessed from the server shell
+![grafik](https://user-images.githubusercontent.com/54933878/224549354-c5609668-1ad1-4572-ac9a-14c681e612ad.png)
 
 ## Nextcloud management console usage
 
