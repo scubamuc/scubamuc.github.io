@@ -73,11 +73,11 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 
 ## 3.1 Nextcloud-snap export & import
 
-### Backup Nextcloud-snap with nextcloud.export
+### Export Nextcloud-snap with nextcloud.export
 * nextcloud.export
-* compress backup
-* move/copy compressed backup from backup directory: `/var/snap/nextcloud/common/backups` to wherever
-* remove old backups from directory
+* compress export
+* move/copy compressed export from backup directory: `/var/snap/nextcloud/common/backups` to wherever
+* remove old exports from directory
 
 This works fine as weekly automatic cronjob (as root) and for random backups. Compressed backup may be moved wherever.
 
@@ -88,9 +88,9 @@ This works fine as weekly automatic cronjob (as root) and for random backups. Co
 * when moving to new device, be sure to install nextcloud-snap first
 * nextcloud.import replaces previous installation incl. DB and data
 
-1\. copy/move compressed backup file to restore directory: `/var/snap/nextcloud/common`
+1\. copy/move compressed export file to restore directory: `/var/snap/nextcloud/common`
 
-2\. uncompress backup file in restore directory: `/var/snap/nextcloud/common`
+2\. uncompress export file in restore directory: `/var/snap/nextcloud/common`
 
 3\. issue command `$ sudo nextcloud.import PATH TO DIRECTORY`
 
