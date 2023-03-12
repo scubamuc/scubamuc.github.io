@@ -11,7 +11,7 @@ $ sudo nextcloud.occ
 ### Nextcloud management console help
 
 ```
-$ sudo nextcloud.occ
+$ sudo nextcloud.occ --help
 ```
 
 ### View status
