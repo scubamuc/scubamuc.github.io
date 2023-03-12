@@ -1,6 +1,6 @@
 # Nextcloud.occ management console 
 
-Nextcloud.occ management console requires root privileges and is accessed in the server shell
+**OCC** (**O**wn **C**loud **C**onsole) is a commandline management interface requiring root privileges and is accessed from the server shell
 
 ## Nextcloud management console usage
 
@@ -56,9 +56,8 @@ $ nextcloud.occ user:resetpassword USERNAME
 Enter a new password: 
 Confirm the new password: 
 Successfully reset password for USERNAME
-
-
 ```
+
 ### Reset Amin Password
 ```
 $ sudo nextcloud.occ user:resetpassword admin
