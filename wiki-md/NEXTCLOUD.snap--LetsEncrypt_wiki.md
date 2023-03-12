@@ -1,6 +1,6 @@
 # Enable LetsEncrypt in Nextcloud-snap
 
-Enable LetsEncrypt for Nextcloud-Snap:
+Enable LetsEncrypt for Nextcloud-snap:
 
 ```
 sudo nextcloud.enable-https lets-encrypt
@@ -10,7 +10,7 @@ Enter mailaddress and domain/subdomain
 
 # Disable LetsEncrypt in Nextcloud-snap
 
-Disable LetsEncrypt for Nextcloud-Snap:
+Disable LetsEncrypt for Nextcloud-snap:
 
 ```
 sudo nextcloud.disable-https lets-encrypt
