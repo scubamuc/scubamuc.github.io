@@ -35,7 +35,7 @@ $ nextcloud.occ app:enable appname
 $ nextcloud.occ app:update appname
 ```
 
-#### update all apps
+### Update all apps
 
 ```
 $ nextcloud.occ app:update --all
@@ -48,6 +48,12 @@ $ nextcloud.occ user:resetpassword USERNAME
 Enter a new password: 
 Confirm the new password: 
 Successfully reset password for USERNAME
+
+
+```
+### Reset Amin Password
+```
+$ sudo nextcloud.occ user:resetpassword admin
 ```
 
 ### Add user
@@ -61,6 +67,7 @@ $ nextcloud.occ user:add USERNAME
 ```
 $ sudo nextcloud.occ maintenance:repair
 ```
+
 ----
 ## Backup/Export
 
