@@ -72,5 +72,5 @@ $ sudo nextcloud.enable-https lets-encrypt
 View letsencrypt log in Netxtcloud-snap:
 
 ```
-sudo less /var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
+sudo cat /var/snap/nextcloud/current/certs/certbot/logs/letsencrypt.log
 ```
