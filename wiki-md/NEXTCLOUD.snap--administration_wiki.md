@@ -2,6 +2,14 @@
 
 Nextcloud.occ management console requires root privileges and is accessed in the server shell
 
+## Nextcloud management console usage
+
+```
+$ sudo nextcloud.occ
+```
+
+### Nextcloud management console help
+
 ```
 $ sudo nextcloud.occ
 ```
