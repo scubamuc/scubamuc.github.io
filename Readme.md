@@ -79,7 +79,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 * move/copy compressed export from backup directory: `/var/snap/nextcloud/common/backups` to wherever
 * remove old exports from directory
 
-This works fine as weekly automatic cronjob (as root) and for random backups. Compressed backup may be moved wherever.
+This works fine as weekly automatic cronjob (as root) and for random backups. Compressed backup may be moved wherever. 0 downtime.
 
 [Nextcloud-snap Export Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md)
 
@@ -105,7 +105,7 @@ This works fine as weekly automatic cronjob (as root) and for random backups. Co
 * snap start nextcloud 
 * find snapshot in `/var/lib/snapd/snapshots` and copy/move to wherever
 
-This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media.
+This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media. Downtime depends on resources and data.
 
 [Nextcloud-snap Snap snapshot Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
@@ -132,6 +132,8 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 * LXC container image from snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 * LXC image copy/move to wherever
 * LXC image rotate [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+
+This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) cronjob or LXDMosaic schedule. Easy schedule and maintenece in GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic). 0 downtime.
 
 #### Restore LXC-container in shell or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
