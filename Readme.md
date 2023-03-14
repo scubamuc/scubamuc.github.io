@@ -92,7 +92,7 @@ This works fine as weekly automatic cronjob (as root) and for random backups. Co
 
 2\. uncompress export file in restore directory: `/var/snap/nextcloud/common`
 
-3\. issue command `$ sudo nextcloud.import /var/snap/nextcloud/common`
+3\. issue command `$ sudo nextcloud.import /var/snap/nextcloud/common/...`
 
 ----
 ## 3.2 Nextcloud-snap snapshot & restore
