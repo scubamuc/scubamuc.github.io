@@ -5,7 +5,7 @@ Some Nextcloud-snap settings are best done directly in the `config.php` configur
 
 ## Nextcloud-snap, editing configuration file
 
-The configuration file may be edited by hand. Take good care to destinguish special characters, as a misplaced character can render your Nextcloud unusable. So be sure to bachkup the original `config.php` file before editing.
+The configuration file can be edited manually. Take good care to destinguish special characters, as a misplaced character may render your Nextcloud unusable. So be sure to bachkup the original `config.php` file before editing.
 
 backup `config.php`
 ```
