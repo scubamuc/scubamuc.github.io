@@ -1,4 +1,4 @@
-# Nextcloud-snap -- config.php configuration
+# Nextcloud-snap config.php configuration
 
 Some Nextcloud-snap settings are best done directly in the `config.php` configuration file. Whilst the default configurations are mostly fine, it may be necessary to fine tune Nextcloud-snap.
 [Nextcloud configuration parameters](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#configuration-parameters)
