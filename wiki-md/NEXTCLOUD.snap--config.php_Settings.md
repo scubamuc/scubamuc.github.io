@@ -3,7 +3,7 @@
 Some Nextcloud-snap settings are best done directly in the `config.php` configuration file. Whilst the default configurations are mostly fine, it may be necessary to fine tune Nextcloud-snap.
 [Nextcloud configuration parameters](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#configuration-parameters)
 
-## Nextcloud.snap, editing config.php
+## Nextcloud.snap, editing configuration file
 
 The configuration file may be edited by hand. Take good care to destinguish special characters, as a misplaced character can render your Nextcloud unusable. So be sure to bachkup the original `config.php` file before editing.
 
