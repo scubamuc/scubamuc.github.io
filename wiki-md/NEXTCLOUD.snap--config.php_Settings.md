@@ -7,11 +7,11 @@ Some Nextcloud-snap settings are best done directly in the `config.php` configur
 
 The configuration file may be edited by hand. Take good care to destinguish special characters, as a misplaced character can render your Nextcloud unusable. So be sure to bachkup the original `config.php` file before editing.
 
-backup `config.php`:
+backup `config.php`
 ```
 sudo cp /var/snap/nextcloud/current/nextcloud/config/config.php config.php.bak
 ``` 
-edit `config.php`: 
+edit `config.php` 
 ```
 sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php. 
 ```
