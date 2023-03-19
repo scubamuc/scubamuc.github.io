@@ -1,6 +1,7 @@
 # Nextcloud-snap -- config.php Settings
 
 Some Nextcloud-snap settings are best done directly in the `config.php` configuration file. Whilst the default configurations are mostly fine, it may be necessary to fine tune Nextcloud-snap.
+[Nextcloud configuration parameters](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#configuration-parameters)
 
 ## Nextcloud.snap -- edit config.php
 
@@ -22,19 +23,19 @@ sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php.
 ```
 
 ### Setting **default_phone_region**
-
+[country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
 ```
 'default_phone_region' => 'DE',
 ```
 
 ### Setting default language for all/new users
-
+[country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
 ```
 'default_language' => 'de',
 ```
 
 ### Setting default kocale
-
+[country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
 ```
 'default_locale' => 'de_DE',
 ```
