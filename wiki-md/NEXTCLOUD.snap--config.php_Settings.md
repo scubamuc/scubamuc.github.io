@@ -34,7 +34,7 @@ Add skeleton directory path in `config.php`
 'default_phone_region' => 'DE',
 ```
 
-### Setting default language for all/new users
+### Setting default language for new users
 [country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
 ```
 'default_language' => 'de',
