@@ -13,7 +13,7 @@ sudo cp /var/snap/nextcloud/current/nextcloud/config/config.php config.php.bak
 ``` 
 edit `config.php` 
 ```
-sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php. 
+sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php 
 ```
 
 ### Skeleton for default dokuments, files and folders etc.
