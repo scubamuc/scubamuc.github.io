@@ -8,7 +8,7 @@
 ## advantages:
 
  * 5 free subscriptions for private use
- * added security for internet facing servers
+ * 10 years support instead of 5 for 'Universe' and 'Main'
  * peace of mind
  * easy to set up and manage
  * "Kernel Livepatch" to avoid unscheduled reboots is not required (some knowledgable people don't agree that this is an advantage!)
