@@ -54,7 +54,7 @@ echo "" >> "$LOG" ;  ## log linefeed
 
 ## Restore Image
 ## To restore and create a container from it, you can then do:
-## lxc image import $TARGET/$IMAGENAME.tar.gz --alias $IMAGENAME'
+## lxc image import $TARGET/$IMAGENAME.tar.gz --alias $IMAGENAME
 ## lxc launch $IMAGENAME $CONTAINERNAME
 ## lxc image delete $IMAGENAME
 
