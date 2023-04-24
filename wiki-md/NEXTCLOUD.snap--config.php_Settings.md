@@ -40,7 +40,7 @@ Add skeleton directory path in `config.php`
 'default_language' => 'de',
 ```
 
-### Setting default kocale
+### Setting default locale
 [country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
 ```
 'default_locale' => 'de_DE',
