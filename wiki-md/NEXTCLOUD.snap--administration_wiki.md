@@ -28,26 +28,26 @@ $ sudo nextcloud.occ list
 ### View apps in Nexcloud
 
 ```
-$ nextcloud.occ app:list
+$ sudo nextcloud.occ app:list
 ```
 
 ### Enable / disable apps
 
 ```
-$ nextcloud.occ app:disable appname
-$ nextcloud.occ app:enable appname
+$ sudo nextcloud.occ app:disable appname
+$ sudo nextcloud.occ app:enable appname
 ```
 
 ### Update apps
 
 ```
-$ nextcloud.occ app:update appname
+$ sudo nextcloud.occ app:update appname
 ```
 
 ### Update all apps
 
 ```
-$ nextcloud.occ app:update --all
+$ sudo nextcloud.occ app:update --all
 ```
 
 ### Reset user password
@@ -67,7 +67,7 @@ $ sudo nextcloud.occ user:resetpassword admin
 ### Add user
 
 ```
-$ nextcloud.occ user:add USERNAME
+$ sudo nextcloud.occ user:add USERNAME
 ```
 
 ### Repair Nextcloud
