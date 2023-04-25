@@ -73,6 +73,6 @@ edit `config.php` and add line in `config.php`
 edit `config.php` and add line in `config.php`
 
 ```
-'simpleSignUpLink.shown' => false',
+'simpleSignUpLink.shown' => false,
 
 ```
