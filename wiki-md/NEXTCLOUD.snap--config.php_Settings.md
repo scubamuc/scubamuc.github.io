@@ -67,3 +67,12 @@ edit `config.php` and add line in `config.php`
 ```
 'share_folder' => '/SHARED_with_me',
 ```
+
+### Remove signup link
+
+edit `config.php` and add line in `config.php`
+
+```
+'simpleSignUpLink.shown' => false',
+
+```
