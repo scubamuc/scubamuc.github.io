@@ -122,9 +122,9 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 3\. issue command `sudo snap restore "snapshot-ID"` 
 
 ----
-## 3.3 LXC-container snapshot / backup & restore
+## 3.3 LXC container snapshot / backup & restore
 
-#### Backup LXC-container with snapshot/image & restore in shell [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+#### Backup LXC container with snapshot/image & restore in shell [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
 ![grafik](https://user-images.githubusercontent.com/54933878/216815478-9a58192c-b769-487d-b781-09593a4ec2c9.png)
 
@@ -135,9 +135,9 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) cronjob or [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) schedule. 0 downtime.
 
-[rotating LXC-container snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
+[rotating LXC container snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
 
-#### Restore LXC-container in shell or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+#### Restore LXC container in shell or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
 * `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
 * `lxc launch $IMAGENAME $CONTAINERNAME`
