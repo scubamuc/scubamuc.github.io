@@ -16,7 +16,7 @@ edit `config.php`
 sudo nano /var/snap/nextcloud/current/nextcloud/config/config.php 
 ```
 
-### Skeleton for default dokuments, files and folders etc.
+### Skeleton for default documents, files and folders etc.
 
 Default documents, files and folders for new users may be placed in a "skeleton" directory. Thus new users will find documents files an folders in their Nextcloud upon first login.
 Create a skeleton directory ` /var/snap/nextcloud/common/skeleton `
