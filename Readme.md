@@ -81,7 +81,7 @@ My goal is a simple safe and reliable setup with ample ressources for 5+ family 
 
 This works fine as weekly automatic cronjob (as root) and for random backups. Compressed backup may be moved wherever. 0 downtime.
 
-[Nextcloud-snap Export Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md)
+[Rotating Nextcloud-snap Export Script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md)
 
 ## Restore export using nextcloud.import
 
