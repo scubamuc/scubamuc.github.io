@@ -30,29 +30,34 @@ Add skeleton directory path in `config.php`
 
 ### Setting **default_phone_region**
 [country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
+Add line in config.php
 ```
 'default_phone_region' => 'DE',
 ```
 
 ### Setting default language for new users
 [country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
+Add line in config.php
 ```
 'default_language' => 'de',
 ```
 
 ### Setting default locale
 [country codes](https://docs.nextcloud.com/server/latest/admin_manual/configuration_server/config_sample_php_parameters.html#user-experience)
+Add line in config.php
 ```
 'default_locale' => 'de_DE',
 ```
 
 ### Setting default folder for shares
+Add line in config.php
 
 ```
 'share_folder' => '/SHARE_with_others',
 ```
 
 ### Setting default folder for shared with me
+Add line in config.php
 
 ```
 'share_folder' => '/SHARED_with_me',
