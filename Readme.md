@@ -135,6 +135,8 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) cronjob or [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) schedule. 0 downtime.
 
+[rotating LXC-container snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
+
 #### Restore LXC-container in shell or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
 * `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
