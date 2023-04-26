@@ -6,4 +6,4 @@ Lenovo M92p consumption -- 16W load / 12W idle
 
 12,0W x 24H x 365D / 1000 x 0,45 € = **€ 47,30 p.a.**
 
-= **€3,94 monthly**
+**€3,94 monthly**
