@@ -2,6 +2,6 @@
 
 [*Lenovo ThinkCentre M92p Tiny*](https://github.com/scubamuc/scubamuc.github.io#11-hardware) headless power consumption: ~16W load / ~12W idle
 
-![grafik](https://user-images.githubusercontent.com/54933878/234381791-68f44d8a-0b6c-4365-9f98-bdf89bcda73f.png)
+![grafik](https://user-images.githubusercontent.com/54933878/234572976-7263ad71-4a60-49cc-a899-d5d5d3499c64.png)
 
 12W x 24H x 365D / 1000 x 0,45 € = **€ 47,30 p.a.** **€3,94 monthly**
