@@ -1,6 +1,6 @@
 # Calculate approximate power consumption
 
-*Lenovo ThinkCentre M92p Tiny* power consumption: ~16W load / ~12W idle
+*Lenovo ThinkCentre M92p Tiny* headless power consumption: ~16W load / ~12W idle
 
 ![grafik](https://user-images.githubusercontent.com/54933878/234381791-68f44d8a-0b6c-4365-9f98-bdf89bcda73f.png)
 
