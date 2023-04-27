@@ -15,3 +15,39 @@ Viewing logs: `less` is `more`, from `head` to `tail` with `cat` or `bat` but `l
 ```
 sudo lnav /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
 ```
+
+### Nextcloud-snap error logs
+
+example mysql errors:
+```
+/var/snap/nextcloud/current/logs/mysql_errors.log
+```
+
+----
+
+# Nextcloud-snap services
+
+list Nextcloud-snap services:
+```
+sudo snap services nextcloud
+````
+
+Nextcloud-snap services
+```
+nextcloud.apache           
+nextcloud.logrotate        
+nextcloud.mdns-publisher   
+nextcloud.mysql            
+nextcloud.nextcloud-cron   
+nextcloud.nextcloud-fixer  
+nextcloud.php-fpm          
+nextcloud.redis-server     
+nextcloud.renew-certs
+```
+### Service logs
+
+example of sevice logs:
+```
+Logs for Apache service: 'journalctl -u snap.nextcloud.apache.service'
+Logs for Mysql service:  'journalctl -u snap.nextcloud.mysql.service'
+```
