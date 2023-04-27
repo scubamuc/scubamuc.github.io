@@ -20,6 +20,14 @@ Example:
 
 `sudo snap logs nextcloud.nextcloud-cron`
 
+## Journalctl service logs
+
+example of sevice logs:
+```
+Logs for Apache service: 'journalctl -u snap.nextcloud.apache.service'
+Logs for Mysql service:  'journalctl -u snap.nextcloud.mysql.service'
+```
+
 ## Manage Nextcloud-snap service using "get" und "set" 
 
 **View configuration with "get":**
@@ -80,3 +88,4 @@ Example:
 
 `sudo snap start --enable nextcloud.renew-certs
 `
+
