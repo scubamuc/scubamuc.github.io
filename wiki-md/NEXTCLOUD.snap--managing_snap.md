@@ -15,7 +15,7 @@
 man snap
 ```
 
-## Getting help
+## Snap help
 ```
 snap --help
 ```
