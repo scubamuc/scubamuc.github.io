@@ -52,3 +52,17 @@ sudo snap revert nextcloud --revision=xxxxx
 ```
 
 ## [Snap snapshots](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
+
+----
+
+### remove Nextcloud-snap from host
+```
+sudo snap remove nextcloud
+```
+
+### remove Nextcloud-snap completely
+```
+suco snap remove --purge nextcloud
+```
+
+### [remove old unused Snaps from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
