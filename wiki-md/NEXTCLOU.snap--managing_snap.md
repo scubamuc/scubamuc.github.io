@@ -1,8 +1,10 @@
 # Managing Nextcloud-snap with Snap
 
+#### [Introduction to snaps](https://ubuntu.com/core/services/guide/snaps-intro)
+
 #### [Snap Documentation](https://snapcraft.io/docs)
 
-#### [Nextcloud-snap & Ubuntu](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro)
+#### [Nextcloud-snap on Ubuntu](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro)
 
 #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
