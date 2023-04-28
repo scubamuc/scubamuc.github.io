@@ -45,4 +45,4 @@ sudo snap revert nextcloud
 sudo snap revert nextcloud --revision=xxxxx
 ```
 
-
+## [Snap snapshot](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
