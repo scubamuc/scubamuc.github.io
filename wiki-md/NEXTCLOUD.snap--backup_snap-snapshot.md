@@ -1,6 +1,6 @@
 # Nextcloud-snap Snapshot
 
-## backup nextcloud-snap using snap snapshot
+## Backup Nextcloud-snap using snap snapshots
 
 [documentation](https://snapcraft.io/docs/snapshots)
 
@@ -9,13 +9,13 @@
 * snap start 'nextcloud'
 * find snapshot in `/var/lib/snapd/snapshots` and move to wherever
 
-this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
+this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap snapshots on backup media.
 
-snap snapshot may be scripted, see example below
+snap snapshots may be scripted, see example below
 
 ---
 
-### rotating nextcloud-snap snapshot script to media incl. logging:
+### rotating nextcloud-snap snapshots script to media incl. logging:
 
 1\. create mount directory for media in `/media` or `/mnt`
 
@@ -32,7 +32,7 @@ snap snapshot may be scripted, see example below
 ```
 #!/bin/bash
 ##############################################################
-## Nextcloud-snap backup with snap snapshot -- SCUBA --
+## Nextcloud-snap backup with snap snapshots -- SCUBA --
 ##############################################################
 ## create target directory "sudo mkdir /media/SNAPBACKUP"
 ## snapshot rotation 30 days 
