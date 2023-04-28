@@ -31,14 +31,14 @@ snap <command> <option> --help
 
 #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
-## View installed active Snaps on Host
+## View installed enabled Snaps on Host
 List all active snaps installed on host
 ```
 sudo snap list
 ```
 ![grafik](https://user-images.githubusercontent.com/54933878/235135007-1a0b8e50-1718-4c71-a243-f7994bff86f4.png)
 
-### View all installed active/inactive (revisions) Snaps on Host
+### View all installed enabled/disabled (revisions) Snaps on Host
 List all active snaps and revisions installed on host
 ```
 sudo snap list --all
@@ -98,7 +98,6 @@ sudo snap revert nextcloud --revision=xxxxx
 
 * `sudo snap stop nextcloud`
 * `sudo snap save nextcloud`
-* `sudo snap start nextcloud`
 * find snapshot in `/var/lib/snapd/snapshots` and move to wherever
 
 ## Restore Nextcloud-snap snapshot using snap restore 
