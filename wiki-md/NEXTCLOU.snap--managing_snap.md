@@ -51,7 +51,7 @@ sudo snap revert nextcloud
 sudo snap revert nextcloud --revision=xxxxx
 ```
 
-## [Nextcloud-snap logs](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
+## [Nextcloud-snap logging](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
 
 ----
 
