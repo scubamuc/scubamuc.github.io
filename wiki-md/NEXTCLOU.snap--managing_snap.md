@@ -8,50 +8,50 @@
 
 #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
-## view installed active Snaps on Host
+## View installed active Snaps on Host
 ```
 sudo snap list
 ```
 
-### view all installed Snaps on Host
+### View all installed Snaps on Host
 ```
 sudo snap list --all
 ```
 
-## start Nextcloud-snap
+## Start Nextcloud-snap
 ```
 sudo snap start nextcloud
 ```
 
-## stop Nextcloud-snap
+## Stop Nextcloud-snap
 ```
 sudo snap stop nextcloud
 ```
 
-## restart Nextcloud-snap
+## Restart Nextcloud-snap
 ```
 sudo snap restart nextcloud
 ```
 
-## update Nextcloud-snap manually
+## Update Nextcloud-snap manually
 
 ```
 sudo snap refresh nextcloud
 ```
 
-## revert Nextcloud-snap 
+## Revert Nextcloud-snap 
 
 ```
 sudo snap revert nextcloud
 ```
 
-### revert Nextcloud-snap revision
+### Revert Nextcloud-snap revision
 
 ```
 sudo snap revert nextcloud --revision=xxxxx
 ```
 
-## backup Nextcloud-snap using snap snapshot
+## Backup Nextcloud-snap using snap snapshot
 
 [documentation](https://snapcraft.io/docs/snapshots)
 
@@ -62,7 +62,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
 
-## restore Nextcloud-snap snapshot using snap restore 
+## Restore Nextcloud-snap snapshot using snap restore 
 
 * when moving to new device, be sure to install nextcloud-snap first
 * snap restore replaces previous installation incl. certs, DB and data
@@ -78,14 +78,14 @@ this works fine as weekly automatic (cronjob as root) job and has the added conv
 
 ----
 
-### remove Nextcloud-snap from host
+### Remove Nextcloud-snap from host
 ```
 sudo snap remove nextcloud
 ```
 
-### remove Nextcloud-snap completely
+### Remove Nextcloud-snap completely
 ```
 suco snap remove --purge nextcloud
 ```
 
-#### [remove old unused Snaps from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
+#### [Remove old Snap-revisions from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
