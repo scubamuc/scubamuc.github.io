@@ -1,0 +1,1 @@
+sudo snap revert nextcloud --revision=34377
