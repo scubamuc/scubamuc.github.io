@@ -116,10 +116,16 @@ sudo snap revert nextcloud --revision=xxxxx
 
 ----
 ## Remove Snap from host
+
+**WARNING!!** 
+
+Be sure you want to remove Snap
+
 This will completely remove Snap including all installed enabled/disabled snaps and all revisions from your system 
 ```
 sudo apt remove snapd
 ```
+*This is final! All snaps, revisions, backups and settings will be removed* 
 
 ### Remove Nextcloud-snap from host
 This will completely remove Nextcloud-snap from your system but creates a revision 
