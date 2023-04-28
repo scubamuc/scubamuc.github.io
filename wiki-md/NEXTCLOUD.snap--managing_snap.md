@@ -23,13 +23,8 @@ snap --help
 
 ### Contextual help
 ```
-snap [OPTION] --help
+snap <command> --help
 ```
-Example:
-```
-snap info --help
-```
-![grafik](https://user-images.githubusercontent.com/54933878/235140263-b354a6fa-8d28-434b-9012-a5bdb0c09772.png)
 
 ----
 
