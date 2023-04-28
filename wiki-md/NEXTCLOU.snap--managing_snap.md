@@ -1,5 +1,7 @@
 # Managing Nextcloud-snap with Snap
 
+#### [Snap Documentation](https://snapcraft.io/docs)
+
 ## view installed active Snaps on Host
 ```
 sudo snap list
