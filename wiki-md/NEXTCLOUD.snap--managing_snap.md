@@ -104,7 +104,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 * when moving to new device, be sure to install nextcloud-snap first
 * snap restore replaces previous installation incl. certs, DB and data
-* see documentation in `man snap` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
+* see documentation in `snap restore --help` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
 
 1\. copy \*.zip from backup media to `/var/lib/snapd/snapshots`
 
