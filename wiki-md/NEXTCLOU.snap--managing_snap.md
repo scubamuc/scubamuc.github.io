@@ -87,7 +87,16 @@ sudo snap remove nextcloud
 
 ### Remove Nextcloud-snap completely
 ```
-suco snap remove --purge nextcloud
+sudo snap remove --purge nextcloud
+```
+
+### Snap retention
+
+Use *refresh.retain* to set the maximum number of a snap’s revisions stored by the system *after* the next refresh:
+
+Value = Number of retentiomns
+```
+sudo snap set system refresh.retain=2
 ```
 
 ##### [Remove old Snap-revisions from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
