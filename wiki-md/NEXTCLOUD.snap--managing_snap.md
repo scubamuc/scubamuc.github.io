@@ -128,12 +128,12 @@ sudo apt remove snapd
 *This is final! All snaps, revisions, backups and settings will be removed* 
 
 ### Remove Nextcloud-snap from host
-This will completely remove Nextcloud-snap from your system but creates a revision 
+This will remove Nextcloud-snap from your system but creates a revision 
 ```
 sudo snap remove nextcloud
 ```
 
-### Remove Nextcloud-snap completely
+### Remove Nextcloud-snap completely from host
 This will completely remove Nextcloud-snap from your system
 ```
 sudo snap remove --purge nextcloud
