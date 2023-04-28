@@ -98,7 +98,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 * `sudo snap stop nextcloud`
 * `sudo snap save nextcloud`
-* find snapshot in `/var/lib/snapd/snapshots` and move to wherever
+* find snapshot (`*.zip`) in `/var/lib/snapd/snapshots` and copy/move to backup media
 
 ## Restore Nextcloud-snap snapshot using snap restore 
 
@@ -106,7 +106,7 @@ sudo snap revert nextcloud --revision=xxxxx
 * snap restore replaces previous installation incl. certs, DB and data
 * see documentation in `snap restore --help` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
 
-1\. copy \*.zip from backup media to `/var/lib/snapd/snapshots`
+1\. copy snapshot (`*.zip`) from backup media to `/var/lib/snapd/snapshots`
 
 2\. discover snapshot-ID using `snap saved`
 
