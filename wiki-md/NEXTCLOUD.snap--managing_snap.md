@@ -8,6 +8,8 @@
 
 #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
+----
+
 ## View installed active Snaps on Host
 ```
 sudo snap list
