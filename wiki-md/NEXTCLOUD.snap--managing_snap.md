@@ -8,6 +8,29 @@
 
 #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
+## Using Snap
+
+## Snap manual pages
+```
+man snap
+```
+
+## Getting help
+```
+snap --help
+```
+![grafik](https://user-images.githubusercontent.com/54933878/235139733-f2cc0b60-eebc-491a-8265-999506ffd75c.png)
+
+### Contextual help
+```
+snap [OPTION] --help
+```
+Example:
+```
+snap info --help
+```
+![grafik](https://user-images.githubusercontent.com/54933878/235140263-b354a6fa-8d28-434b-9012-a5bdb0c09772.png)
+
 ----
 
 ## View installed active Snaps on Host
