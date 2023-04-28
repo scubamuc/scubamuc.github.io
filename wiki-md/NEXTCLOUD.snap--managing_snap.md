@@ -8,7 +8,7 @@
 
 #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
-## Using Snap
+# Using Snap
 
 ## Snap manual pages
 ```
