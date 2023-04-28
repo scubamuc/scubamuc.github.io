@@ -86,7 +86,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 ----
 
-# Snap snapshot
+# Snap snapshots
 [Snap snapshot documentation](https://snapcraft.io/docs/snapshots)
 
 ## Functions
@@ -94,13 +94,13 @@ sudo snap revert nextcloud --revision=xxxxx
 ![grafik](https://user-images.githubusercontent.com/54933878/235142637-6aecf2d1-52eb-44b8-a934-797f59a1231e.png)
 
 
-## Backup Nextcloud-snap using snap snapshot
+## Backup Nextcloud-snap using snap snapshots
 
 * `sudo snap stop nextcloud`
 * `sudo snap save nextcloud`
 * find snapshot (`*.zip`) in `/var/lib/snapd/snapshots` and copy/move to backup media
 
-## Restore Nextcloud-snap snapshot using snap restore 
+## Restore Nextcloud-snap snapshots using snap restore 
 
 * when moving to new device, be sure to install nextcloud-snap first
 * snap restore replaces previous installation incl. certs, DB and data
@@ -112,7 +112,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 3\. issue command `sudo snap restore "snapshot-ID"`
 
-##### [SCUBA's Rotating Snap snapshot skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
+##### [SCUBA's Rotating Snap snapshots skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
 
 ----
 ## Remove Snap from host
