@@ -62,7 +62,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap-snapshots on backup media.
 
-## restoreNextcloud-snap snapshot using snap restore 
+## restore Nextcloud-snap snapshot using snap restore 
 
 * when moving to new device, be sure to install nextcloud-snap first
 * snap restore replaces previous installation incl. certs, DB and data
@@ -88,4 +88,4 @@ sudo snap remove nextcloud
 suco snap remove --purge nextcloud
 ```
 
-### [remove old unused Snaps from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
+#### [remove old unused Snaps from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
