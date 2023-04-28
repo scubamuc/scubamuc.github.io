@@ -87,7 +87,7 @@ sudo snap revert nextcloud --revision=xxxxx
 ----
 
 # Snap snapshots
-[Snap snapshot documentation](https://snapcraft.io/docs/snapshots)
+[Snap snapshots documentation](https://snapcraft.io/docs/snapshots)
 
 ## Functions
 
