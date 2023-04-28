@@ -76,6 +76,8 @@ this works fine as weekly automatic (cronjob as root) job and has the added conv
 
 ##### [Snap snapshot skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
 
+## [Nextcloud-snap logs](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
+
 ----
 
 ### Remove Nextcloud-snap from host
