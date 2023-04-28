@@ -51,6 +51,10 @@ sudo snap revert nextcloud
 sudo snap revert nextcloud --revision=xxxxx
 ```
 
+## [Nextcloud-snap logs](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
+
+----
+
 ## Backup Nextcloud-snap using snap snapshot
 
 [Documentation](https://snapcraft.io/docs/snapshots)
@@ -75,8 +79,6 @@ this works fine as weekly automatic (cronjob as root) job and has the added conv
 3\. issue command `sudo snap restore "snapshot-ID"`
 
 ##### [Snap snapshot skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
-
-## [Nextcloud-snap logs](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
 
 ----
 
