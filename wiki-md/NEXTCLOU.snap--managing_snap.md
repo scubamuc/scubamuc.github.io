@@ -13,7 +13,7 @@
 sudo snap list
 ```
 
-### View all installed Snaps on Host
+### View all installed active/inactive (revisions) Snaps on Host
 ```
 sudo snap list --all
 ```
