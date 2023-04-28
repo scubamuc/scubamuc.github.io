@@ -76,7 +76,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 3\. issue command `sudo snap restore "snapshot-ID"`
 
-##### [Snap snapshot skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
+##### [Rotating Snap snapshot skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
 
 ----
 
