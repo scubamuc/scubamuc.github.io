@@ -53,7 +53,7 @@ sudo snap revert nextcloud --revision=xxxxx
 
 ## Backup Nextcloud-snap using snap snapshot
 
-[documentation](https://snapcraft.io/docs/snapshots)
+[Documentation](https://snapcraft.io/docs/snapshots)
 
 * snap stop 'nextcloud'
 * snap save 'nextcloud'
