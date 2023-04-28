@@ -25,6 +25,10 @@ snap --help
 ```
 snap <command> --help
 ```
+also
+```
+snap <command> <option> --help
+```
 
 ----
 
