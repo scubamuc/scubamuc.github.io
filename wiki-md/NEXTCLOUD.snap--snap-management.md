@@ -23,15 +23,17 @@ snap <command> <option> --help
 ----
 # Managing Nextcloud-snap with Snap
 
-#### [Introduction to snaps](https://ubuntu.com/core/services/guide/snaps-intro)
+**Documentation and further reading:**
 
-#### [Snap Documentation](https://snapcraft.io/docs)
++ #### [Introduction to snaps](https://ubuntu.com/core/services/guide/snaps-intro)
 
-#### [Nextcloud-snap on Ubuntu](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro)
++ #### [Snap Documentation](https://snapcraft.io/docs)
 
-#### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
++ #### [Nextcloud-snap on Ubuntu](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro)
 
-#### [Nextcloud-snap occ management console wiki](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--administration_wiki.md)
++ #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
+
++ #### [Nextcloud-snap occ management console wiki](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--administration_wiki.md)
 
 ## View installed enabled Snaps on host
 List all enabled snaps on host
