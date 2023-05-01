@@ -86,7 +86,14 @@ sudo snap revert nextcloud --revision=xxxxx
 ```
 ![grafik](https://user-images.githubusercontent.com/54933878/235136149-6d90b10c-cbfd-45c2-9470-aff8b13ef904.png)
 
-## [Nextcloud-snap logging](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
+## Revert to stable channel
+Revert to stable
+`sudo snap refresh --channel=25/stable nextcloud`
+
+## Nextcloud-snap logs
+View Nextcloud snap logs
+
+[Nextcloud-snap logging](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
 
 ----
 
