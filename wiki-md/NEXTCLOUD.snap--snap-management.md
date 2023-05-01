@@ -172,7 +172,7 @@ sudo snap remove --purge nextcloud
 
 ### Snap retention
 
-Use Snap-option *refresh.retain* to set the maximum number of a Snap revisions stored by the system *after* the next refresh:
+Use Snap-option `refresh.retain` to set the maximum number of a Snap revisions stored by the system **after** the next refresh:
 
 Value = Number of revesions retained
 ```
