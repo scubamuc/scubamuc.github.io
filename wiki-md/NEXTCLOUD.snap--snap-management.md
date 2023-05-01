@@ -34,14 +34,14 @@ snap <command> <option> --help
 + #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
 ## View installed enabled Snaps on host
-List all enabled snaps on host
+List enabled snaps on host
 ```
 sudo snap list
 ```
 ![grafik](https://user-images.githubusercontent.com/54933878/235135007-1a0b8e50-1718-4c71-a243-f7994bff86f4.png)
 
 ### View all installed enabled/disabled (revisions) Snaps on host
-List all snaps and revisions on host
+List **all** snaps and revisions on host
 ```
 sudo snap list --all
 ```
