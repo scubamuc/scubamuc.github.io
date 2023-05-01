@@ -33,8 +33,6 @@ snap <command> <option> --help
 
 + #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
-+ #### [Nextcloud-snap occ management console wiki](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--nextcloud.occ.md)
-
 ## View installed enabled Snaps on host
 List all enabled snaps on host
 ```
@@ -48,6 +46,18 @@ List all snaps and revisions on host
 sudo snap list --all
 ```
 ![grafik](https://user-images.githubusercontent.com/54933878/235135305-75853fd3-dc2c-4439-bb74-81cd01dfa1ae.png)
+
+## Enable Nextcloud-snap
+Enable Nextcloud-snap to start automatically
+```
+sudo snap enable nextcloud
+```
+
+## Disable Nextcloud-snap
+Disable Nextcloud-snap from starting automatically
+```
+sudo snap disable nextcloud
+```
 
 ## Start Nextcloud-snap
 Start Nextcloud-snap manually
