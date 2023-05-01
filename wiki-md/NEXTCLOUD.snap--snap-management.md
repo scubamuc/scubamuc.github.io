@@ -95,7 +95,7 @@ Revert to stable channel
 
 ----
 
-## Nextcloud-snap logs
+# Nextcloud-snap logs
 View Nextcloud snap logs
 
 [Nextcloud-snap logging](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap_logs.md)
@@ -137,11 +137,12 @@ View Nextcloud snap logs
 
 Be sure you want to remove Snap
 
+*This is final! All snaps, revisions, backups and settings will be removed* 
+
 This will completely remove Snap including all installed enabled/disabled snaps and all revisions from your system 
 ```
 sudo apt remove snapd
 ```
-*This is final! All snaps, revisions, backups and settings will be removed* 
 
 ### Remove Nextcloud-snap from host
 This will remove Nextcloud-snap from your system but creates a revision 
