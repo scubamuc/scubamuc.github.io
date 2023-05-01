@@ -84,13 +84,13 @@ sudo snap refresh nextcloud
 ```
 
 ## Revert Nextcloud-snap 
-Revert Nextcloud-snap to last retained revision
+Revert Nextcloud-snap to **last** retained revision
 ```
 sudo snap revert nextcloud
 ```
 
 ### Revert Nextcloud-snap revision
-Revert Nextcloud-snap to retained revision
+Revert Nextcloud-snap to **defined** revision
 ```
 sudo snap revert nextcloud --revision=xxxxx
 ```
