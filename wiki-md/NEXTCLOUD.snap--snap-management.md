@@ -33,7 +33,7 @@ snap <command> <option> --help
 
 + #### [Nextcloud-snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
-+ #### [Nextcloud-snap occ management console wiki](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--administration_wiki.md)
++ #### [Nextcloud-snap occ management console wiki](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--nextcloud.occ.md)
 
 ## View installed enabled Snaps on host
 List all enabled snaps on host
