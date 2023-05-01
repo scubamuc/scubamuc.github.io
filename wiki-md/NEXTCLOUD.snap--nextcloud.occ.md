@@ -75,20 +75,3 @@ $ sudo nextcloud.occ user:add USERNAME
 ```
 $ sudo nextcloud.occ maintenance:repair
 ```
-
-----
-## Backup/Export
-
-Export Nextcloud-snap incl. database, apps and configuration:
-
-`$ sudo nextcloud.export` see `--help` for options
-
-INFO: Backup path `/var/snap/nextcloud/common/backups/yyymmdd-hhmmss`.
-
-## Restore/Import
-
-`$ sudo nextcloud.import full/path/to/export/yyymmdd-hhmmss` see `--help` for options
-
-- include full path `/var/snap/nextcloud/common/backups/yyymmdd-hhmmss` required for restore
-
-----
