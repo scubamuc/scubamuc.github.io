@@ -144,6 +144,12 @@ View Nextcloud snap logs
 
 ##### [SCUBA's rotating Snap snapshots skript](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md#nextcloud-snap-snapshot)
 
+## Remove Snap snapshot
+Remove Snap snapshot
+```
+sudo snap forget "snapshot-ID"
+```
+
 ----
 ## Remove Snap from host
 
@@ -179,4 +185,4 @@ Value = Number of revesions retained
 sudo snap set system refresh.retain=2
 ```
 
-##### [Remove old Snap-revisions from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
+##### [Skript to Remove old Snap-revisions from host](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--remove_old_snaps.md#remove-old-snasps)
