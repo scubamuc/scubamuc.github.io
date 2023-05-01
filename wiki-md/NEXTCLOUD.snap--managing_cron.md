@@ -1,4 +1,4 @@
-# Nextcloud-snap, cron
+# Nextcloud-snap, managing cron
 
 ---
 
