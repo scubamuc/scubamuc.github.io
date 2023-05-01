@@ -91,6 +91,10 @@ sudo snap revert nextcloud --revision=xxxxx
 
 Revert to stable channel
 
+`sudo snap refresh nextcloud --stable`
+
+or defined [channel](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Release-strategy)
+
 `sudo snap refresh --channel=25/stable nextcloud`
 
 ----
