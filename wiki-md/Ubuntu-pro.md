@@ -1,6 +1,6 @@
 # Ubuntu Pro
 
-[**Ubuntu Pro**](https://ubuntu.com/pricing/pro) is a great service if you have an [Ubuntu One](https://login.ubuntu.com) account anyway.
+[**Ubuntu Pro**](https://ubuntu.com/pricing/pro) is a great service if you have an [Ubuntu One](https://login.ubuntu.com) account already anyway.
 
 ![grafik](https://user-images.githubusercontent.com/54933878/226614459-a7c86f96-56dc-4143-8f53-8da933db4adc.png)
 
