@@ -9,6 +9,7 @@ for a self-hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server
 My goal is a simple safe and reliable setup with ample resources for 5+ family users, affordable, efficient and low maintenence. My day job is software support for a leading WMS. I'm an avid scuba diver and enjoy Linux and FOSS. I'm a dad and husband thus I'm not keen on spending much of my free time doing server-maintenence.
 
 **Quicklinks**
+* [Official Nextcloud-snap wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki)
 * [Managing Nextcloud-snap with Snap](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-management.md#managing-nextcloud-snap-with-snap.md)
 * [Nextcloud management console](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--nextcloud.occ.md)
 * [SCUBA's Nextcloud-snap Wiki docs](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
