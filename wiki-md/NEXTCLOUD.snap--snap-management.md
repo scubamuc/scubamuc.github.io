@@ -171,7 +171,7 @@ sudo snap remove nextcloud
 ```
 
 ### Remove Nextcloud-snap completely from host
-This will completely remove Nextcloud-snap from your system
+This will completely remove Nextcloud-snap and all revisions from your system
 ```
 sudo snap remove --purge nextcloud
 ```
