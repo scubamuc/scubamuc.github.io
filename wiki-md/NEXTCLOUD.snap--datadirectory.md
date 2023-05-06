@@ -30,7 +30,7 @@ More details can be found in the server log.
 
 The procedure to [**Move**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) or [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) the data directory in Nextcloud-snap is different when an **admin-user** exists or an **admin-user** still needs to be created:
 
-a) [**Move**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) data directory after installation (**admin-user** exists)
+a) [**Move**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) data directory after installation (**admin-user** exists) in `/var/snap/nextcloud/current/nextcloud/config/config.php`
 
 Example: `/var/snap/nextcloud/current/nextcloud/config/config.php`
 ```
@@ -41,7 +41,7 @@ Example: `/var/snap/nextcloud/current/nextcloud/config/config.php`
 
 **OR** 
 
-b) [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) data directory before installation (**admin-user** needs to be created)
+b) [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) data directory before installation (**admin-user** needs to be created) in `/var/snap/nextcloud/current/nextcloud/config/autoconfig.php`
 
 Example: `/var/snap/nextcloud/current/nextcloud/config/autoconfig.php`
  ```
