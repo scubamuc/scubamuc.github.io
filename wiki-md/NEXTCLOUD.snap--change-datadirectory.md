@@ -50,6 +50,8 @@ Example: `/var/snap/nextcloud/current/nextcloud/config/autoconfig.php`
  ```
  >**Tipp**: Ensure installation is completed and **admin-user** is created before rebooting
 
+
+
 ## Path to data directory
 
 By default, the data directory Nextcloud-snap is `'datadirectory' => '/var/snap/nextcloud/common/nextcloud/data'`. So regardless which procedure is used, the path to the data directory must include the complete path including `.../data` because this is where the required `.ocdata` file will is located.
