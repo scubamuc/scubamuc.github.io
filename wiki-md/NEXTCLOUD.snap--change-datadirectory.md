@@ -7,10 +7,13 @@ This can be any device (e.g. external-disk-partition, NFS-network mount, SSHFS-n
 The device should be available at system boot and mounted by `/etc/fstab`.
 
 >**Tipp**: Ensure USB-boot is disabled in BIOS or use the `--nofail` option in `/etc/fstab` for headless boot, especially when connecting an external USB-device.
+>
+>**Tipp**: Its **not** recommended to use the "automount" directory `/media/$USER/`. Prefer creating a dedicated directory `/media/nextcloud/`
 
 ### Connect [removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media)
 
 Removable media **must** be mounted to either `/media` or `/mnt` as **root** with **root** permissions and **connected** to Snap, also see [Snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
+
 
 ```
 $ sudo snap connect nextcloud:removable-media
