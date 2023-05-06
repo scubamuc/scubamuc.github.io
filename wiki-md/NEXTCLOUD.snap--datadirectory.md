@@ -7,6 +7,10 @@
 This can be any device (e.g. external-disk-partition, NFS-network mount, SSHFS-network mount etc.). 
 The device should be available at system boot and mounted by `/etc/fstab`.
 
+>**Tipp**:
+>
+>Ensure USB-boot is disabled in BIOS or use the `--nofail` option in `/etc/fstab` for headless boot, especially when connecting an external USB-device.
+
 ### Connect removable media
 
 [Removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media) **must** be mounted to either `/media` or `/mnt` as **root** with **root** permissions, also see [Snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
@@ -23,10 +27,6 @@ The server encountered an internal error and was unable to complete your request
 Please contact the server administrator if this error reappears multiple times, please include the technical details below in your report.
 More details can be found in the server log.
 ```
-
-Tipp:
->Ensure USB-boot is disabled in BIOS or use the `--nofail` option in `/etc/fstab` for headless boot, especially when connecting an external USB-device.
-
 
 ## 2. Data directory
 
