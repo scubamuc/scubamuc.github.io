@@ -1,8 +1,6 @@
 # Nextcloud-snap, data directory
 
-## Removable media
-
-[Official Documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition)
+## [Removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media)
 
 This can be any device (e.g. external-disk-partition, NFS-network mount, SSHFS-network mount etc.). 
 The device should be available at system boot and mounted by `/etc/fstab`.
@@ -26,7 +24,9 @@ Please contact the server administrator if this error reappears multiple times, 
 More details can be found in the server log.
 ```
 
-## Data directory
+## Change Data directory
+
+[Official Documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition)
 
 The procedure to [**Move**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) or [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) the data directory in Nextcloud-snap is different when an **admin-user** exists or an **admin-user** still needs to be created:
 
