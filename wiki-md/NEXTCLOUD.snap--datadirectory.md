@@ -4,8 +4,6 @@
 
 [Official Documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition)
 
-INFO:
-
 This can be any device (e.g. external-disk-partition, NFS-network mount, SSHFS-network mount etc.). 
 The device should be available at system boot and mounted by `/etc/fstab`.
 
