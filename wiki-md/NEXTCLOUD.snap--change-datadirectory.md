@@ -10,7 +10,7 @@ The device should be available at system boot and mounted by `/etc/fstab`.
 
 ### Connect [removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media)
 
-Removable media **must** be mounted to either `/media` or `/mnt` as **root** with **root** permissions and correctly connected to Snap, also see [Snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
+Removable media **must** be mounted to either `/media` or `/mnt` as **root** with **root** permissions and **connected** to Snap, also see [Snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
 ```
 $ sudo snap connect nextcloud:removable-media
