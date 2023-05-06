@@ -19,16 +19,12 @@ $ sudo snap connect nextcloud:removable-media
 ```
 ## 2. Data directory
 
-The procedure for moving or defining data directory in Nextcloud-snap is different when:
+The procedure for **moving** or **defining** data directory in Nextcloud-snap is different when an **admin-user** exists or an **admin-user** still needs to be created:
 
-1. Nextcloud-snap is **already installed** and data directory **exists**
-
-[Data directory **exists**, move data](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user)
+[**Move** data directory](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user)
 
 OR
 
-2. Nextcloud-snap is **not installed** and data directory needs to be **created**
-
-[Data-directory needs to be **created**, define data-directory](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user)
+[**Define** data directory](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user)
 
 
