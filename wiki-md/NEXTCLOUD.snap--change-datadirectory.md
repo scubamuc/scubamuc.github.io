@@ -1,4 +1,5 @@
 # Nextcloud-snap, change data directory
+[Official Documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition)
 
 ## [Removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media)
 
@@ -25,8 +26,6 @@ More details can be found in the server log.
 ```
 
 ## Change Data directory
-
-[Official Documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition)
 
 The procedure to [**Move**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) or [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) the data directory in Nextcloud-snap is different when an **admin-user** exists or an **admin-user** still needs to be created:
 
