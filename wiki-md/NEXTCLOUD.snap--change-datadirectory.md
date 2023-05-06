@@ -65,4 +65,4 @@ Your data directory is invalid.
 
 Ensure there is a file called ".ocdata" in the root of the data directory.
 ```
- >**Tipp**: if this keeps failing doublecheck your path, spelling and typos like 'spaces', 'commas', 'single-quotes' and 'double-quotes'
+ >**Tipp**: if this keeps failing doublecheck your path, spelling and typos like 'spaces', 'commas', 'colons', 'single-quotes' and 'double-quotes'
