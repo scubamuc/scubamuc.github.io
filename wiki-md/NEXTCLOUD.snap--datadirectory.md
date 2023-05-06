@@ -1,19 +1,17 @@
 # Nextcloud-snap, data directory
 
-## 1. Removable media
+## Removable media
 
 [Official Documentation](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition)
 
 This can be any device (e.g. external-disk-partition, NFS-network mount, SSHFS-network mount etc.). 
 The device should be available at system boot and mounted by `/etc/fstab`.
 
->**Tipp**:
->
->Ensure USB-boot is disabled in BIOS or use the `--nofail` option in `/etc/fstab` for headless boot, especially when connecting an external USB-device.
+>**Tipp**: Ensure USB-boot is disabled in BIOS or use the `--nofail` option in `/etc/fstab` for headless boot, especially when connecting an external USB-device.
 
 ### Connect removable media
 
-[Removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media) **must** be mounted to either `/media` or `/mnt` as **root** with **root** permissions, also see [Snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
+[Removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media) **must** be mounted to either `/media` or `/mnt` as **root** with **root** permissions and correctly connected to Snap, also see [Snap confinement](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-confinement.md#snap-confinement-in-nextcloud-snap)
 
 ```
 $ sudo snap connect nextcloud:removable-media
@@ -28,7 +26,7 @@ Please contact the server administrator if this error reappears multiple times, 
 More details can be found in the server log.
 ```
 
-## 2. Data directory
+## Data directory
 
 The procedure for **moving** or **defining** data directory in Nextcloud-snap is different when an **admin-user** exists or an **admin-user** still needs to be created:
 
@@ -45,6 +43,8 @@ Example: `/var/snap/nextcloud/current/nextcloud/config/config.php`
 
 b) [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) data directory before installation (**admin-user** needs to be created)
 
+>**Tipp**: Ensure installation is completed and **admin-user** is created before rebooting
+
 Example: `/var/snap/nextcloud/current/nextcloud/config/autoconfig.php`
  ```
   // ...
@@ -52,9 +52,9 @@ Example: `/var/snap/nextcloud/current/nextcloud/config/autoconfig.php`
  // ...
  ```
 
-### 2.1 Path to data directory
+### Path to data directory
 
-Regardless which procedure is used, the path to the data directory must include the complete path including `.../data` because this is where the required `.ocdata` file will is located.
+By default, the data directory Nextcloud-snap is `'datadirectory' => '/var/snap/nextcloud/common/nextcloud/data'`. So regardless which procedure is used, the path to the data directory must include the complete path including `.../data` because this is where the required `.ocdata` file will is located.
 
 **common error message**
 ```
