@@ -1,4 +1,4 @@
-# Nextcloud-snap, change data directory
+# Nextcloud-snap, data directory
 
 ## 1. Removable media
 
