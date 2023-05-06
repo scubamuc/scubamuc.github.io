@@ -1,4 +1,4 @@
-# Nextcloud-snap, data directory
+# Nextcloud-snap, change data directory
 
 ## [Removable media](https://github.com/nextcloud-snap/nextcloud-snap/blob/master/README.md#removable-media)
 
