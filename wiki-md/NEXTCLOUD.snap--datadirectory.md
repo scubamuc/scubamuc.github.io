@@ -32,11 +32,25 @@ Tipp:
 
 The procedure for **moving** or **defining** data directory in Nextcloud-snap is different when an **admin-user** exists or an **admin-user** still needs to be created:
 
-[**Move** data directory](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) after installation (**admin-user** exists)
+a) [**Move**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-have-already-created-an-admin-user) data directory after installation (**admin-user** exists)
+
+Example: `/var/snap/nextcloud/current/nextcloud/config/config.php`
+```
+ // ...
+ 'datadirectory' => '/media/nextcloud/data',
+ // ...
+ ```
 
 **OR** 
 
-[**Define** data directory](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) before installation (**admin-user** needs to be created)
+b) [**Define**](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Change-data-directory-to-use-another-disk-partition#if-you-just-installed-the-snap-and-havent-created-an-admin-user-yet) data directory before installation (**admin-user** needs to be created)
+
+Example: `/var/snap/nextcloud/current/nextcloud/config/autoconfig.php`
+ ```
+  // ...
+ 'directory' => '/media/nextcloud/data',
+ // ...
+ ```
 
 ### 2.1 Path to data directory
 
