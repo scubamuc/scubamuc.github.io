@@ -10,7 +10,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 
 **Quicklinks**
 * [Official Nextcloud-snap wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki)
-* [Managing Nextcloud-snap with Snap](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-management.md#managing-nextcloud-snap-with-snap.md)
+* [Managing Nextcloud-snap with Snap](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--snap-management.md#managing-nextcloud-snap-with-snap)
 * [Nextcloud management console](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--nextcloud.occ.md)
 * [SCUBA's Nextcloud-snap wiki docs](https://github.com/scubamuc/scubamuc.github.io/tree/scubamuc/wiki-md)
 
