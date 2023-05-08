@@ -176,7 +176,7 @@ This will completely remove Nextcloud-snap and all revisions from your system
 sudo snap remove --purge nextcloud
 ```
 
-### Snap retention
+## Snap retention
 
 Use Snap-option `refresh.retain` to set the maximum number of a Snap revisions stored by the system **after** the next refresh:
 
