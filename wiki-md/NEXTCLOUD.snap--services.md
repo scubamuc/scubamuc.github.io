@@ -6,6 +6,10 @@
 
 ---
 
+## View Nextcloud-snap processes in htop
+
+`htop -F nextcloud`
+
 ## View Snap services for Nextcloud-snap
 
 `sudo snap services $SNAPNAME`
