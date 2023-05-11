@@ -1,5 +1,7 @@
 # Nextcloud-snap logs
 
+See [Nextcloud-snap services](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--services.md)
+
 Nextcloud-snap log locations:
 ```
 Logs for Nextcloud: `/var/snap/nextcloud/common/nextcloud/data/nextcloud.log`
