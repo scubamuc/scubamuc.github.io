@@ -2,6 +2,8 @@
 
 <https://snapcraft.io/docs/service-management>
 
+[Nextcloud-snap logs](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--logs.md)
+
 ---
 
 ## View Snap services for Nextcloud-snap
