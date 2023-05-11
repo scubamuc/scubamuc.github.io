@@ -1,7 +1,5 @@
 # Nextcloud-snap logs
 
-See [Nextcloud-snap services](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--services.md)
-
 Nextcloud-snap log locations:
 ```
 Logs for Nextcloud: `/var/snap/nextcloud/common/nextcloud/data/nextcloud.log`
@@ -40,6 +38,8 @@ journalctl -u snap.nextcloud.apache.service
 
 # Nextcloud-snap services
 
+See [Nextcloud-snap services](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--services.md)
+
 list Nextcloud-snap services:
 ```
 sudo snap services nextcloud
@@ -57,10 +57,19 @@ nextcloud.php-fpm
 nextcloud.redis-server     
 nextcloud.renew-certs
 ```
-### Service logs
+## View service-logs for Nextcloud-snap
+
+`sudo snap logs $SNAPNAME`
+
+Example:
+
+`sudo snap logs nextcloud.nextcloud-cron`
+
+## Journalctl service logs
 
 example of sevice logs:
 ```
 Logs for Apache service: 'journalctl -u snap.nextcloud.apache.service'
 Logs for Mysql service:  'journalctl -u snap.nextcloud.mysql.service'
 ```
+
