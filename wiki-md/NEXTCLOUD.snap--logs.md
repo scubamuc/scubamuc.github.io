@@ -23,6 +23,17 @@ example mysql errors:
 /var/snap/nextcloud/current/logs/mysql_errors.log
 ```
 
+### Apache logs
+
+watch Apache logs:
+```
+sudo snap logs -f nextcloud.apache
+```
+Apache service logs:
+```
+journalctl -u snap.nextcloud.apache.service
+```
+
 ----
 
 # Nextcloud-snap services
