@@ -8,6 +8,8 @@
 ```
 $ sudo nextcloud.occ
 ```
+> @kyrofa 
+> Some systems don't add /snap/bin to the PATH. Try `sudo /snap/bin/nextcloud.occ`
 
 ### Nextcloud management console help
 
