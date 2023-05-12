@@ -8,6 +8,7 @@ echo "Your current hostname is: $hostn"
 
 # request new hostname $newhost
 echo "Enter your new hostname: "
+echo ""
 read newhost
 
 # add new host name in /etc/hosts & /etc/hostname
