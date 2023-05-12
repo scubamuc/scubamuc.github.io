@@ -2,6 +2,7 @@
 
 [Snap confinement](https://snapcraft.io/docs/snap-confinement) is an **Ubuntu security feature**. This is the reason [Nextcloud-snap is not supported on non-**Ubuntu** distributions](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Why-Ubuntu-is-the-only-supported-distro). So unless you allow the Nextcloud snap to **access** [**removable media**](https://github.com/nextcloud-snap/nextcloud-snap#removable-media) in `/mnt` or `/media` you will not be able to access any other directory outside of the confinement on **Ubuntu**. 
 
+> @kyrofa
 > INFO: 
 > 
 >This has nothing to do with permissions. It's not a permissions issue, it's a *confinement* issue. The Linux kernel won't allow the snap to touch your home directory or any other directory outside of the confinement
