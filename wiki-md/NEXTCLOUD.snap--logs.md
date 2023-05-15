@@ -15,23 +15,33 @@ Viewing logs: `less` is `more`, from `head` to `tail` with `cat` or `bat` but `l
 ```
 sudo lnav /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
 ```
+### [@Kyrofa's blog](https://kyrofa.com/posts/monitoring-a-nextcloud-snap-upgrade/)
 
-### Nextcloud-snap error logs
+The Nextcloud-snap has several services contained within it. There are four that are most important for upgrade purposes:
 
-example mysql errors:
+  +  MySQL (nextcloud.mysql)
+  +  PHP (nextcloud.php-fpm)
+  +  Apache (nextcloud.apache)
+  +  Nextcloud Fixer (nextcloud.nextcloud-fixer)
+
+#### MySQL
 ```
-/var/snap/nextcloud/current/logs/mysql_errors.log
+$ snap logs -f nextcloud.mysql
 ```
 
-### Apache logs
+#### PHP
+```
+$ snap logs -f nextcloud.php-fpm
+```
 
-watch Apache logs:
+#### Apache
 ```
-sudo snap logs -f nextcloud.apache
+$ snap logs -f nextcloud.apache
 ```
-Apache service logs:
+
+#### Nextcloud Fixer
 ```
-journalctl -u snap.nextcloud.apache.service
+$ snap logs -f nextcloud.nextcloud-fixer
 ```
 
 ----
