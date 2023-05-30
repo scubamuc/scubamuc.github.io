@@ -23,6 +23,6 @@ read -s -n 1 -p "Press any key to confirm new host name"
 sudo hostname -F /etc/hostname 
 
 # restart system if required
-read -p "  Enter to reboot... Crtl+c to return..."
+read -p "  Enter to reboot... Crtl+c to return --> relogin to confirm changes."
 ##read -s -n 1 -p "Press any key to reboot system"
 sudo reboot
