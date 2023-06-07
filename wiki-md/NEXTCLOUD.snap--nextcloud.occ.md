@@ -61,7 +61,7 @@ Confirm the new password:
 Successfully reset password for USERNAME
 ```
 
-### Reset Amin Password
+### Reset Admin Password
 ```
 $ sudo nextcloud.occ user:resetpassword admin
 ```
