@@ -16,7 +16,7 @@
 COUNT=1			# Anzahl Pings 
 ROUTER=xxx.xxx.xxx.xxx	# IP-Adresse des Routers
 HOST1=xxx.xxx.xxx.xxx	# IP oder NS vom Host
-HOST2=alpi.dedyn.io	# IP oder NS vom Host
+HOST2=xxx.xxx.xxx.xxx	# IP oder NS vom Host
 HOST3=9.9.9.9		# IP oder NS vom Quadnine
 HOST4=1.1.1.1		# IP oder NS vom Cloudflare
 HOST5=8.8.8.8		# IP oder NS von Google
