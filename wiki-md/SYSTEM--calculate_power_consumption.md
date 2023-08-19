@@ -6,11 +6,8 @@
 
 ```
 W = Watt
-
 H = Hours
-
 D = Days
-
 Cost per KW/H = € 0,xx (depending on service provider/region)
 ```
 ## Calculation:
