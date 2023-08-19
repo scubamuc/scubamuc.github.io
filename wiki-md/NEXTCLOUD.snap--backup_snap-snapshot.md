@@ -9,13 +9,13 @@
 * snap start 'nextcloud'
 * find snapshot in `/var/lib/snapd/snapshots` and move to wherever
 
-this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy Snap transfer to different server when needed. thus always 4 weeks of snap snapshots on backup media.
+This works fine as weekly automatic (cronjob as root) job and has the added convenience of easy Snap transfer to different server when needed. thus always 4 weeks of Snap snapshots on backup media.
 
-snap snapshots may be scripted, see example below
+Snap snapshots may be scripted, see example below
 
 ---
 
-### rotating Nextcloud-snap snapshots script to media incl. logging:
+### Rotating Nextcloud-snap snapshots script to media incl. logging:
 
 1\. create mount directory for media in `/media` or `/mnt`
 
@@ -87,9 +87,9 @@ exit
 
 ---
 
-## restore snapshot using snap restore 
+## Restore snapshot using Snap restore 
 
-* when moving to new device, be sure to install nextcloud-snap first
+* when moving to new device, be sure to install Nextcloud-snap first
 * snap restore replaces previous installation incl. certs, DB and data
 * see documentation in `man snap` and [snapcraft](https://snapcraft.io/docs/snapshots#heading--restoring)
 
