@@ -13,4 +13,4 @@ Cost per KW = € 0,xx (depending on service provider/region)
 ```
 ## Calculation:
 
-`12W x 24H x 365D / 1000 x 0,45 €` = **€ 47,30 p.a.** ~ **€3,94 p.m.**
+`12W x 24H x 365D / 1000 x € 0,45` = **€ 47,30 p.a.** ~ **€3,94 p.m.**
