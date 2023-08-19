@@ -4,4 +4,4 @@
 
 ![grafik](https://user-images.githubusercontent.com/54933878/234572976-7263ad71-4a60-49cc-a899-d5d5d3499c64.png)
 
-12W x 24H x 365D / 1000 x 0,45 € = **€ 47,30 p.a.** **€3,94 monthly**
+12W x 24H x 365D / 1000 x 0,45 € = **€ 47,30 p.a.** ~ **€3,94 p.m.**
