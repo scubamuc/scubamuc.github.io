@@ -1,6 +1,6 @@
 # Nextcloud-snap Snapshot
 
-## Backup Nextcloud-snap using snap snapshots
+## Backup Nextcloud-snap using Snap snapshots
 
 [documentation](https://snapcraft.io/docs/snapshots)
 
@@ -15,7 +15,7 @@ snap snapshots may be scripted, see example below
 
 ---
 
-### rotating nextcloud-snap snapshots script to media incl. logging:
+### rotating Nextcloud-snap snapshots script to media incl. logging:
 
 1\. create mount directory for media in `/media` or `/mnt`
 
