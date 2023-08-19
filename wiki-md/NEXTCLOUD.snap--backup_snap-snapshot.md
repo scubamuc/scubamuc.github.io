@@ -9,7 +9,7 @@
 * snap start 'nextcloud'
 * find snapshot in `/var/lib/snapd/snapshots` and move to wherever
 
-this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy snap transfer to different server when needed. thus always 4 weeks of snap snapshots on backup media.
+this works fine as weekly automatic (cronjob as root) job and has the added convenience of easy Snap transfer to different server when needed. thus always 4 weeks of snap snapshots on backup media.
 
 snap snapshots may be scripted, see example below
 
