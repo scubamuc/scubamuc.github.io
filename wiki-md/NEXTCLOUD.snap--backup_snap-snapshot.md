@@ -1,4 +1,4 @@
-# Nextcloud-snap Snapshot
+# Nextcloud-snap snapshot
 
 ## Backup Nextcloud-snap using Snap snapshots
 
