@@ -2,19 +2,20 @@
 
 ## Automatic updates
 
-How to set up automatic updates on Ubuntu Server 20.04.x
+How to set up automatic updates on Ubuntu Server 22.04.x
 
 Automatic Updates in Ubuntu Server
 
 ## Step 1: package installation
+
+
+This package may already be installed on your server.
 
 Install the unattended-upgrades package:
 
 ```
 sudo apt install unattended-upgrades
 ```
-
-This package may already be installed on your server.
 
 ## Step 2: configure automatic updates
 
@@ -34,13 +35,6 @@ The most important: uncomment the “updates” line by deleting the two slashes
 
 ```
 "${distro_id}:${distro_codename}-updates";
-```
-
-Optional: You should uncomment and adapt the following lines to ensure you’ll be notified if an error happens:
-
-```
-Unattended-Upgrade::Mail "user@example.com";
-Unattended-Upgrade::MailOnlyOnError "true";
 ```
 
 Recommended: remove unused kernel packages and dependencies and make sure the system automatically reboots if needed by uncommenting and adapting the following lines: Unattended-Upgrade::Remove-Unused-Kernel-Packages "true"; ↑ You may have to add a semicolon at the end of this line. ↑
@@ -65,8 +59,6 @@ In most cases, the file will be empty. Copy and paste the following lines:
 
 ```
 APT::Periodic::Update-Package-Lists "1";
-//APT::Periodic::Download-Upgradeable-Packages "1";
-APT::Periodic::AutocleanInterval "7";
 APT::Periodic::Unattended-Upgrade "1";
 ```
 
@@ -80,16 +72,7 @@ You can see if the auto-upgrades work by launching a dry run:
 sudo unattended-upgrades --dry-run --debug
 ```
 
-The dry run should output something like this:
-
-Unattended upgrades on Ubuntu Server 18.04 Bionic Beaver
-
 Another way to check if automatic updates work is waiting a few days and checking the unattended upgrades logs:
 
-cat /var/log/unattended-upgrades/unattended-upgrades.log
+`cat /var/log/unattended-upgrades/unattended-upgrades.log`
 
-## Step 5: view Log
-
--``
-cat /var/log/unattended-upgrades/unattended-upgrades.log
-```
