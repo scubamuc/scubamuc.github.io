@@ -88,22 +88,8 @@ Another way to check if automatic updates work is waiting a few days and checkin
 
 cat /var/log/unattended-upgrades/unattended-upgrades.log
 
-## Step 5: Log skript
+## Step 5: view Log
 
-create file in $USER/bin/ called `autoupdatelog.sh`
-
-Copy and paste the following into the file:
-
-```
-  #!/bin/bash
-### Logdatei für unattended Upgrades ###
-echo
-echo
-echo "   ################################################################"
-echo "   Hallo $USER die Logdatei für Unattended Upgrades wird angezeigt"
-echo "   ****************************************************************"
-echo
+-``
 cat /var/log/unattended-upgrades/unattended-upgrades.log
 ```
-
-make the file executable `chmod +x autoupdatelog.sh`
