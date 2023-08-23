@@ -25,10 +25,6 @@ Edit the configuration file (here with nano – replace with any other text edit
 sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
-The beginning of the configuration file should look like this:
-
-Install unattended upgrades on Ubuntu Server
-
 Anything after a double slash “//” is a comments and has no effect. To “enable” a line, remove the double slash at the beginning of the line (replace with nothing or with spaces to keep alignment).
 
 The most important: uncomment the “updates” line by deleting the two slashes at the beginning of it:
@@ -37,9 +33,10 @@ The most important: uncomment the “updates” line by deleting the two slashes
 "${distro_id}:${distro_codename}-updates";
 ```
 
-Recommended: remove unused kernel packages and dependencies and make sure the system automatically reboots if needed by uncommenting and adapting the following lines: Unattended-Upgrade::Remove-Unused-Kernel-Packages "true"; ↑ You may have to add a semicolon at the end of this line. ↑
+Recommended: remove unused kernel packages and dependencies and make sure the system automatically reboots if needed by uncommenting and adapting the following lines: `Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";` ↑ You may have to add a semicolon at the end of this line. ↑
 
 ```
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
 Unattended-Upgrade::Remove-Unused-Dependencies "true";
 Unattended-Upgrade::Automatic-Reboot "true";
 Unattended-Upgrade::Automatic-Reboot-Time "02:00";
