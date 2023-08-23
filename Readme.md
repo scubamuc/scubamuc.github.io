@@ -38,7 +38,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 
 ## 1.2 OS & Software
 **Requirements:**
-* [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & administration, unattended updates & updgrades_)
+* [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & administration, [unattended updates & updgrades](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)_)
 * [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) (_easy setup & automated updates_)
 * [LXD](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (_multiple LXC-containers_)
    * [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) LXD-server management GUI
