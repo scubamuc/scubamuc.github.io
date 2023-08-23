@@ -1,5 +1,5 @@
 # **SYSTEM--Unattended Upgrades**
-
+https://ubuntu.com/server/docs/package-management
 ## Automatic updates
 
 How to set up automatic updates on Ubuntu Server
@@ -19,7 +19,7 @@ sudo apt install unattended-upgrades
 
 ## Step 2: configure automatic updates
 
-Edit the configuration file (here with nano – replace with any other text editor):
+Edit the configuration file:
 
 ```
 sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
@@ -30,7 +30,9 @@ Anything after a double slash “//” is a comments and has no effect. To “en
 The most important: uncomment the “updates” line by deleting the two slashes at the beginning of it:
 
 ```
-"${distro_id}:${distro_codename}-updates";
+        "${distro_id}ESMApps:${distro_codename}-apps-security";
+        "${distro_id}ESM:${distro_codename}-infra-security";
+        "${distro_id}:${distro_codename}-updates";
 ```
 
 Recommended: remove unused kernel packages and dependencies and make sure the system automatically reboots if needed by uncommenting and adapting the following lines: `Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";` ↑ You may have to add a semicolon at the end of this line. ↑
@@ -56,7 +58,8 @@ In most cases, the file will be empty. Copy and paste the following lines:
 
 ```
 APT::Periodic::Update-Package-Lists "1";
-APT::Periodic::Unattended-Upgrade "1";
+APT::Periodic::Unattended-Upgrade "7";
+APT::Periodic::AutocleanInterval "7";
 ```
 
 The time interval are specified in days, feel free to change the values. Save changes and exit.
@@ -74,5 +77,3 @@ Another way to check if automatic updates work is waiting a few days and checkin
 `cat /var/log/unattended-upgrades/unattended-upgrades.log`
 
 ----
-
-https://ubuntu.com/server/docs/package-management
