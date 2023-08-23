@@ -1,8 +1,9 @@
 # **SYSTEM--Unattended Upgrades**
+https://www.cyberciti.biz/faq/set-up-automatic-unattended-updates-for-ubuntu-20-04/
 
 ## Automatic updates
 
-How to set up automatic updates on Ubuntu Server 22.04.x
+How to set up automatic updates on Ubuntu Server
 
 Automatic Updates in Ubuntu Server
 
@@ -73,3 +74,6 @@ Another way to check if automatic updates work is waiting a few days and checkin
 
 `cat /var/log/unattended-upgrades/unattended-upgrades.log`
 
+----
+
+https://ubuntu.com/server/docs/package-management
