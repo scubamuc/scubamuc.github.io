@@ -1,5 +1,4 @@
 # **SYSTEM--Unattended Upgrades**
-https://www.cyberciti.biz/faq/set-up-automatic-unattended-updates-for-ubuntu-20-04/
 
 ## Automatic updates
 
