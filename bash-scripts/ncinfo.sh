@@ -2,93 +2,93 @@
   #!/bin/bash
 
 ##############################################################
-# Script Beschreibung #
+# Script description #
 ##############################################################
-# Dieses Skript dient zur Übersicht über den Nextcloud-snap 
-# Server. Es werden zusätzliche Systemwerte angezeigt!
-# Installierte Snaps: nextcloud
-# Zusätzliche Pakete: sysstat
+# Script to display a quick overview of Nextcloud snap status 
+# Required:
+# Nextcloud snap:  `sudo snap install nextcloud`
+# Sysstat: `sudo apt install sysstat`
 ##############################################################
-# VARIABLEN #
+# VARIABLES #
 ##############################################################
-LOG="/home/$USER/script.log"  ## Lagdatei
-DATUM=`date +"%F"` ## Datumvariable
-ZEIT=`date +"%T"`  ## Zeitvariable
-ZIEL="/home/$USER/Pfad"  ## Zieldatei
-QUELLE="/home/$USER/Pfad" ## Quelldatei
-LAN=$(ls /sys/class/net | grep 'br0') ## Eternet Interface
-WLAN=$(ls /sys/class/net | grep 'wlx') ## Wireless Interface
+LOG="/home/$USER/script.log"  ## Log file
+DATUM=`date +"%F"` ## Date format
+ZEIT=`date +"%T"`  ## Time format
+TARGET="/home/$USER/Pfad"  ## Target path
+SOURCE="/home/$USER/Pfad" ## Source path
+LAN=$(ls /sys/class/net | grep 'br0') ## Eternet interface
+WLAN=$(ls /sys/class/net | grep 'wlx') ## Wireless interface
 EXTIP=$(dig +short myip.opendns.com @resolver1.opendns.com)
-IPEXT=curl ifconfig.me ## zeigt externe IP
-IPLAN=hostname -I ## zeigt lokale LAN IP
+IPEXT=curl ifconfig.me ## external ip
+IPLAN=hostname -I ## internal ip
 ##############################################################
-# FUNKTION #
+# FUNCTIONS #
 ##############################################################
-## Check ob neustart notwendig ##
+## Reboot required? ##
 CheckReboot()
 	{
 	sudo /usr/lib/update-notifier/update-motd-reboot-required 
 	}
 
 
-## Check ob Updates verfügbar ##
+## Updates available? ##
 CheckUpdates()
 	{
 	sudo /usr/lib/update-notifier/update-motd-updates-available
 	}
 
-## Check snap Dienste ##
+## Snap Services ##
 CheckSnapDienste()
         {
         snap services nextcloud
         }
 
 ##############################################################
-# Script Beginn
+# Script
 ##############################################################
 	clear
-	sudo pwd #einmalige Passworteingabe
+	sudo pwd #enter `sudo` password
 	clear
-echo '   Hallo '$USER', wllkommen auf '$HOSTNAME'!     '
-echo '   ncinfo.sh wird ausgeführt...                  '
+echo '   Hallo '$USER', welcome to '$HOSTNAME'!     '
+echo '   ncinfo.sh will proceed...                  '
 echo '=========================================   '
-echo '       System Information!                       '
+echo '       System imformation!                       '
 echo ''
 	echo     "	      Host: "$HOSTNAME ;
-	echo     "	     Datum: "$DATUM ;
-	echo     "	      Zeit: "$ZEIT ;
+	echo     "	      Date: "$DATUM ;
+	echo     "	      Time: "$ZEIT ;
   	echo -ne "	    LAN-IP: "; hostname -I ;
 	echo -ne "	    EXT-IP: "$EXTIP ;
 echo ''
 	hostnamectl;
 echo ''
 echo '-------------------------------------------------'
-echo '       System Dienste und Meldungen!             '
+echo '       System services and messages!             '
 echo ''
-	echo -ne "	 Nextcloud Dienst:	"; snap services nextcloud.apache | grep 'nextcloud' >/dev/null && echo "läuft!" || echo "gestoppt!"
+	echo -ne "	Nextcloud Service:	"; snap services nextcloud.apache | grep 'nextcloud' >/dev/null && echo "läuft!" || echo "gestoppt!"
 	echo -ne "	   Nextcloud Cron:	"; snap services nextcloud.nextcloud-cron | grep -oPw 'aktiv' >/dev/null && echo "läuft!" || echo "gestoppt!"
-	echo -ne "	System Läuft seit:	"; uptime -p ; #check wie lange läuft System schon
-	echo -ne "	 Letzter Neustart:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
-	echo	 "	   System Updates?	"$CheckUpdate ; #prüfe nach ob updates verfügbar sind
-	echo	 "	  System Neustart?	"$CheckReboot ; #prüfe nach ob reboot erforderlich ist
+	echo -ne "	  System up since:	"; uptime -p ; #uptime
+	echo -ne "	      Last reboot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #las reboot
+	echo	 "	Updates available?	"$CheckUpdate ; #updates available?
+	echo	 "	  Reboot required?	"$CheckReboot ; #reboot required?
 echo ''
 sar -u 1 2
 echo ''
 echo '-------------------------------------------------'
 echo '-------------------------------------------------'
-echo '       Snap Version auf dem System!              '
+echo '       Snap version being used!              '
 echo ''
-	echo	"	-- Aktuelle Snap Version: "
-	snap version # Listet Snap Info's
+	echo	"	-- Current Snap Version: "
+	snap version # current snap version infos
 echo ''
-	echo 	"	-- Aktuelle Nextcloud Snap: "
-	snap list nextcloud --all # Listet Nextcloud Info's
+	echo 	"	-- Current Nextcloud snap: "
+	snap list nextcloud --all # List Nextcloud snap info's
 echo ''
- 	echo	"	-- Nextcloud Snap Dienste:"
- 	echo	"				"; sudo snap services nextcloud #Listet Nextcloud Dienste
+ 	echo	"	-- Nextcloud snap services:"
+ 	echo	"				"; sudo snap services nextcloud #List Nextcloud snap services
 echo ''
 echo '       ==================================   '
-read -p "  weiter mit Enter... Strg+c für Ende..."
+read -p "  Enter to continue... Crtl+c to close..."
 echo ''
 	clear
 echo ''
