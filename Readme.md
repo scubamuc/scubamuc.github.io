@@ -113,7 +113,7 @@ This works fine as weekly automatic cronjob (as root) and for random backups. Co
 
 This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media. Downtime depends on resources and data.
 
-[rotating Nextcloud-snap Snap snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
+[rotating Snap snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
 ## Restore Snap snapshot using Snap restore 
 
