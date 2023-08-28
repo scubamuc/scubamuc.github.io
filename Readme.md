@@ -72,7 +72,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Set [FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
 * Nextcloud snap handles [Lets-Encrypt certificate](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) automatically with `nextcloud.enable-https lets-encrypt` 
     * *optionally* handle certificates with [reverse Proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) or [NGINX-Proxy-Manager](https://github.com/nextcloud-snap/nextcloud-snap/wiki/NGINX-proxy-manager)
-* Configure Nextcloud and regain control over your data
+* [Configure Nextcloud](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) and regain control over your data
 
 ----
 # 3. Export, Import -- Backup, Restore
