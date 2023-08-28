@@ -1,6 +1,6 @@
 #!/bin/bash
 ##############################################################
-## Nextcloud-snap backup with snap snapshot -- SCUBA --
+## Nextcloud-snap backup with Snap snapshot -- SCUBA --
 ##############################################################
 ## create target directory "sudo mkdir /media/SNAPBACKUP"
 ## snapshot rotation 30 days 
