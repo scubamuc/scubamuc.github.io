@@ -66,20 +66,20 @@ echo "********************************************************" >> "$LOG" ; ## l
 echo "$(timestamp) -- Snapbackup $SNAPNAME Start" >> "$LOG" ; ## start log
 
 ## stop snap for snapshot  
-sudo snap stop $SNAPNAME ;
+ sudo snap stop "$SNAPNAME" ;
 ## create snap snapshot 
-sudo snap save --abs-time $SNAPNAME ;
+ sudo snap save --abs-time "$SNAPNAME" ;
 ## restart snap after snapshot 
-sudo snap start $SNAPNAME ;
+ sudo snap start "$SNAPNAME" ;
 
 ## find and move snapshot to $TARGET  
-sudo find $SOURCE/ -name "*.zip" -exec mv '{}' $TARGET/ \; # find and move
+ sudo find "$SOURCE"/ -name "*.zip" -exec mv '{}' "$TARGET"/ \; # find and move
 ## find old snapshots and delete snapshots older than $RETENTION days
-sudo find $TARGET/ -name "*.zip" -mtime +$RETENTION -exec rm -f {} \; # find and delete
+ sudo find "$TARGET"/ -name "*.zip" -mtime +"$RETENTION" -exec rm -f {} \; # find and delete
 
 ## end log 
-echo "$(timestamp) -- Snapbackup $SNAPNAME End " >> "$LOG" ; ## end log 
-echo "" >> "$LOG" ;  ## log linefeed 
+ echo "$(timestamp) -- Snapbackup "$SNAPNAME" End " >> "$LOG" ; ## end log 
+ echo "" >> "$LOG" ;  ## log linefeed 
 
 exit
 
