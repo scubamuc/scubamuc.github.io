@@ -92,16 +92,17 @@ read -p "  Enter to continue... Crtl+c to close..."
 echo ''
 	clear
 echo ''
-echo '       Directory sizes!   '
+echo '       Memory an drive usage!   '
 echo ''
 echo '       ==================================   '
 echo '       Memory usage!            '
 echo ''
 	sudo free -tmh
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT
+##      sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT
+	sudo lsblk
 echo ''
-echo '  discovering sizes, please wait...          '
+echo '  discovering disk usage, please wait...          '
 echo ''
 	cd / && sudo du -hsx --exclude=proc * | sort -rh | head -5
 echo ''
@@ -111,7 +112,7 @@ echo ''
 	sudo du -hs /var/snap/nextcloud/common/nextcloud/data
 echo ''
 echo '-------------------------------------------------'
-echo '       Largest files in Nextcloud directory!    '
+echo '       Largest files in Nextcloud data directory!    '
 echo ''
 	sudo find /var/snap/nextcloud/common/nextcloud/data -type f -printf "%s\t%p\n" | sort -n | tail -1 &&
 echo ''
