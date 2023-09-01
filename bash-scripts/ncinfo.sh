@@ -125,7 +125,7 @@ echo '       Last entry in Nextcloud log         '
 echo ''
 	sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
 echo ''
-echo " NOTE: delete Nextcloud 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log'"
+echo " NOTE: delete Nextcloud 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log' "
 echo ''
 read -p "  Enter to continue... Crtl+c to close..."
 echo ''
@@ -138,11 +138,11 @@ echo ''
 echo '-------------------------------------------------'
 echo '       Logins & System tasks           '
 echo ''
-	last -aFixn 5  ;
+	sudo last -aFixn 5  ; ## last 5 successfull logins
 echo ''
 echo ''
 echo '-------------------------------------------------'
 echo '       Last unsuccessfull logins    '
 echo ''
-	sudo lastb -aFin 5 ;
+	sudo lastb -aFin 5 ; ## last 5 bad logins
 echo ''
