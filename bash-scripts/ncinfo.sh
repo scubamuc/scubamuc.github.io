@@ -92,57 +92,57 @@ read -p "  Enter to continue... Crtl+c to close..."
 echo ''
 	clear
 echo ''
-echo '       Verzeichnis-Größen auf dem System!   '
+echo '       Directory sizes!   '
 echo ''
 echo '       ==================================   '
-echo '       Gesamtspeicher auf dem System!            '
+echo '       Memory usage!            '
 echo ''
 	sudo free -tmh
 echo ''
         sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT
 echo ''
-echo '  Größen werden ermittelt, bitte warten...          '
+echo '  discovering sizes, please wait...          '
 echo ''
 	cd / && sudo du -hsx --exclude=proc * | sort -rh | head -5
 echo ''
 echo '-------------------------------------------------'
-echo '       Größe Nextcloud Data-Verzeichnis!         '
+echo '       Nextcloud Data directory!         '
 echo ''
 	sudo du -hs /var/snap/nextcloud/common/nextcloud/data
 echo ''
 echo '-------------------------------------------------'
-echo '       Größte Datei im Nextcloud-Verzeichnis!    '
+echo '       Largest files in Nextcloud directory!    '
 echo ''
 	sudo find /var/snap/nextcloud/common/nextcloud/data -type f -printf "%s\t%p\n" | sort -n | tail -1 &&
 echo ''
 echo '-------------------------------------------------'
-echo '       Größe der Nextcloud-Log!                  '
+echo '       Nextcloud log size!                  '
 echo ''
 	sudo du -hs /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
 echo ''
 echo '-------------------------------------------------'
-echo '       Letzter Eintrag der Nextcloud-Log         '
+echo '       Last entry in Nextcloud log         '
 echo ''
 	sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
 echo ''
-echo " HINWEIS: Nextcloud-Log löschen mit 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log'"
+echo " NOTE: delete Nextcloud 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log'"
 echo ''
-read -p "  weiter mit Enter... Strg+c für Ende..."
+read -p "  Enter to continue... Crtl+c to close..."
 echo ''
 	clear
 echo ''
-echo '       Die letzten Logins auf dem System!   '
+echo '       Last logins on the system!   '
 echo ''
 echo '       ==================================   '
 echo ''
 echo '-------------------------------------------------'
-echo '       Letzten Logins & Systemtasks           '
+echo '       Logins & System tasks           '
 echo ''
 	last -aFixn 5  ;
 echo ''
 echo ''
 echo '-------------------------------------------------'
-echo '       Letzten fehlgeschlagenen Loginversuche    '
+echo '       Last unsuccessfull logins    '
 echo ''
 	sudo lastb -aFin 5 ;
 echo ''
