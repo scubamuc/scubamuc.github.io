@@ -91,7 +91,7 @@ echo ''
 	free -m
 echo ''
 echo ''
-read -p "  System Upgrade mit Enter... Strg+c für Ende..."
+	read -p "  System Upgrade mit Enter... Strg+c für Ende..."
         clear
 echo ''
         AptUpdate
