@@ -85,7 +85,8 @@ echo ''
 echo '       ==================================   '
 echo '       Gesamtspeicher auf dem System!       '
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL
+##	sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL
+	sudo lsblk
 echo ''
 	free -m
 echo ''
