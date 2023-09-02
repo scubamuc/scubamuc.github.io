@@ -2,7 +2,7 @@
   #!/bin/bash
 
 ##############################################################
-# Script description #
+# Script description  -scubamuc- https://scubamuc.github.io/ #
 ##############################################################
 # Script to display a quick overview of Nextcloud snap status 
 # Required:
