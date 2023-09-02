@@ -2,7 +2,7 @@
   #!/bin/bash
 
 ##############################################################
-# Script Beschreibung -- scubamuc --#
+# Script Beschreibung -scubamuc- https://scubamuc.github.io/ #
 ##############################################################
 # Mit SysInfo wird ein Systemüberblick ausgegeben. 
 # Es werden zusätzliche Systemwerte angezeigt und abschließend
