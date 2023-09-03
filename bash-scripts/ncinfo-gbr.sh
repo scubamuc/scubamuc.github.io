@@ -54,11 +54,11 @@ echo ''
 echo '=========================================   '
 echo '       System information!                       '
 echo ''
-	echo     "	      Host: "$HOSTNAME" " ;
-	echo     "	      Date: "$DATUM" " ;
-	echo     "	      Time: "$ZEIT" " ;
-  	echo -ne "	    LAN-IP: "$IPLAN" " ;
-	echo -ne "	    EXT-IP: "$EXTIP" " ;
+	echo     "	      Host: "$HOSTNAME ;
+	echo     "	      Date: "$DATUM ;
+	echo     "	      Time: "$ZEIT  ;
+  	echo -ne "	    LAN-IP: "; hostname -I ;
+	echo -ne "	    EXT-IP: "$EXTIP ;
 echo ''
 	hostnamectl;
 echo ''
@@ -74,83 +74,74 @@ echo ''
 	echo -ne "	  Reboot required?	"; sudo /usr/lib/update-notifier/update-motd-reboot-required ; #check reboot required
 echo ''
 echo ''
-sar -u 1 2
+	sar -u 1 2
 echo ''
 echo '-------------------------------------------------'
 echo '-------------------------------------------------'
 echo '       Snap version installed!                   '
 echo ''
 	echo	"	-- Current Snap version: "
-	snap version # list Snap information
+	snap version 	# list Snap information
 echo ''
-##	echo 	"	-- Aktuelle Nextcloud Snap: "
-##	snap list nextcloud --all # Listet Nextcloud Info's
-## echo ''
-## 	echo	"	-- Nextcloud Snap Dienste:"
-## 	echo	"				"; sudo snap services nextcloud #Listet Nextcloud Dienste
-## echo ''
 echo '       ==================================   '
-read -p "  weiter mit Enter... Strg+c für Ende..."
+	read -p "  Enter to continue... Crtl+c to close..."
 echo ''
 	clear
 echo ''
-echo '       Verzeichnis-Größen auf dem System!   '
+echo '        Memory and disk usage overview!    '
 echo ''
 echo '       ==================================   '
-echo '       Gesamtspeicher auf dem System!            '
+echo '       Memory used System!            '
 echo ''
 	sudo free -tmh
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT
-# echo ''
-#       sudo df -ah /dev/sda1 &&
-#       sudo df -ah /dev/sda2 &&
-#       sudo df -ah /media/DATAHOME &&
+echo '       ==================================   '
+echo '       Disk space!  			  '
 echo ''
-echo '  Größen werden ermittelt, bitte warten...          '
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT # View disk usage ignoring loop
+echo ''
+echo '  Disovering disk usage, please wait... '
 echo ''
 	cd / && sudo du -hsx --exclude=proc * | sort -rh | head -5
 echo ''
-##echo '-------------------------------------------------'
-##echo '       Größe Nextcloud Data-Verzeichnis!         '
-##echo ''
-##	sudo du -hs /var/snap/nextcloud/common/nextcloud/data
-##echo ''
-##echo '-------------------------------------------------'
-##echo '       Größte Datei im Nextcloud-Verzeichnis!    '
-##echo ''
-##	sudo find /var/snap/nextcloud/common/nextcloud/data -type f -printf "%s\t%p\n" | sort -n | tail -1 &&
-##echo ''
-##echo '-------------------------------------------------'
-##echo '       Größe der Nextcloud-Log!                  '
-##echo ''
-##	sudo du -hs /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
-##echo ''
-##echo '-------------------------------------------------'
-##echo '       Letzter Eintrag der Nextcloud-Log         '
-##echo ''
-##	sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
+echo '-------------------------------------------------'
+echo '       Disk usage Nextcloud snap data directory!         '
 echo ''
-##echo " HINWEIS: Nextcloud-Log löschen mit 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log'"
+	sudo du -hs /var/snap/nextcloud/common/nextcloud/data
 echo ''
-read -p "  weiter mit Enter... Strg+c für Ende..."
+echo '-------------------------------------------------'
+echo '       Largest file in Nextcloud data directory!    '
+echo ''
+	sudo find /var/snap/nextcloud/common/nextcloud/data -type f -printf "%s\t%p\n" | sort -n | tail -1 &&
+echo ''
+echo '-------------------------------------------------'
+echo '       Nextcloud log size!                  '
+echo ''
+	sudo du -hs /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
+echo ''
+echo '-------------------------------------------------'
+echo '       Last log entries in Nextcloud log         '
+echo ''
+	sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
+echo ''
+echo " NOTE: Delete Nextcloud: 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log' "
+echo ''
+	read -p "  Enter to continue... Crtl+c to close..."
 echo ''
 	clear
 echo ''
-echo '       Die letzten Logins auf dem System!   '
+echo '       Logins and security!   '
 echo ''
 echo '       ==================================   '
 echo ''
 echo '-------------------------------------------------'
-echo '       Letzten Logins & Systemtasks           '
+echo '       Last logins and system tasks              '
 echo ''
 	last -aFixn 5  ;
 echo ''
 echo ''
 echo '-------------------------------------------------'
-echo '       Letzten fehlgeschlagenen Loginversuche    '
+echo '       Last unsuccessfull logins    '
 echo ''
 		sudo lastb -aFin 5 ;
-##	  sudo egrep "Failed|Failure" /var/log/auth.log ;
-##	sudo cat /var/log/auth.log | grep "Failed password"
 echo ''
