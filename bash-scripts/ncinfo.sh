@@ -4,9 +4,9 @@
 ##############################################################
 # Script description  -scubamuc- https://scubamuc.github.io/ #
 ##############################################################
-# Script to display a quick overview of Nextcloud snap status 
-# Required:
-# Nextcloud snap:  `sudo snap install nextcloud`
+# Script to display a quick overview of system information and
+# system status. 
+# Required packages:
 # Sysstat: `sudo apt install sysstat`
 ##############################################################
 # VARIABLES #
@@ -14,136 +14,81 @@
 LOG="/home/$USER/script.log"  ## Log file
 DATUM=`date +"%F"` ## Date format
 ZEIT=`date +"%T"`  ## Time format
-TARGET="/home/$USER/Pfad"  ## Target path
-SOURCE="/home/$USER/Pfad" ## Source path
-LAN=$(ls /sys/class/net | grep 'br0') ## Eternet interface
-WLAN=$(ls /sys/class/net | grep 'wlx') ## Wireless interface
+ZIEL="/home/$USER/Pfad"  ## Targe path
+QUELLE="/home/$USER/Pfad" ## Source path
+LAN=$(ls /sys/class/net | grep en) ## Eternet Interface
+WLAN=$(ls /sys/class/net | grep wl) ## Wireless Interface
 EXTIP=$(dig +short myip.opendns.com @resolver1.opendns.com)
-IPEXT=curl ifconfig.me ## external ip
-IPLAN=hostname -I ## internal ip
 ##############################################################
 # FUNCTIONS #
 ##############################################################
-## Reboot required? ##
+## Check if reboot is required ##
 CheckReboot()
-	{
-	sudo /usr/lib/update-notifier/update-motd-reboot-required 
-	}
-
-
-## Updates available? ##
-CheckUpdates()
-	{
-	sudo /usr/lib/update-notifier/update-motd-updates-available
-	}
-
-## Snap Services ##
-CheckSnapDienste()
         {
-        snap services nextcloud
+                sudo /usr/lib/update-notifier/update-motd-reboot-required
         }
 
+
+## Check if updates are available ##
+CheckUpdates()
+	{
+		sudo /usr/lib/update-notifier/update-motd-updates-available
+	}
+
+## Upgrade and clean APT ##
+AptUpdate()
+	{
+	echo '#############################################################'
+	echo '#                 APT Update 	                          #'
+	echo '#############################################################'
+		sudo apt update &&
+		sudo apt full-upgrade -y &&
+	echo '#############################################################'
+	echo '#                 APT clean up	                          #'
+	echo '#############################################################'
+		sudo apt-get autoremove --purge &&
+		sudo apt-get -y autoclean &&
+		sudo apt-get -y clean &&
+	echo '#############################################################'
+	echo '#               System updated!	                          #'
+	echo '#############################################################'
+	}
 ##############################################################
 # Script
 ##############################################################
 	clear
-	sudo pwd #enter `sudo` password
+	sudo pwd # needs root privileges, enter "sudo" credentials
 	clear
 echo '   Hallo '$USER', welcome to '$HOSTNAME'!     '
-echo '   ncinfo.sh will proceed...                  '
+echo ''
+        hostnamectl; ## System overview
+echo ''
 echo '=========================================   '
-echo '       System imformation!                       '
+echo '       System information!                       '
 echo ''
-	echo     "	      Host: "$HOSTNAME ;
-	echo     "	      Date: "$DATUM ;
-	echo     "	      Time: "$ZEIT ;
-  	echo -ne "	    LAN-IP: "; hostname -I ;
-	echo -ne "	    EXT-IP: "$EXTIP ;
-echo ''
-	hostnamectl;
+	echo     "      |     Host:   ""$HOSTNAME"; ## Hostname des Systems
+	echo     "      |     Date:   ""$DATUM"; ## aktuelles Systemdatum
+	echo     "      |     Time:   ""$ZEIT" ; ## aktuelle Systemzeit
+	echo -ne "      |   LAN-IP:   "; ip -4 addr show $LAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## LAN IP
+	echo -ne "      |  WLAN-IP:   "; ip -4 addr show $WLAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## WLAN-IP
+	echo -ne "      |   EXT-IP:   "; dig +short myip.opendns.com @resolver1.opendns.com ## external IP
 echo ''
 echo '-------------------------------------------------'
 echo '       System services and messages!             '
 echo ''
-	echo -ne "	Nextcloud Service:	"; snap services nextcloud.apache | grep 'nextcloud' >/dev/null && echo "läuft!" || echo "gestoppt!"
-	echo -ne "	   Nextcloud Cron:	"; snap services nextcloud.nextcloud-cron | grep -oPw 'aktiv' >/dev/null && echo "läuft!" || echo "gestoppt!"
-	echo -ne "	  System up since:	"; uptime -p ; #uptime
-	echo -ne "	      Last reboot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #las reboot
-	echo	 "	Updates available?	"$CheckUpdate ; #updates available?
-	echo	 "	  Reboot required?	"$CheckReboot ; #reboot required?
+	echo -ne "      |   System up since:	"; uptime -p ; #check wie lange läuft System schon
+        echo -ne "      |         Last boot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; # Check last reboot
+        echo     "      |    System updates?	" $CheckUpdates ; # check for system upgrades
+        echo     "      |   Reboot required?	" $CheckReboot ; # check if system reboot is required
 echo ''
-sar -u 1 2
-echo ''
-echo '-------------------------------------------------'
-echo '-------------------------------------------------'
-echo '       Snap version being used!              '
-echo ''
-	echo	"	-- Current Snap Version: "
-	snap version # current snap version infos
-echo ''
-	echo 	"	-- Current Nextcloud snap: "
-	snap list nextcloud --all # List Nextcloud snap info's
-echo ''
- 	echo	"	-- Nextcloud snap services:"
- 	echo	"				"; sudo snap services nextcloud #List Nextcloud snap services
 echo ''
 echo '       ==================================   '
-read -p "  Enter to continue... Crtl+c to close..."
+echo '       Memory and disk usage overview!            '
 echo ''
-	clear
-echo ''
-echo '       Memory an drive usage!   '
-echo ''
-echo '       ==================================   '
-echo '       Memory usage!            '
-echo ''
-	sudo free -tmh
-echo ''
-##      sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT
-	sudo lsblk
-echo ''
-echo '  discovering disk usage, please wait...          '
-echo ''
-	cd / && sudo du -hsx --exclude=proc * | sort -rh | head -5
-echo ''
-echo '-------------------------------------------------'
-echo '       Nextcloud Data directory!         '
-echo ''
-	sudo du -hs /var/snap/nextcloud/common/nextcloud/data
-echo ''
-echo '-------------------------------------------------'
-echo '       Largest files in Nextcloud data directory!    '
-echo ''
-	sudo find /var/snap/nextcloud/common/nextcloud/data -type f -printf "%s\t%p\n" | sort -n | tail -1 &&
-echo ''
-echo '-------------------------------------------------'
-echo '       Nextcloud log size!                  '
-echo ''
-	sudo du -hs /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
-echo ''
-echo '-------------------------------------------------'
-echo '       Last entry in Nextcloud log         '
-echo ''
-	sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
-echo ''
-echo " NOTE: delete Nextcloud 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log' "
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL # View disk usage ignoring loop
 echo ''
 read -p "  Enter to continue... Crtl+c to close..."
-echo ''
 	clear
 echo ''
-echo '       Last logins on the system!   '
-echo ''
-echo '       ==================================   '
-echo ''
-echo '-------------------------------------------------'
-echo '       Logins & System tasks           '
-echo ''
-	sudo last -aFixn 5  ; ## last 5 successfull logins
-echo ''
-echo ''
-echo '-------------------------------------------------'
-echo '       Last unsuccessfull logins    '
-echo ''
-	sudo lastb -aFin 5 ; ## last 5 bad logins
-echo ''
+	AptUpdate # start system update and upgrade and clean up
+exit
