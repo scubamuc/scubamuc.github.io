@@ -2,96 +2,93 @@
   #!/bin/bash
 
 ##############################################################
-# Script Beschreibung -scubamuc- https://scubamuc.github.io/ #
+# Script description  -scubamuc- https://scubamuc.github.io/ #
 ##############################################################
-# Mit SysInfo wird ein Systemüberblick ausgegeben. 
-# Es werden zusätzliche Systemwerte angezeigt und abschließend
-# eine Option zum Systemupdate abgefragt.
+# Script to display a quick overview of system information and
+# system status. 
+# Required packages:
+# Sysstat: `sudo apt install sysstat`
 ##############################################################
-# VARIABLEN #
+# VARIABLES #
 ##############################################################
-LOG="/home/$USER/script.log"  ## Lagdatei
-DATUM=`date +"%F"` ## Datumvariable
-ZEIT=`date +"%T"`  ## Zeitvariable
-ZIEL="/home/$USER/Pfad"  ## Zieldatei
-QUELLE="/home/$USER/Pfad" ## Quelldatei
-LAN=$(ls /sys/class/net | grep -oP 'br0') ## Eternet Interface
+LOG="/home/$USER/script.log"  ## Log file
+DATUM=`date +"%F"` ## Date format
+ZEIT=`date +"%T"`  ## Time format
+ZIEL="/home/$USER/Pfad"  ## Targe path
+QUELLE="/home/$USER/Pfad" ## Source path
+LAN=$(ls /sys/class/net | grep en) ## Eternet Interface
 WLAN=$(ls /sys/class/net | grep wl) ## Wireless Interface
 EXTIP=$(dig +short myip.opendns.com @resolver1.opendns.com)
 ##############################################################
-# FUNKTION #
+# FUNCTIONS #
 ##############################################################
-## Check ob neustart notwendig ##
+## Check if reboot is required ##
 CheckReboot()
         {
-        	sudo /usr/lib/update-notifier/update-motd-reboot-required
+                sudo /usr/lib/update-notifier/update-motd-reboot-required
         }
 
-## Check ob Updates verfügbar ##
+
+## Check if updates are available ##
 CheckUpdates()
 	{
 		sudo /usr/lib/update-notifier/update-motd-updates-available
 	}
 
-## Apt Update und Apt Upgrade ##
+## Upgrade and clean APT ##
 AptUpdate()
 	{
 	echo '#############################################################'
-	echo '#                 APT Update durchführen                    #'
+	echo '#                 APT Update 	                          #'
 	echo '#############################################################'
 		sudo apt update &&
 		sudo apt full-upgrade -y &&
 	echo '#############################################################'
-	echo '#                 APT Bereinigung.....                      #'
+	echo '#                 APT clean up	                          #'
 	echo '#############################################################'
 		sudo apt-get autoremove --purge &&
 		sudo apt-get -y autoclean &&
 		sudo apt-get -y clean &&
 	echo '#############################################################'
-	echo '#               System ist aktuell!                         #'
+	echo '#               System updated!	                          #'
 	echo '#############################################################'
 	}
 ##############################################################
-# Script Beginn
+# Script
 ##############################################################
 	clear
-	sudo pwd #einmalige Passworteingabe
+	sudo pwd # needs root privileges, enter "sudo" credentials
 	clear
-echo '   Hallo '$USER', wllkommen auf '$HOSTNAME'!   '
-echo '   =========================================   '
+echo '   Hallo '$USER', welcome to '$HOSTNAME'!     '
 echo ''
-	hostnamectl; ## Systemdienst übersicht
+        hostnamectl; ## System overview
 echo ''
-echo '       ----------------------------------   '
-echo '       System Information!                       '
+echo '=========================================   '
+echo '       System information!                       '
 echo ''
-##	echo	"	   Host: "$HOSTNAME; ## Hostname des Systems
-	echo	"	  Datum: "$DATUM; ## aktuelles Systemdatum
-	echo	"	   Zeit: "$ZEIT ; ## aktuelle Systemzeit
-	echo -ne "	 LAN-IP: "; hostname -I ; ## LAN-IP
-##	echo -ne "	 LAN-IP: "; ip -4 addr show $LAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## LAN-IP
-##	echo -ne "	WLAN-IP: "; ip -4 addr show $WLAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## WLAN-IP
-	echo -ne "	 EXT-IP: "; dig +short myip.opendns.com @resolver1.opendns.com ## externe IP
+	echo     "      |     Host:   ""$HOSTNAME"; ## Hostname des Systems
+	echo     "      |     Date:   ""$DATUM"; ## aktuelles Systemdatum
+	echo     "      |     Time:   ""$ZEIT" ; ## aktuelle Systemzeit
+	echo -ne "      |   LAN-IP:   "; ip -4 addr show $LAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## LAN IP
+	echo -ne "      |  WLAN-IP:   "; ip -4 addr show $WLAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## WLAN-IP
+	echo -ne "      |   EXT-IP:   "; dig +short myip.opendns.com @resolver1.opendns.com ## external IP
 echo ''
-echo '       ----------------------------------   '
-echo '       System Dienste und Meldungen!             '
+echo '-------------------------------------------------'
+echo '       System services and messages!             '
 echo ''
-	echo -ne "	System Läuft seit: "; uptime -p ; #check wie lange läuft System schon
-	echo -ne "	 Letzter Neustart: "; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
-	echo     "	   System Updates? " $CheckUpdates ; #prüfe nach ob Updates verfügbar sind
-	echo     "	  System Neustart? " $CheckReboot ; #prüfe nach ob reboot erforderlich ist
+	echo -ne "      |   System up since:	"; uptime -p ; #check wie lange läuft System schon
+        echo -ne "      |         Last boot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; # Check last reboot
+        echo     "      |    System updates?	" $CheckUpdates ; # check for system upgrades
+        echo     "      |   Reboot required?	" $CheckReboot ; # check if system reboot is required
+echo ''
 echo ''
 echo '       ==================================   '
-echo '       Gesamtspeicher auf dem System!       '
+echo '       Memory and disk usage overview!            '
 echo ''
-##	sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL
-	sudo lsblk
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL # View disk usage ignoring loop
 echo ''
-	free -m
+read -p "  Enter to continue... Crtl+c to close..."
+	clear
 echo ''
-echo ''
-	read -p "  System Upgrade mit Enter... Strg+c für Ende..."
-        clear
-echo ''
-        AptUpdate
+	AptUpdate # start system update and upgrade and clean up
 exit
