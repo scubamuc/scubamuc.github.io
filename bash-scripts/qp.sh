@@ -1,5 +1,6 @@
   #!/bin/bash
 ##############################################################
+# Script -scubamuc- https://scubamuc.github.io/ 
 # Beschreibung -- Quick Ping & Speed Test --
 # - Voraussetzung 'sudo apt install speedtest-cli'
 # - Siehe Variablen
