@@ -1,7 +1,7 @@
   #!/bin/bash
 
 ##############################################################
-# Script Beschreibung #
+# Script Beschreibung -scubamuc- https://scubamuc.github.io/ #
 ##############################################################
 # Dieses Skript dient zur Übersicht über die Platzverhältnisse
 # auf dem Nextcloud Server. Es werden zusätzliche Systemwerte
