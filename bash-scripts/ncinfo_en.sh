@@ -98,7 +98,7 @@ echo ''
 echo '       ==================================   '
 echo '       Disk space!  			  '
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT | grep -v "loop" # View disk usage ignoring loop 
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL | grep -v "ram" # List drives excluding loop (-e7 = loop) and ram
 echo ''
 echo '  Disovering disk usage, please wait... '
 echo ''
