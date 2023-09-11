@@ -100,7 +100,7 @@ echo '       Gesamtspeicher auf dem System!            '
 echo ''
 	sudo free -tmh
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT | grep -v "ram"
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL | grep -v "ram" # Liste alle laufwerke ohne (-e7 = loop) und ram
 # echo ''
 #       sudo df -ah /dev/sda1 &&
 #       sudo df -ah /dev/sda2 &&
