@@ -85,7 +85,7 @@ echo ''
 echo '       ==================================   '
 echo '       Memory and disk usage overview!            '
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL # View disk usage ignoring loop
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL # View disk usage ignoring loop | grep -v "loop"
 echo ''
 read -p "  Enter to continue... Crtl+c to close..."
 	clear
