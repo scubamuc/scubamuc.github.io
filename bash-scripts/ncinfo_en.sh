@@ -98,7 +98,7 @@ echo ''
 echo '       ==================================   '
 echo '       Disk space!  			  '
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT # View disk usage ignoring loop
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL,MOUNTPOINT | grep -v "loop" # View disk usage ignoring loop 
 echo ''
 echo '  Disovering disk usage, please wait... '
 echo ''
