@@ -105,7 +105,7 @@ echo ''
 echo '       ----------------------------------   '
 echo '       Aktuelle Speicherauslastung!         '
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL | grep -v "loop"
 echo ''
 	sudo free -m
 echo ''
