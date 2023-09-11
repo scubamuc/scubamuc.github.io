@@ -105,7 +105,7 @@ echo ''
 echo '       ----------------------------------   '
 echo '       Aktuelle Speicherauslastung!         '
 echo ''
-        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL | grep -v "loop"
+        sudo lsblk -e7 -o NAME,SIZE,FSUSED,FSUSE%,FSAVAIL | grep -v "ram" # Liste alle laufwerke ohne (-e7 = loop) und ram
 echo ''
 	sudo free -m
 echo ''
