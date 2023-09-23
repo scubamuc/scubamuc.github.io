@@ -19,15 +19,14 @@ echo '#############################################################'
 # echo '#############################################################'
 # echo '#                 APT Update durchführen                    #' 
 # echo '#############################################################'
+# der Schalter -y ist für YES, keine Eingabe mehr nötig
 	sudo apt update; 
 	sudo apt full-upgrade -y;
 	notify-send 'Systemaktualisierung beendet!' ## HINWEIS, ausschalten für cronjob!
-##apt update && apt dist-upgrade -y && apt-get --purge autoremove##
 echo '#############################################################'
 echo '#                 APT Bereinigung.....                      #' 
 echo '#############################################################'
 # autoremove löscht alle alten Kernels 
-# der Schalter -y ist für YES, keine Eingabe mehr nötig
 	sudo apt-get -y autoremove --purge;
 	sudo apt-get -y autoclean;
 	sudo apt-get -y clean;
@@ -37,7 +36,6 @@ echo '#############################################################'
 ##	rm -rf ~/.cache/mozilla/firefox/* ; # bereigige Firefox caches
 echo '#############################################################'
 echo '#               System ist aktuell!                         #'
-echo '#          Alle Caches wurden gelöscht.....                 #' 
 echo '#############################################################'
-	notify-send 'Alle Caches wurden gelöscht!' ## HINWEIS, ausschalten für cronjob!
+	notify-send 'System ist aktuell!' ## HINWEIS, ausschalten für cronjob!
 	exit
