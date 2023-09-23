@@ -3,20 +3,6 @@ echo '#############################################################'
 echo '#            Hallo '$USER'! Update & Upgrade                #'
 echo '#        Das System wird aktualisiert und bereinigt         #' 
 echo '#############################################################'
-##############################################################
-# FUNKTION #
-##############################################################
-## Check ob neustart notwendig ##
-	function neustart {
-	  if [ -f /var/run/reboot-required ]; then
-	    read -p "Restart needed. Reboot? (y/N) " answer;
-	    if [ "$answer" = "y" -o "$answer" = "Y" ]; then
-	      reboot;
-	    fi
-	  else
-	    echo "No restart";
-	  fi
-	}
 #############################################################
 #                 APT Update durchführen                    #
 #############################################################
