@@ -70,9 +70,9 @@ echo ''
 	echo	"	  Datum: "$DATUM; ## aktuelles Systemdatum
 	echo	"	   Zeit: "$ZEIT ; ## aktuelle Systemzeit
 	echo -ne "	 LAN-IP: "; hostname -I ; ## LAN-IP
-##	echo -ne "	 LAN-IP: "; ip -4 addr show $LAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## LAN-IP
-##	echo -ne "	WLAN-IP: "; ip -4 addr show $WLAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## WLAN-IP
-	echo -ne "	 EXT-IP: "; dig +short myip.opendns.com @resolver1.opendns.com ## externe IP
+##	echo -ne "	 LAN-IP: "; ip -4 addr show "$LAN" | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## LAN-IP
+##	echo -ne "	WLAN-IP: "; ip -4 addr show "$WLAN" | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## WLAN-IP
+	echo -ne "	 EXT-IP: "; "$EXTIP" ## externe IP
 echo ''
 echo '       ----------------------------------   '
 echo '       System Dienste und Meldungen!             '
