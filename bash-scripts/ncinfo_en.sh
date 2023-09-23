@@ -20,8 +20,6 @@ QUELLE="/home/$USER/Pfad" ## Source path
 LAN=$(ls /sys/class/net | grep 'br0') ## Eternet Interface
 WLAN=$(ls /sys/class/net | grep 'wlx') ## Wireless Interface
 EXTIP=$(dig +short myip.opendns.com @resolver1.opendns.com)
-IPEXT=curl ifconfig.me ## external IP
-IPLAN=hostname -I ## local IP
 ##############################################################
 # FUNCTIONS #
 ##############################################################
@@ -65,10 +63,8 @@ echo ''
 echo '-------------------------------------------------'
 echo '        System services and messages!            '
 echo ''
-##	echo -ne "	Nextcloud service:	"; snap services nextcloud.apache | grep 'nextcloud' >/dev/null && echo "running!" || echo "stopped!"
-##	echo -ne "	   Nextcloud cron:	"; snap services nextcloud.nextcloud-cron | grep -oPw 'aktiv' >/dev/null && echo "running!" || echo "stopped!"
-##	echo -ne "	   Coturn service:	"; ps -C turnserver >/dev/null && echo "running!" || echo "stopped!"
-##	echo -ne "	   X11VNC service:	"; ps -C x11vnc >/dev/null && echo "running!" || echo "stopped!"
+	echo -ne "	Nextcloud service:	"; snap services nextcloud.apache | grep 'nextcloud' >/dev/null && echo "running!" || echo "stopped!"
+	echo -ne "	   Nextcloud cron:	"; snap services nextcloud.nextcloud-cron | grep -oPw 'aktiv' >/dev/null && echo "running!" || echo "stopped!"
 	echo -ne "	  System up since:	"; uptime -p ; #check uptime
 	echo -ne "	 	Last boot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check last boot
 	echo -ne "	  Reboot required?	"; pro system reboot-required ; #check reboot required
