@@ -70,7 +70,7 @@ echo ''
 	echo -ne "	    X11VNC Server:	"; ps -C x11vnc >/dev/null && echo "läuft!" || echo "gestoppt!"
 	echo -ne "	System Läuft seit:	"; uptime -p ; #check wie lange läuft System schon
 	echo -ne "	 Letzter Neustart:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
-	echo -ne "	  System Neustart?	"; sudo /usr/lib/update-notifier/update-motd-reboot-required ; #prüfe nach ob reboot erforderlich ist
+	echo -ne "	  System Neustart?	"; pro system reboot-required ; #prüfe nach ob reboot erforderlich ist
 echo ''
 echo ''
 sar -u 1 2
