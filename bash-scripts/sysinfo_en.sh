@@ -71,12 +71,12 @@ echo ''
 	echo     "      |     Time:   ""$ZEIT" ; ## aktuelle Systemzeit
 	echo -ne "      |   LAN-IP:   "; hostname -I ; ## LAN IP
 	echo -ne "      |  WLAN-IP:   "; ip -4 addr show $WLAN | grep -oP '(?<=inet\s)\d+(\.\d+){3}' ; ## WLAN-IP
-	echo -ne "      |   EXT-IP:   "; dig +short myip.opendns.com @resolver1.opendns.com ## external IP
+	echo -ne "      |   EXT-IP:   "; "$EXTIP" ## external IP
 echo ''
 echo '-------------------------------------------------'
 echo '       System services and messages!             '
 echo ''
-	echo -ne "      |   System up since:	"; uptime -p ; #check wie lange läuft System schon
+	echo -ne "      |   System up since:	"; uptime -p ; #check uptime
         echo -ne "      |         Last boot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; # Check last reboot
         echo     "      |    System updates?	" $CheckUpdates ; # check for system upgrades
         echo -ne "      |   Reboot required?	" pro system reboot-requided ; # check if system reboot is required
