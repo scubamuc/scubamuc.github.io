@@ -71,7 +71,7 @@ echo ''
 ##	echo -ne "	   X11VNC service:	"; ps -C x11vnc >/dev/null && echo "running!" || echo "stopped!"
 	echo -ne "	  System up since:	"; uptime -p ; #check uptime
 	echo -ne "	 	Last boot:	"; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check last boot
-	echo -ne "	  Reboot required?	"; sudo /usr/lib/update-notifier/update-motd-reboot-required ; #check reboot required
+	echo -ne "	  Reboot required?	"; pro system reboot-required ; #check reboot required
 echo ''
 echo ''
 	sar -u 1 2
