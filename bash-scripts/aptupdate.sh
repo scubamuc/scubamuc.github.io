@@ -21,7 +21,7 @@ echo '#############################################################'
 # echo '#############################################################'
 	sudo apt update; 
 	sudo apt full-upgrade -y;
-notify-send 'Systemaktualisierung beendet!' ## HINWEIS, ausschalten für cronjob!
+	notify-send 'Systemaktualisierung beendet!' ## HINWEIS, ausschalten für cronjob!
 ##apt update && apt dist-upgrade -y && apt-get --purge autoremove##
 echo '#############################################################'
 echo '#                 APT Bereinigung.....                      #' 
@@ -39,5 +39,5 @@ echo '#############################################################'
 echo '#               System ist aktuell!                         #'
 echo '#          Alle Caches wurden gelöscht.....                 #' 
 echo '#############################################################'
-notify-send 'Alle Caches wurden gelöscht!' ## HINWEIS, ausschalten für cronjob!
+	notify-send 'Alle Caches wurden gelöscht!' ## HINWEIS, ausschalten für cronjob!
 	exit
