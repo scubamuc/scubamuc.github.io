@@ -23,7 +23,7 @@ echo '#############################################################'
 # der Schalter -y ist für YES, keine Eingabe mehr nötig
 	sudo apt update; 
 	sudo apt full-upgrade -y;
-	notify-send 'Systemaktualisierung beendet!' ## HINWEIS, ausschalten für cronjob!
+	notify-send 'Systemaktualisierung beendet!' #ausschalten für cronjob!
 #############################################################
 #                 APT Bereinigung.....                      #
 #############################################################
@@ -38,5 +38,5 @@ echo '#############################################################'
 echo '#############################################################'
 echo '#               System ist aktuell!                         #'
 echo '#############################################################'
-	notify-send 'System ist aktuell!' ## HINWEIS, ausschalten für cronjob!
+	notify-send 'System ist aktuell!' #ausschalten für cronjob!
 	exit
