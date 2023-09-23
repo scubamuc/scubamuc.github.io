@@ -26,9 +26,9 @@ echo '#############################################################'
 echo '#############################################################'
 echo '#                 APT Bereinigung.....                      #' 
 echo '#############################################################'
-# autoremove löscht alle alten Kernels
-	sudo apt-get autoremove --purge;
+# autoremove löscht alle alten Kernels 
 # der Schalter -y ist für YES, keine Eingabe mehr nötig
+	sudo apt-get -y autoremove --purge;
 	sudo apt-get -y autoclean;
 	sudo apt-get -y clean;
 ##	rm -rf ~/.cache/chromium/* ; # bereigige Chromium caches
