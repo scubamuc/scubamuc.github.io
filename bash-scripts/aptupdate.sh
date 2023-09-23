@@ -1,6 +1,6 @@
   #!/bin/bash
 echo '#############################################################'
-echo '#            Hallo '$USER'! Update & Upgrade                  #'
+echo '#            Hallo '$USER'! Update & Upgrade                #'
 echo '#        Das System wird aktualisiert und bereinigt         #' 
 echo '#############################################################'
 ##############################################################
