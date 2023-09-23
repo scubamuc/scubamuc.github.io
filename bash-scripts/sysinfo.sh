@@ -77,14 +77,10 @@ echo ''
 echo '       ----------------------------------   '
 echo '       System Dienste und Meldungen!             '
 echo ''
-	echo -ne "	 	      VPN: "; ps -ef | grep 'pivpn' >/dev/null && echo "läuft!" || echo "gestoppt!" ## Nextcloud Status
-	echo -ne "	 	     VPN2: "; ps -ef | grep 'pivpn2' >/dev/null && echo "läuft!" || echo "gestoppt!" ## Nextcloud Status
-	echo -ne "		   Pihole: "; ps -ef | grep 'pihole' >/dev/null && echo "läuft!" || echo "gestoppt!" ## Nextcloud Status
-	echo -ne "	 	Nextcloud: "; ps -ef | grep 'nextcloud' >/dev/null && echo "läuft!" || echo "gestoppt!" ## Nextcloud Status
         echo -ne "	    X11VNC Server: "; ps -C x11vnc >/dev/null && echo "läuft!" || echo "gestoppt!"
 	echo -ne "	System Läuft seit: "; uptime -p ; #check wie lange läuft System schon
 	echo -ne "	 Letzter Neustart: "; last reboot -F | head -1 | awk '{print $5,$6,$7,$8,$9}' ; #check letzter neustart
-	echo -ne "	  System Neustart: "; pro system reboot-required ; #prüfe nach ob reboot erforderlich ist
+	echo -ne "	  System Neustart? "; pro system reboot-required | grep 'no' >/dev/null && echo "nicht erforderlich!" || echo "ist erforderlich!" ; #prüfe nach ob reboot erforderlich ist
 echo ''
 echo ''
 echo '   =========================================   '
