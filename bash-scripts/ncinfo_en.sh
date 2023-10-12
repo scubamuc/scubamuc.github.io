@@ -113,14 +113,12 @@ echo ''
 echo '-------------------------------------------------'
 echo '       Nextcloud log size!                  '
 echo ''
-	sudo du -hs /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
+	sudo du -hs /var/snap/nextcloud/current/logs/nextcloud.log
 echo ''
 echo '-------------------------------------------------'
 echo '       Last log entries in Nextcloud log         '
 echo ''
-	sudo tail -n1 /var/snap/nextcloud/common/nextcloud/data/nextcloud.log
-echo ''
-echo " NOTE: Delete Nextcloud: 'sudo rm /var/snap/nextcloud/common/nextcloud/data/nextcloud.log' "
+	sudo tail -n5 /var/snap/nextcloud/current/logs/nextcloud.log
 echo ''
 	read -p "  Enter to continue... Crtl+c to close..."
 echo ''
