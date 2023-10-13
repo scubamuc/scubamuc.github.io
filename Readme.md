@@ -33,7 +33,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 >  * PSU: 16W/12W load/idle
 >  * RAM: 16GB
 >  * SSD: 500GB
-> <img src="https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/images/m92p-stacked%230.png" width="400">
+> <img src="https://github.com/scubamuc/scubamuc.github.io/assets/54933878/da9e2da8-e00f-41d0-a207-c340f42743e3" width="400">
 ----
 
 ## 1.2 OS & Software
