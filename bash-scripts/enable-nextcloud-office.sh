@@ -1,8 +1,12 @@
   #!/bin/bash
 ##############################################################
-# Re-enable Nextcloud office & CODE on Nextcloud snap #
+# Re-enable Nextcloud office & CODE on Nextcloud snap        #
+# Re-enable Nextcloud office & CODE on Nextcloud snap        #
+# This skript re-enables Nextcloud office and CODE on        #
+# Nextcloud snap installation, where Nextcloud office        #
+# loses or changes its wonrking configuration after an       #
+# app-update or app-upgrade                                  #
 ##############################################################
-
 # 1. Disable CODE
 sudo nextcloud.occ app:disable richdocumentscode ;
 # 2. Disable Nextcloud office
