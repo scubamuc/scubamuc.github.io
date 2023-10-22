@@ -1,6 +1,6 @@
   #!/bin/bash
 ##############################################################
-# Re-enable Nextcloud office & CODE on Nextcloud snap        #
+# Script description  -scubamuc- https://scubamuc.github.io/ #
 # Re-enable Nextcloud office & CODE on Nextcloud snap        #
 # This skript re-enables Nextcloud office and CODE on        #
 # Nextcloud snap installation, where Nextcloud office        #
@@ -19,5 +19,4 @@ sudo nextcloud.occ config:app:delete richdocuments wopi_url ;
 sudo nextcloud.occ app:enable richdocuments ;
 # 6. Enable CODE
 sudo nextcloud.occ app:enable richdocumentscode ;
-
 exit
