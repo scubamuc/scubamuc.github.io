@@ -33,6 +33,7 @@ Snap snapshots may be scripted, see example below
 #!/bin/bash
 ##############################################################
 ## Nextcloud-snap backup with snap snapshots -- SCUBA --
+## -scubamuc- https://scubamuc.github.io/ 
 ##############################################################
 ## create target directory "sudo mkdir /media/SNAPBACKUP"
 ## snapshot rotation 30 days 
