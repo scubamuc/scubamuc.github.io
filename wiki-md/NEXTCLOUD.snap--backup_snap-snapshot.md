@@ -1,6 +1,6 @@
-# Nextcloud-snap snapshot
+# Nextcloud snap snapshot
 
-## Backup Nextcloud-snap using Snap snapshots
+## Backup Nextcloud snap using Snap snapshots
 
 [documentation](https://snapcraft.io/docs/snapshots)
 
