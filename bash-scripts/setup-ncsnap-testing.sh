@@ -12,7 +12,7 @@
 	sudo nextcloud.occ config:system:set default_phone_region --value="US" ;
 # set http compression
 	sudo snap set nextcloud http.compression=true ;
-## Set Email
+## Set email
 	sudo nextcloud.occ config:system:set mail_from_address --value="cloud.admin" ;
 	sudo nextcloud.occ config:system:set mail_smtpmode --value="smtp" ;
 	sudo nextcloud.occ config:system:set mail_sendmailmode --value="smtp" ;
