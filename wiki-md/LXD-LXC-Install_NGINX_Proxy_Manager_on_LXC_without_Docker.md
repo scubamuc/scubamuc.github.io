@@ -4,15 +4,16 @@ Some folks prefer to install NGINX Proxy Manager in an LXC container on LXD or P
 
 ## Procedure
 
-### - Create/launch *Ubuntu* LXC container
-### - Ensure  (*IP from DHCP*) [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
-### - Configure router to ensure static IP from DHCP, forward port 80 and port 443
-### - Access container as root using LXC-shell
-### - Update and upgrade 
-### - Add users 
-### - Launch setup script
-### - Configure NGINX
-### - Configure services
+#### - Create/launch *Ubuntu* LXC container
+#### - Ensure  (*IP from DHCP*) [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
+#### - Configure router to ensure static IP from DHCP, forward port 80 and port 443
+#### - Access container as root using LXC-shell
+#### - Update and upgrade 
+#### - Add users 
+#### - Launch setup script
+#### - Configure NGINX
+#### - Configure services
+----
 
 #### Update and upgrade
 ```
@@ -26,7 +27,7 @@ apt update && apt full-upgrade
  useradd -s /bin/false npm
 ```
 
-#### Run nginx-proxy-manager LXC setup script:
+#### Launch nginx-proxy-manager LXC setup script:
 
 ```
 wget --no-cache -qO - https://raw.githubusercontent.com/ej52/proxmox/main/lxc/nginx-proxy-manager/setup.sh | sh
@@ -46,11 +47,13 @@ wget --no-cache -qO - https://raw.githubusercontent.com/ej52/proxmox/main/lxc/ng
 
 #### Enable services: 
 ```
-systemctl enable openresty && systemctl enable npm
+systemctl enable openresty
+systemctl enable npm
 ```  
 #### Start services: 
   ```
-  systemctl start openresty && systemctl start npm
+systemctl start openresty
+systemctl start npm
 ```
     
 #### Access **Nginx Proxy Manager** admin panel (*IP.ADDRESS.OF.SERVER:**81***) using local browser
@@ -94,5 +97,6 @@ wget --no-cache -qO - https://raw.githubusercontent.com/ej52/proxmox/main/lxc/ng
   
 #### Restart services: 
   ```
-  systemctl restart openresty && systemctl restart npm
+systemctl restart openresty
+systemctl restart npm
 ```
