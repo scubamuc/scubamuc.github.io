@@ -32,7 +32,7 @@ wget --no-cache -qO - https://raw.githubusercontent.com/ej52/proxmox/main/lxc/ng
 - start services: 
   - `systemctl start openresty`
   - `systemctl start npm`
-- access **Nginx Proxy Manager** admin panel (*IP.OF.SERVER:**81***) using local browser
+- access **Nginx Proxy Manager** admin panel (*IP.ADDRESS.OF.SERVER:**81***) using local browser
 
 ```
 http://ip.address.of.server
