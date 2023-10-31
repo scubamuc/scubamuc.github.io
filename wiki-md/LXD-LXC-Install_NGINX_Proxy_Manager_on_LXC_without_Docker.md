@@ -4,15 +4,15 @@ Some folks prefer to install NGINX Proxy Manager in an LXC container on LXD or P
 
 ## Procedure
 
-#### - Create/launch *Ubuntu* LXC container
-#### - Ensure  (*IP from DHCP*) [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
-#### - Configure router to ensure static IP from DHCP, forward port 80 and port 443
-#### - Access container as root using LXC-shell
-#### - Update and upgrade 
-#### - Add users 
-#### - Launch setup script
-#### - Configure NGINX
-#### - Configure services
+* Create/launch *Ubuntu* LXC container
+* Ensure  (*IP from DHCP*) [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
+* Configure router to ensure static IP from DHCP, forward port 80 and port 443
+* Access container as root using LXC-shell
+* Update and upgrade 
+* Add users 
+* Launch setup script
+* Configure NGINX
+* Configure services
 ----
 
 #### Update and upgrade
