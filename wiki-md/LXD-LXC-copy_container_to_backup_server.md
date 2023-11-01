@@ -1,6 +1,6 @@
 # Syncronise/Copy containers between LXD servers
 
-Assuming you have two identical servers **LXD1** and **LXD2**. Both servers should be known to eachother by adding them to remotes respectively.
+Assuming you have two identical servers **LXD1** (LXD-server) and **LXD2** (LXD-backup). Both servers should be known to eachother by adding them to remotes respectively.
 
 #### On production **LXD1** server
 
