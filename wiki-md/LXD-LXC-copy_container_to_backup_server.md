@@ -31,7 +31,7 @@ lxc list LXD2:
 ```
 
 Copying or syncronising containers between servers can be scripted.
-Be sure to stop the containers to be syncronised on ***LXD2*** server.
+Be sure to *stop* the containers to be syncronised on ***LXD2*** server.
 
 Example script:
 
@@ -41,10 +41,10 @@ Example script:
 ## Syncronise/copy containers from LXD1 to LXD2 server
 ##############################################################
 ## Stop all containers on backup-server
-  ssh <LXD2.backup.server.ip> 'lxc stop --all'
+  ssh <ip.address.of.LXD2> 'lxc stop --all'
 #copy container1
-  lxc copy CONTAINER1 LXD-BACKUP: --stateless --refresh ;
+  lxc copy CONTAINER1 LXD2: --stateless --refresh ;
 #copy container2
-  lxc copy CONTAINER2 LXD-BACKUP: --stateless --refresh ;
+  lxc copy CONTAINER2 LXD2: --stateless --refresh ;
 exit
 ```
