@@ -1,6 +1,6 @@
 # Syncronise/Copy containers between LXD servers
 
-Assuming you have two identical servers **LXD1** (LXD-server) and **LXD2** (LXD-backup). Both servers should be known to eachother by adding them to remotes respectively.
+Assuming you have two identical servers **LXD1** (LXD-server) and **LXD2** (LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers must be available.
 
 #### On production **LXD1** server
 
@@ -31,6 +31,7 @@ lxc list LXD2:
 ```
 
 Copying or syncronising containers between servers can be scripted.
+Be sure to stop the containers to be syncronised on ***LXD2*** server.
 
 Example script:
 
@@ -39,6 +40,8 @@ Example script:
 ##############################################################
 ## Syncronise/copy containers from LXD1 to LXD2 server
 ##############################################################
+## Stop all containers on backup-server
+  ssh <LXD2.backup.server.ip> 'lxc stop --all'
 #copy container1
   lxc copy CONTAINER1 LXD-BACKUP: --stateless --refresh ;
 #copy container2
