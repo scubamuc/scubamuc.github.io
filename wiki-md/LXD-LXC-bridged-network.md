@@ -14,7 +14,7 @@ $ sudo nmcli con add type bridge-slave ifname eno1 master br0
 $ nmcli connection show
 ```
 
-**deactivate STP:**
+**Disable STP:**
 
 ```
 $ sudo nmcli con modify br0 bridge.stp no 
@@ -35,7 +35,7 @@ bridge.ageing-time: 300
 bridge.multicast-snooping: yes
 ```
 
-Deactivate the standard network connection. The bridged connection should start automatically:
+Disable the standard network connection. The bridged connection should start automatically:
 
 ```
 $ sudo nmcli con down standardconnection1
