@@ -43,7 +43,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [LXD](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) (_multiple LXC-containers_)
    * [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) LXD-server management GUI
 * Packages:
- `cockpit, htop, lnav, mc, openssh-server, sysstat`
+ `cockpit, htop, lnav, mc, openssh-server, sysstat, tmux`
 * Snaps: 
  `nextcloud, lxd, lxdmosaic,`
 
