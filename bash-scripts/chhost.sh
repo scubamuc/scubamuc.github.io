@@ -1,4 +1,8 @@
 #!/bin/bash
+##############################################################
+## -- SCUBA --
+## Script -scubamuc- https://scubamuc.github.io/ 
+##############################################################
 # change host name
 # current host name is $hostn
 hostn=$(cat /etc/hostname)
