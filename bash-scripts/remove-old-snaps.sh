@@ -1,4 +1,8 @@
 #!/bin/bash
+##############################################################
+## -- SCUBA --
+## Script -scubamuc- https://scubamuc.github.io/ 
+##############################################################
 # Removes old revisions of snaps
 # CLOSE ALL SNAPS BEFORE RUNNING THIS
 set -eu
