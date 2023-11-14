@@ -1,4 +1,8 @@
   #!/bin/bash
+##############################################################
+## -- SCUBA --
+## Script -scubamuc- https://scubamuc.github.io/ 
+##############################################################
 echo '#############################################################'
 echo '#            Hallo '$USER'! Update & Upgrade                #'
 echo '#        Das System wird aktualisiert und bereinigt         #' 
