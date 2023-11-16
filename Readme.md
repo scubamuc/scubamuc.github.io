@@ -23,7 +23,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Small [energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
 * Linux compatible
 * Ample resources  - (_5+ users_)
-* Install and forget - (_uptime 24/7_)
+* Low maintenence - (_uptime 24/7_)
 * Redundancy - (_failover, cold-standby & backup_)
 * Multiple services - (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
 
