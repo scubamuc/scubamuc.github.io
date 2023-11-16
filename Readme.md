@@ -20,7 +20,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 ## 1.1 Hardware
 **Requirements:**
 * Affordable, efficient, small 
-* Low [energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
+* Small [energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
 * Linux compatible
 * Ample resources  - (_5+ users_)
 * Install and forget - (_uptime 24/7_)
