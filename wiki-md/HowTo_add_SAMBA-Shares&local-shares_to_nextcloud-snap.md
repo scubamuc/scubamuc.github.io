@@ -6,7 +6,7 @@ When using nextcloud-snap there are a couple of things to consider in order to a
 
 ### External-storage app
 
-Please ensure that the external-storage app is installed in your nextcloud instance. Refer to your nextcloud manual for installing apps in your nextcloud instance.
+Ensure that the external-storage app is installed in your nextcloud instance. Refer to your nextcloud manual for installing apps in your nextcloud instance.
 
 ### Removable media
 
@@ -16,13 +16,13 @@ Also note that the interface providing the ability to access removable media is 
 $ sudo snap connect nextcloud:removable-media
 ```
 
-### Configure samba on your Linux machine
+### Configure samba on your host
 
-Samba should be correctly installed and configured on the machine running nextcloud-snap. Both SMB and CIFS file sharing protocol should be installed on the machine. Please refer to your distribution documentation for information. Similarly sharing protocolls such as sshfs, davfs etc. may be required.
+Samba should be correctly installed and configured on the host running nextcloud-snap. Both SMB and CIFS file sharing protocol should be installed on the host. Refer to your distribution documentation for information. Similarly sharing protocolls such as sshfs, davfs etc. may be required.
 
 ---
 
-On the machine running your nextcloud-snap the following steps are required;
+Requirements;
 
 ### Create Mount-directory
 
@@ -38,12 +38,12 @@ $ sudo mkdir /media/mountpoint
 
 ### Mount device or share in FSTAB
 
-Please refer to your distribution documentation for mounting devices or shares using **fstab** into the /media/ directory.
+Refer to your distribution documentation for mounting devices or shares using **fstab** into the /media/ directory.
 
 You can mount a device or network-share using the **UUID** or the device name **/dev/sdb** etc.   
-NOTE: The mount point should be in **/media/** in order to be available for nextcloud-snap.
+NOTE: The mount point should be in **/media/** or **/mnt/** in order to be available for nextcloud-snap.
 
-Mount points added in `/etc/fstab` pointing to `/media/mountpoint` or `media/devicename` . Please refer to your distribution documentation for editing important files with root privileges.
+Mount points added in `/etc/fstab` pointing to `/media/mountpoint` or `media/devicename` . Refer to your distribution documentation for editing important files with root privileges.
 
 Examples for **fstab** mounts:
 
@@ -73,7 +73,7 @@ UUID=device-xxx-xxx-xxx-id /media/DEVICENAME ext4 defaults, 0 0
 
 **Softlinks:**
 
-Note that you can also link a local directory or share into the /media/ directory using a softlink. Please refer to your distribution documentation for information on creating softlinks.
+Note that you can also link a local directory or share into the /media/ or /mnt/ directory using a softlink. Please refer to your distribution documentation for information on creating softlinks.
 
 Example of a softlink of a local directory:
 
