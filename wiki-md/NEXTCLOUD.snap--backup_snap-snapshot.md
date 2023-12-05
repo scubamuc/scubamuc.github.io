@@ -9,10 +9,19 @@ Snap snapshot will backup the entire Snap including configuration, apps, certifi
 
 ### Procedure
 
-* snap stop 'nextcloud'
-* snap save 'nextcloud'
-* snap start 'nextcloud'
-* find snapshot in `/var/lib/snapd/snapshots` and move to wherever
+ 1. **Stop Nextcloud** (optional but recommended)
+```
+sudo snap stop nextcloud
+```
+ 2. **Create snapshot**
+```
+sudo snap save nextcloud
+```
+ 3. **Start Nextcloud** (see step 1.)
+``` 
+sudo snap start nextcloud#
+```
+ 4. **Find snapshot** (`*.zip`) in `/var/lib/snapd/snapshots` and copy/move to wherever
 
 This works fine as weekly automatic cronjob as root and has the added convenience of easy Snap transfer to different server when needed. thus always 4 weeks of Snap snapshots on backup media.
 
@@ -102,9 +111,15 @@ exit
 
 ### Procedure
 
-1\. copy \*.zip from backup media to `/var/lib/snapd/snapshots`
+1. **Copy snapshot** (`*.zip`) from backup media to `/var/lib/snapd/snapshots`
 
-2\. discover snapshot-ID using `snap saved`
+2. **Discover snapshot-ID** using `snap saved`
+
+3. **Restore snapshot** 
+```
+sudo snap restore "snapshot-ID"
+```
+
 
 3\. issue command `sudo snap restore "snapshot-ID"`
 
