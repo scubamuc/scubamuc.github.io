@@ -1,8 +1,10 @@
 # **SYSTEM--Unattended Upgrades**
 https://ubuntu.com/server/docs/package-management
-## Automatic updates
 
-How to set up automatic updates on Ubuntu Server
+https://help.ubuntu.com/community/AutomaticSecurityUpdates
+## Automatic security updates
+
+How to set up automatic security updates on Ubuntu Server
 
 Automatic Updates in Ubuntu Server
 
