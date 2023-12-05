@@ -20,4 +20,4 @@
 
 # Alternative
 
-**Unattended upgrades**
+[**Unattended upgrades**](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)
