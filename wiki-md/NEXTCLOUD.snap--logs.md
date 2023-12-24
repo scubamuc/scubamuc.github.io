@@ -2,7 +2,7 @@
 
 Nextcloud-snap log locations:
 ```
-Logs for Nextcloud: `/var/snap/nextcloud/common/nextcloud/data/nextcloud.log`
+Logs for Nextcloud: `/var/snap/nextcloud/current/logs/nextcloud.log`
 Logs for Apache2:   `/var/snap/nextcloud/current/apache/logs/`
 Logs for Redis:     `/var/snap/nextcloud/current/redis/redis.log`
 Logs for PHP-FPM:   `/var/snap/nextcloud/current/php/php-fpm.log`
