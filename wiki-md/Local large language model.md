@@ -11,4 +11,4 @@
 3. In Nextcloud open *Administration settings* and go to section *Artificial intelligence* and select `Local Large language model` for all available entries.
 4. Optionally install \`Nextcloud assistant\` .
 
-![grafik.png](.attachments.190/grafik.png)
+![grafik](https://github.com/scubamuc/scubamuc.github.io/assets/54933878/4606b076-aa54-4d0a-a91f-40aa89d06d98)
