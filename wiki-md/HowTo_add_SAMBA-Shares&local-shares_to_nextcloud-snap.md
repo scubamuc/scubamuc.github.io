@@ -1,6 +1,6 @@
-## HowTo add samba-shares, local shares and devices as external-storage to nextcloud-snap
+## Add samba-shares, local shares as external-storage to nextcloud-snap
 
----
+----
 
 When using nextcloud-snap there are a couple of things to consider in order to add samba-shares and other network-shares as well as local-shares and USB-devices and HDD-devices as external-storage into your cloud instance.
 
@@ -13,27 +13,27 @@ Ensure that the external-storage app is installed in your nextcloud instance. Re
 Also note that the interface providing the ability to access removable media is not automatically connected upon install, so if you'd like to use external storage (or otherwise use a device in `/media` for data), you need to give the snap permission to access removable media by connecting that interface:
 
 ```
- sudo snap connect nextcloud:removable-media
+sudo snap connect nextcloud:removable-media
 ```
 
 ### Configure samba on your host
 
 Samba should be correctly installed and configured on the host running nextcloud-snap. Both SMB and CIFS file sharing protocol should be installed on the host. Refer to your distribution documentation for information. Similarly sharing protocolls such as sshfs, davfs etc. may be required.
 
----
+----
 
 Requirements;
 
 ### Create Mount-directory
 
 ```
- sudo mkdir /media/devicename
+sudo mkdir /media/devicename
 ```
 
 or
 
 ```
- sudo mkdir /media/mountpoint
+sudo mkdir /media/mountpoint
 ```
 
 ### Mount device or share in FSTAB
@@ -81,7 +81,7 @@ Example of a softlink of a local directory:
  sudo ln -s /home/USER/Documents /media/LINKNAME
 ```
 
----
+----
 
 ### Configure nextcloud external-storage-app
 
@@ -94,6 +94,4 @@ In order to make the above devices or shares available to nextcloud users or gro
 5. User and group permissions as well as read/write permissions may be configured in the options menu in external-storage app.
 6. Mount options may be configured in the options menu in external-storage app.
 
----
-
----
+----
