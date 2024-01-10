@@ -120,7 +120,4 @@ exit
 sudo snap restore "snapshot-ID"
 ```
 
-
-3\. issue command `sudo snap restore "snapshot-ID"`
-
 ---
