@@ -8,7 +8,9 @@
 # app-update or app-upgrade                                  #
 ##############################################################
 # Set overwrite-cli
-sudo nextcloud.occ config:system:set overwrite.cli.url --value="https://xcloud.scubamuc.dedyn.io"
+sudo nextcloud.occ config:system:set overwrite.cli.url --value="https://cloud.yourdomain.com"
+# set trusted proxies
+	sudo nextcloud.occ config:system:set trusted_proxies 0 --value="your.reverse.proxy.ip"
 # 1. Disable CODE
   sudo nextcloud.occ app:disable richdocumentscode ;
 # 2. Disable Nextcloud office
