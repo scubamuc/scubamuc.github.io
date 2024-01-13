@@ -11,7 +11,7 @@
  * 10 years support instead of 5 for 'Universe' and 'Main' --> (*personally I'd upgrade LTS nonetheless*)
  * peace of mind
  * easy to set up and manage
- * "Kernel Livepatch" - not required! --> *(sic. @kyrofa: some knowledgable people don't agree that this is an advantage!)*
+ * "Kernel Livepatch" - not required!
 
 **NB.**
 > Any of: KVM | Qemu | Boch, VMWare ESXi, LXD | LXC, Xen, Hyper-V (WSL, Multipass), VirtualBox, z/VM, Docker. All Nodes in the cluster have to be subscribed to the service in order to benefit from the unlimited VM support
