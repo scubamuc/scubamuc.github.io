@@ -6,7 +6,7 @@
 
 For a self hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server](https://ubuntu.com/download/server) and [LXD](https://linuxcontainers.org/lxd/) to create an [LXC container](https://linuxcontainers.org/lxc/) for [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap). Ubuntu one is great for running an almost mainenence free internet facing server with near zero downtime.
 
-## advantages and opinions:
+## Advantages and opinions:
 
  * 5 free subscriptions for private use --> (*included in [Ubuntu One](https://login.ubuntu.com)*)
  * 10 years support instead of 5 for 'Universe' and 'Main' --> (*personally I'd upgrade LTS nonetheless*)
