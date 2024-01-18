@@ -1,9 +1,10 @@
 # Ubuntu Pro
 
-[**Ubuntu Pro**](https://ubuntu.com/pricing/pro) is a great service if you have an [Ubuntu One](https://login.ubuntu.com) account already anyway.
+[**Ubuntu Pro**](https://ubuntu.com/pricing/pro) is a great service if you have an [Ubuntu One](https://login.ubuntu.com) account already anyway. Most Ubuntu fans like myself have an Ubuntu One account since its kick off way back when you got free 10GB cloud storage. Cloud storage was discontued, but I kept my account.
 
 ![grafik](https://user-images.githubusercontent.com/54933878/226614459-a7c86f96-56dc-4143-8f53-8da933db4adc.png)
 
+For a self hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server](https://ubuntu.com/download/server) and [LXD](https://linuxcontainers.org/lxd/) to create an [LXC container](https://linuxcontainers.org/lxc/) for [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap). Ubuntu one is great for running an almost mainenence free internet facing server with near zero downtime.
 
 ## advantages and opinions:
 
