@@ -12,7 +12,7 @@ For a self hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server
  * 10 years support instead of 5 for 'Universe' and 'Main' --> (*personally I'd upgrade LTS nonetheless*)
  * peace of mind
  * easy to set up and manage
- * "Kernel Livepatch" - not required!
+ * "Kernel Livepatch" - not required! (*this is kind of a hack! At least its optional*)
 
 **NB.**
 > Any of: KVM | Qemu | Boch, VMWare ESXi, LXD | LXC, Xen, Hyper-V (WSL, Multipass), VirtualBox, z/VM, Docker. All Nodes in the cluster have to be subscribed to the service in order to benefit from the unlimited VM support
