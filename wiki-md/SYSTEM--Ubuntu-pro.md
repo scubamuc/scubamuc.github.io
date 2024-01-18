@@ -20,4 +20,19 @@
 
 # Alternative
 
-[**Unattended upgrades**](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)
+## Unattended upgrades
+
+Ubuntu Unattended Upgrades (UAU) is an automated tool that allows you to manage software updates on your Ubuntu systems without manual intervention. It automatically installs security updates, as well as other updates deemed important by the system administrators or package maintainers. The purpose of UAU is to ensure that your systems are always up-to-date with the latest security patches and bug fixes while minimizing disruption to your work environment.
+
+UAU can be configured to automatically install updates at specific times, such as overnight when system usage is typically low or during off-peak hours. This helps reduce downtime and potential interruptions to your workflow. Additionally, UAU provides a log file that details the status of each update installation, which can be useful for auditing purposes or troubleshooting any issues that may arise during the upgrade process.
+
+See my Wiki for [Unattended upgrades](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)
+
+## Disable Ubuntu Pro ads
+
+[How to get rid of Ubuntu Pro advertisement when updating apt?(]https://askubuntu.com/questions/1434512/how-to-get-rid-of-ubuntu-pro-advertisement-when-updating-apt)
+
+Issue command in shell:
+```
+sudo pro config set apt_news=false
+```
