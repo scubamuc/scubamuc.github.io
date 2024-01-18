@@ -12,10 +12,21 @@ For a self hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server
  * 10 years support instead of 5 for 'Universe' and 'Main' --> (*personally I'd upgrade LTS nonetheless*)
  * peace of mind
  * easy to set up and manage
- * "Kernel Livepatch" - not required! (*this is kind of a hack! At least its optional*)
+ * Kernel Livepatch (*this is kind of a hack! At least its optional. Personally I prefer unattended upgrades*)
 
 **NB.**
 > Any of: KVM | Qemu | Boch, VMWare ESXi, LXD | LXC, Xen, Hyper-V (WSL, Multipass), VirtualBox, z/VM, Docker. All Nodes in the cluster have to be subscribed to the service in order to benefit from the unlimited VM support
+
+
+## Disable Ubuntu Pro ads
+
+
+Issue command in shell:
+```
+sudo pro config set apt_news=false
+```
+
+[How to get rid of Ubuntu Pro advertisement when updating apt?](https://askubuntu.com/questions/1434512/how-to-get-rid-of-ubuntu-pro-advertisement-when-updating-apt)
 
 ----
 
@@ -28,12 +39,3 @@ Ubuntu Unattended Upgrades (UAU) is an automated tool that allows you to manage 
 UAU can be configured to automatically install updates at specific times, such as overnight when system usage is typically low or during off-peak hours. This helps reduce downtime and potential interruptions to your workflow. Additionally, UAU provides a log file that details the status of each update installation, which can be useful for auditing purposes or troubleshooting any issues that may arise during the upgrade process.
 
 See my Wiki for [Unattended upgrades](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)
-
-## Disable Ubuntu Pro ads
-
-[How to get rid of Ubuntu Pro advertisement when updating apt?(]https://askubuntu.com/questions/1434512/how-to-get-rid-of-ubuntu-pro-advertisement-when-updating-apt)
-
-Issue command in shell:
-```
-sudo pro config set apt_news=false
-```
