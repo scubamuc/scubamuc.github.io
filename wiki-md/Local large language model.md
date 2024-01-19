@@ -1,6 +1,6 @@
 # Local large language model
 
-## Install LLLM in Nextcloud snap
+## Install lLLM in Nextcloud snap
 
 1. In Nextcloud apps install `Local Large language model` 
 2. On host install 
