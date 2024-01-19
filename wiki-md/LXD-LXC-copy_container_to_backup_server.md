@@ -2,7 +2,7 @@
 
 If an LXD-cluster with three nodes is overkill for you, a cold standby failover can easily be scripted and works fine with two nodes. Be sure to configure WOL (Wake on Lan) for the cold standby node and ensure regular container syncronisation. Note also, container snapshots on the primary node belong to the container and are syncronised automatically.
 
-One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the syncronised containers on the secondary node are stopped as the containers have the same IP's as those on the primary node which causes network issues.
+One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the containers on the secondary node are stopped as the syncronised containers have identical IP's as those on the primary node which causes network issues.
 
 Assuming you have two identical servers **LXD1** (primary LXD-server) and **LXD2** (secondary LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be available.
 
