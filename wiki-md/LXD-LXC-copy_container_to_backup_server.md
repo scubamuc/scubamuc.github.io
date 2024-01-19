@@ -1,6 +1,6 @@
 # Syncronise/Copy containers between LXD nodes
 
-If an LXD-cluster with three nodes is overkill for you, failover can easily be scripted and works fine with two nodes even if the second node is a cold standby system. Be sure to configure WOL (Wake on Lan) for the cold standby node and ensure regular container syncronisation. Note also, container snapshots on the primary node belong to the container and are syncronised too.
+If an LXD-cluster with three nodes is overkill for you, a cold standby failover can easily be scripted and works fine with two nodes. Be sure to configure WOL (Wake on Lan) for the cold standby node and ensure regular container syncronisation. Note also, container snapshots on the primary node belong to the container and are syncronised automatically.
 
 One caveat of this model is that the controller node holding the primary database is not present. Thus ensure that the syncronised containers on the secondary node are stopped as the containers have the same IP's as those on the primary node which causes network issues.
 
