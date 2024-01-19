@@ -1,4 +1,4 @@
-# Syncronise/Copy containers between LXD servers
+# Syncronise/Copy containers between LXD nodes
 
 It is not necessary to create an LXD-cluster with three nodes! If an LXD-cluster with three nodes is overkill for you, failover can easily be scripted and works fine with two nodes even if the second node is a cold standby system. The only thing you'll have to look out for is regular container syncronisation. Note also, the snapshots belong to the container and are syncronised too.
 
