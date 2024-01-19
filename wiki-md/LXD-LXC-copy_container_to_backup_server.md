@@ -41,9 +41,9 @@ Example script:
 
 ```
 #!/bin/bash
-##############################################################
-## Syncronise/copy containers from LXD1 to LXD2 server
-##############################################################
+####################################################################
+## Syncronise/copy containers and snapshots from LXD1 to LXD2 server
+####################################################################
 ## Stop all containers on backup-server
   ssh <ip.address.of.LXD2> 'lxc stop --all'
 #copy container1
