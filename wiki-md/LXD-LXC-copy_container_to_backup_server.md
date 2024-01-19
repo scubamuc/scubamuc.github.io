@@ -1,6 +1,10 @@
 # Syncronise/Copy containers between LXD servers
 
-Assuming you have two identical servers **LXD1** (LXD-server) and **LXD2** (LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be available.
+It is not necessary to create an LXD-cluster with three nodes! If an LXD-cluster with three nodes is overkill for you, failover can easily be scripted and works fine with two nodes even if the second node is a cold standby system. The only thing you'll have to look out for is regular container syncronisation. Note also, the snapshots belong to the container and are syncronised too.
+
+One caveat of this model is that the controller node holding the primary database is not present. Always ensure that the syncronised containers on the secondary node are stopped as the containers have the same IP's as those the primary node which causes network issues.
+
+Assuming you have two identical servers **LXD1** (primary LXD-server) and **LXD2** (secondary LXD-backup). Both servers should be known to eachother by adding them to remotes respectively. Needless to say that passwordless SSH between both servers should be available.
 
 #### On production **LXD1** server
 
