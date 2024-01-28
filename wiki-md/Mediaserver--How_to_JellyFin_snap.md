@@ -34,3 +34,5 @@ sudo snap install itrue-jellyfin
    ```
    sudo snap connect itrue-jellyfin:firewall-control
    ```
+
+## The web UI will be available at the default Jellyfin address http://localhost:8096
