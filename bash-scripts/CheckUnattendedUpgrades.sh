@@ -1,5 +1,8 @@
 #!/bin/bash
-
+##############################################################
+## -- SCUBA --
+## Script -scubamuc- https://scubamuc.github.io/ 
+##############################################################
 # Check and enable unattended upgrades
 
 # Check if user is root
@@ -10,7 +13,7 @@ fi
 
 # Check if unattended upgrades is installed
 if ! dpkg-query -W unattended-upgrades &>/dev/null; then
-   echo "Unattended upgrades will need to be installed. Issue command 'sudo apt install unattended-upgrades'"
+   echo "Unattended upgrades will need to be installed. Issue command 'apt install unattended-upgrades'"
    exit 1
 fi
 
