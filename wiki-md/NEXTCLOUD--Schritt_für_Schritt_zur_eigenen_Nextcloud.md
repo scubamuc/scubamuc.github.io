@@ -8,10 +8,11 @@ du fragst dich, "wie bekomme ich meine eigene private [Nextcloud](https://nextcl
 
 Nun dies ist eigentlich **kein** schwieriges Unterfangen. Es hört sich ein bisschen einschüchternd an einen eigenen LINUX Server daheim zu betreiben, aber LINUX ist keineswegs kompliziert... deine eigene [Nextcloud](https://nextcloud.com/athome) ist OpenSource, kostenlos, sicher und völlig DSGVO konform. Du kannst sie für dich selbst, für die Familie oder kleine und mittlere Gruppen (je nach Hardware) zur Verfügung stellen,
 
-Was benötigst du also um deine Daten auf deinen eigenen Server in deiner eigenen Cloud umzuziehen?
+Was benötigst du also um deine eigene Nextcloud zu betreiben??
 
-* Einen DSL Anschluss (leider funktioniert das nicht mit einem DSLite Anschluss) mit Zugang zum Router 
-* Einen [**Raspberry Pi**](https://www.raspberrypi.org), einen PC oder Notebook (64Bit+2GB RAM).
+* Einen DSL Anschluss (leider funktioniert das nicht mit einem DSLite Anschluss)
+* Zugang zur Benutzeroberfläche deines Routers 
+* Einen PC, Notebook oder [**Raspberry Pi**](https://www.raspberrypi.org) als Server.
 * Einen Dynamischen-DNS-Dienst (Bsp. <https://desec.io>) damit deine [Nextcloud](https://nextcloud.com/athome) vom Internet erreichbar ist
 
 ---
