@@ -37,7 +37,7 @@ Anschließend kannst Du dich mit Bsp. [PuTTy](https://www.chiark.greenend.org.uk
 
 ## 3\. Schritt, Nextcloud installieren
 
-Sobald du mit deinem [Raspberry Pi](https://www.raspberrypi.org) Server verbunden bist, kannst du mit der Installation der [**Nextcloud-snap**](https://snapcraft.io/nextcloud) fortfahren.
+Sobald du mit deinem Server verbunden bist, kannst du mit der Installation der [**Nextcloud-snap**](https://snapcraft.io/nextcloud) fortfahren.
 
 Gebe hierzu in der Kommandozeile (innerhalb der SSH Konsole) deines Servers einfach folgenden Befehl ein:
 
