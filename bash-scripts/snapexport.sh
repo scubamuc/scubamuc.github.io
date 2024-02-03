@@ -38,7 +38,7 @@ list=`ls $SOURCE`
 for i in $list
 do
     if [ ! "$i" == "." ]; then
-      sudo tar -czf ${i}-$BACKUPNAME.tar.gz ${i}
+      sudo tar czf ${i}-$BACKUPNAME.tar.gz ${i}
     fi
 done
 
