@@ -31,8 +31,8 @@ timestamp()
 # SCRIPT #
 ##############################################################
 
-## must be root, enter sudo password
- sudo pwd
+## must be root, enter sudo password for manual snapshot
+## sudo pwd
 
 ## start log  
  echo "********************************************************" >> "$LOG" ; ## log seperator
