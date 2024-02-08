@@ -67,7 +67,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 ## 2.1 Install Nextcloud-snap in LXC container on LXD server
 
 * Prepare [LXD server](https://linuxcontainers.org/lxd/getting-started-cli/#installing-a-package) with [Ubuntu Server](https://ubuntu.com/download/server)  and [bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
-* Prepare [LXC container](https://ubuntu.com/server/docs/containers-lxc) with [Ubuntu Server](https://ubuntu.com/download/server)
+* Prepare [LXC container](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) with [Ubuntu Server](https://ubuntu.com/download/server)
 * Install [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-container
 * Set [FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
 * Nextcloud snap handles [Lets-Encrypt certificate](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) automatically with `nextcloud.enable-https lets-encrypt` 
