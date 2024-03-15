@@ -10,7 +10,7 @@ H = Hour
 D = Day
 KW = Kilowatt (/1000)
 Cost per KW = €/$ 0,xx (depending on service provider/region)
-p.a = per annum (year)
+p.a. = per annum (year)
 p.m. = per month
 ```
 ## Calculation:
