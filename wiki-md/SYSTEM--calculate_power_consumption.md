@@ -6,11 +6,16 @@
 
 ```
 W = Watt
-H = Hours
-D = Days
+H = Hour
+D = Day
 KW = Kilowatt (/1000)
-Cost per KW = € 0,xx (depending on service provider/region)
+Cost per KW = €/$ 0,xx (depending on service provider/region)
+p.a = per annum (year)
+p.m. = per month
 ```
 ## Calculation:
 
-`12W x 24H x 365D / 1000 x € 0,70` = **€ 73,58 p.a.** ~ **€6,13 p.m.**
+ - Example 1: `12W x 24H x 365D / 1000 x € 0,45` = **€ 47,30 p.a.** ~ **€ 3,94 p.m.** 
+
+ - Example 2: `12W x 24H x 365D / 1000 x $ 0,70` = **$ 73,58 p.a.** ~ **$ 6,13 p.m.** 
+
