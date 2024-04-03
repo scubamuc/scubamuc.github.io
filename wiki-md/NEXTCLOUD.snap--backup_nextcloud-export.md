@@ -1,4 +1,4 @@
-# Nextcloud-snap Export
+# Nextcloud-snap export
 
 ## backup nextcloud-snap using nextcloud export
 
