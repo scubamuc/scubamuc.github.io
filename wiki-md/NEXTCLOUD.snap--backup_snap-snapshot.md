@@ -103,7 +103,7 @@ exit
 
 ---
 
-## Restore snapshot using Snap restore 
+## Restore snapshot using snap restore 
 
 > * When moving to new device, be sure to install Nextcloud snap first
 > * Snap restore replaces previous installation incl. certs, DB and data
