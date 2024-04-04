@@ -29,7 +29,7 @@ Snap snapshots may be scripted, see example below
 
 ---
 
-### Rotating Nextcloud-snap snapshots script to media incl. logging:
+### Rotating Nextcloud snap snapshots script to media incl. logging:
 
 1\. create mount directory for media in `/media` or `/mnt`
 
