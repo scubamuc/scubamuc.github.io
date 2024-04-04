@@ -1,9 +1,9 @@
 # Nextcloud snap snapshot
 
-## Backup, restore or migrate Nextcloud snap using Snap snapshots
-Snapshots of Nextcloud snap are created with the Snap snapshot utility. This works for random snapshots or as an automated backup script/cronjob and has the added convenience of easy Nextcloud snap migration to a new device when needed. 
+## Backup, restore or migrate Nextcloud snap using snap snapshots
+Snapshots of Nextcloud snap are created with the snap snapshot utility. This works for random snapshots or as an automated backup script/cronjob and has the added convenience of easy Nextcloud snap migration to a new device when needed. 
 
-Snap snapshot will backup the entire Snap including configuration, apps, certificates, database and data into a compressed file (*.zip) in `/var/lib/snapd/snapshots`
+Snap snapshot will backup the entire snap including configuration, apps, certificates, database and data into a compressed file (*.zip) in `/var/lib/snapd/snapshots`
 
 [documentation](https://snapcraft.io/docs/snapshots)
 
