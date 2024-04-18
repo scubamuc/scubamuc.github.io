@@ -14,10 +14,20 @@ Check remote servers:
 lxc remote list
 ```
 
-Add remote server:
+add remote server:
 
+on **LXD1**
 ```
 lxc remote add LXD2 <ip.address.of.server>:8443
+```
+
+#### On secondary **LXD2** server
+
+add remote server:
+
+on **LXD2**
+```
+lxc remote add LXD1 <ip.address.of.server>:8443
 ```
 
 #### On production **LXD1** server
