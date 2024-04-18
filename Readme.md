@@ -45,7 +45,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Packages:
  `cockpit, htop, lnav, mc, openssh-server, sysstat, tmux`
 * Snaps: 
- `nextcloud, lxd, lxdmosaic,`
+ `lxd, lxdmosaic`
 
 ### LXD-server setup
 * [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
