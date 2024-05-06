@@ -73,35 +73,9 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [Configure Nextcloud](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) and regain control over your data
 
 ----
-# 3. Export, Import -- Backup, Restore
+# 3. Snap backup, restore & migrate
 
-## 3.1 Nextcloud snap export & import
-
-### Export Nextcloud snap with nextcloud.export
-* nextcloud.export
-* compress export
-* move/copy compressed export from backup directory: `/var/snap/nextcloud/common/backups` to wherever
-* remove old exports from directory
-
-This works fine as weekly automatic cronjob (as root) and for random backups. Compressed backup may be moved wherever. 0 downtime.
-
-[rotating Nextcloud snap export script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_nextcloud-export.md)
-
-## Restore export using nextcloud.import
-
-* when moving to new device, be sure to install nextcloud-snap first
-* nextcloud.import replaces previous installation incl. DB and data
-
-1\. copy/move compressed export file to restore directory: `/var/snap/nextcloud/common`
-
-2\. uncompress export file in restore directory: `/var/snap/nextcloud/common`
-
-3\. issue command `$ sudo nextcloud.import /var/snap/nextcloud/common/...`
-
-----
-## 3.2 Nextcloud snap snapshot & restore
-
-### Backup Nextcloud snap with Snap snapshot
+## 3.1 Backup Nextcloud snap with Snap snapshot
 
 [snapshot documentation](https://snapcraft.io/docs/snapshots)
 * snap stop nextcloud 
@@ -113,7 +87,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 [rotating Snap snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
-## Restore Snap snapshot using Snap restore 
+## 3.2 Restore Snap snapshot using Snap restore 
 
 * when moving to new device, be sure to install Nextcloud snap first
 * snap restore replaces previous installation incl. certs, DB and data
@@ -126,11 +100,9 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 3\. issue command `sudo snap restore "snapshot-ID"` 
 
 ----
-## 3.3 LXC container snapshot / backup & restore
+# 4. LXC container snapshot / backup & restore
 
 #### Backup LXC container with snapshot/image & restore in shell [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
-
-![grafik](https://user-images.githubusercontent.com/54933878/216815478-9a58192c-b769-487d-b781-09593a4ec2c9.png)
 
 * LXC container snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 * LXC container image from snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
@@ -141,7 +113,11 @@ This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blo
 
 [rotating LXC container snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
 
-#### Restore LXC container in shell or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+#### Backup & Restore LXC container in GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+
+![grafik](https://user-images.githubusercontent.com/54933878/216815478-9a58192c-b769-487d-b781-09593a4ec2c9.png)
+
+#### or shell
 
 * `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
 * `lxc launch $IMAGENAME $CONTAINERNAME`
