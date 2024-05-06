@@ -13,9 +13,9 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [SCUBA's Nextcloud snap wiki docs](https://github.com/scubamuc/wiki-md)
 
 ---
-# 1. System specs
+# System specs
 
-## 1.1 Hardware
+## Hardware
 **Requirements:**
 * Affordable, efficient, small 
 * Small [energy footprint](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--calculate_power_consumption.md)
@@ -34,7 +34,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 > <img src="https://github.com/scubamuc/scubamuc.github.io/assets/54933878/da9e2da8-e00f-41d0-a207-c340f42743e3" width="400">
 ----
 
-## 1.2 OS & Software
+## OS & Software
 **Requirements:**
 * [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & maintenence, [Ubuntu Pro, ESM](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--Ubuntu-pro.md) or [unattended updates & updgrades](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--Unattended_Upgrades.md)_)
 * [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) (_[easy setup & automated updates](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)_)
@@ -60,9 +60,9 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * WOL (_manual_) failover
 
 ----
-# 2. Procedure
+# Procedure
 
-## 2.1 Install Nextcloud-snap in LXC container on LXD server
+## Install Nextcloud-snap in LXC container on LXD server
 
 * Prepare [LXD server](https://documentation.ubuntu.com/lxd/en/latest/) with [Ubuntu Server](https://ubuntu.com/download/server)  and [bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
 * Prepare [LXC container](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) with [Ubuntu Server](https://ubuntu.com/download/server)
@@ -73,9 +73,9 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [Configure Nextcloud](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) and regain control over your data
 
 ----
-# 3. Snap backup, restore & migrate
+# Snap backup, restore & migrate
 
-## 3.1 Backup Nextcloud snap with Snap snapshot
+## Backup Nextcloud snap with Snap snapshot
 
 [snapshot documentation](https://snapcraft.io/docs/snapshots)
 * snap stop nextcloud (*optional*)
@@ -87,7 +87,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 [rotating Snap snapshot script](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
-## 3.2 Restore Snap snapshot using Snap restore 
+## Restore Snap snapshot using Snap restore 
 
 * when moving to new device, be sure to install Nextcloud snap first
 * snap restore replaces previous installation incl. certs, DB and data
@@ -100,7 +100,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 3\. issue command `sudo snap restore "snapshot-ID"` 
 
 ----
-# 4. LXC container snapshot / backup & restore
+# LXC container snapshot / backup & restore
 
 #### Backup LXC container with snapshot/image & restore in shell [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
