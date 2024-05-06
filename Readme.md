@@ -78,12 +78,12 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 ## 3.1 Backup Nextcloud snap with Snap snapshot
 
 [snapshot documentation](https://snapcraft.io/docs/snapshots)
-* snap stop nextcloud 
+* snap stop nextcloud (optional)
 * snap save nextcloud 
-* snap start nextcloud 
+* snap start nextcloud (optional, see above)
 * find snapshot in `/var/lib/snapd/snapshots` and copy/move to wherever
 
-This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media. Downtime depends on resources and data.
+This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media. 
 
 [rotating Snap snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
