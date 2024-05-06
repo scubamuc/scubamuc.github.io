@@ -284,13 +284,13 @@ lxc config set CONTAINERNAME limits.cpu 2
 ```
 lxc config set CONTAINERNAME limits.cpu 0-0
 ```
-
+```text
 * CPU1 = 0-0
 * CPU2 = 1-1
 * CPU1+CPU2 = 0-1
 * CPU3 + CPU4 = 2-3
 * Alle Kerne = 0-3
-
+```
 #### LXC-Container -- CPU Zeit definieren:
 
 Die CPU-Zeit ist ein Prozentsatz der erlaubten CPU Nutzung. Demnach kann ein Container auf Bsp. 10% CPU-Leistung begrenzt werden oder zusammen mit der Anzahl an Kernen, die erlaubte CPU-Leistung pro definierten Kernen. Bsp. CPU1 und CPU2 jeweils nur 10% CPU-Leistung.
