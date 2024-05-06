@@ -18,7 +18,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 ## 1.1 Hardware
 **Requirements:**
 * Affordable, efficient, small 
-* Small [energy footprint](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--calculate_power_consumption.md)
+* Small [energy footprint](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--calculate_power_consumption.md)
 * Linux compatible
 * Ample resources  - (_5+ users_)
 * Low maintenence - (_uptime 24/7_)
@@ -36,7 +36,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 
 ## 1.2 OS & Software
 **Requirements:**
-* [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & maintenence, [Ubuntu Pro, ESM](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Ubuntu-pro.md) or [unattended updates & updgrades](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/SYSTEM--Unattended_Upgrades.md)_)
+* [Ubuntu Server](https://ubuntu.com/download/server) (_easy setup & maintenence, [Ubuntu Pro, ESM](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--Ubuntu-pro.md) or [unattended updates & updgrades](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--Unattended_Upgrades.md)_)
 * [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) (_[easy setup & automated updates](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)_)
 * [LXD](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) (_multiple LXC-containers_)
    * [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) LXD-server management GUI
@@ -46,17 +46,17 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
  `lxd, lxdmosaic, nextcloud`
 
 ### LXD-server setup
-* [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
+* [Bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-bridged-network.md) (_IP from DHCP_)
 * Multiple LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
-* [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (_daily_) **0 downtime 24/7**
-* [Scripted](https://github.com/scubamuc/scubamuc.github.io#33-lxc-container-snapshot--backup--restore) automatic [synchronisation to LXD-backup-server](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-copy_container_to_backup_server.md) (_weekly_)
-* [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating backup to NAS (_monthly_)
+* [Scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/snapsnapshot.sh) automatic rotating snapshots (_daily_) **0 downtime 24/7**
+* Scripted automatic [synchronisation to LXD-backup-server](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-copy_container_to_backup_server.md) (_weekly_)
+* Scripted automatic rotating backup to NAS (_monthly_)
 
 ### LXD-backup-server setup
 * Identical setup to LXD-server -- cold-standby
-* [Bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md) (_IP from DHCP_)
-* Multiple [*synchronised*](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-copy_container_to_backup_server.md) LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
-* WOL `ctr-wake` (_weekly_) [container synchronisation](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-copy_container_to_backup_server.md)
+* [Bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-bridged-network.md) (_IP from DHCP_)
+* Multiple [*synchronised*](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-copy_container_to_backup_server.md) LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
+* WOL `ctr-wake` (_weekly_) [container synchronisation](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-copy_container_to_backup_server.md)
 * WOL (_manual_) failover
 
 ----
@@ -67,8 +67,8 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Prepare [LXD server](https://documentation.ubuntu.com/lxd/en/latest/) with [Ubuntu Server](https://ubuntu.com/download/server)  and [bridged network](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-bridged-network.md)
 * Prepare [LXC container](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) with [Ubuntu Server](https://ubuntu.com/download/server)
 * Install [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-container
-* Set [FQDN](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
-* Nextcloud snap handles [Lets-Encrypt certificate](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) automatically with `nextcloud.enable-https lets-encrypt` 
+* Set [FQDN](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
+* Nextcloud snap handles [Lets-Encrypt certificate](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) automatically with `nextcloud.enable-https lets-encrypt` 
     * *optionally* handle certificates with [reverse Proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) or [NGINX-Proxy-Manager](https://github.com/nextcloud-snap/nextcloud-snap/wiki/NGINX-proxy-manager)
 * [Configure Nextcloud](https://github.com/nextcloud-snap/nextcloud-snap/wiki/configure-Nextcloud-snap) and regain control over your data
 
@@ -85,7 +85,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 
 This works fine as weekly automatic cronjob (as root) and has the added convenience of easy snap transfer to different server when needed. Thus always 4 weeks of snap-snapshots on backup media. 
 
-[rotating Snap snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/NEXTCLOUD.snap--backup_snap-snapshot.md)
+[rotating Snap snapshot script](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--backup_snap-snapshot.md)
 
 ## 3.2 Restore Snap snapshot using Snap restore 
 
@@ -104,14 +104,16 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 #### Backup LXC container with snapshot/image & restore in shell [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
-* LXC container snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
-* LXC container image from snapshot [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/
+
+* LXC container snapshot [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+* LXC container image from snapshot [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 * LXC image copy/move to wherever
-* LXC image rotate [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
+* LXC image rotate [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
-This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh) cronjob or [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) schedule. 0 downtime.
+This works fine as [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) cronjob or [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) schedule. 0 downtime.
 
-[rotating LXC container snapshot script](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/bash-scripts/LXC-ContainerBackup.sh)
+[rotating LXC container snapshot script](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh)
 
 #### Backup & Restore LXC container in GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
@@ -122,7 +124,7 @@ This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blo
 * `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
 * `lxc launch $IMAGENAME $CONTAINERNAME`
 
-See also [LXD-LXC Wiki](https://github.com/scubamuc/scubamuc.github.io/edit/scubamuc/wiki-md/LXD-LXC-Wiki.md)
+See also [LXD-LXC Wiki](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-Wiki.md)
 
 ----
 
