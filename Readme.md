@@ -50,7 +50,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Multiple LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating snapshots (_daily_) **0 downtime 24/7**
 * [Scripted](https://github.com/scubamuc/scubamuc.github.io#33-lxc-container-snapshot--backup--restore) automatic [synchronisation to LXD-backup-server](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/wiki-md/LXD-LXC-copy_container_to_backup_server.md) (_weekly_)
-* [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-nextcloudexport) automatic rotating backup to NAS (_monthly_)
+* [Scripted](https://github.com/scubamuc/scubamuc.github.io/blob/scubamuc/Readme.md#backup-nextcloud-snap-with-snap-snapshot) automatic rotating backup to NAS (_monthly_)
 
 ### LXD-backup-server setup
 * Identical setup to LXD-server -- cold-standby
