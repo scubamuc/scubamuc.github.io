@@ -122,5 +122,7 @@ This works fine as [scripted](https://github.com/scubamuc/scubamuc.github.io/blo
 * `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
 * `lxc launch $IMAGENAME $CONTAINERNAME`
 
+See also [LXD-LXC Wiki](https://github.com/scubamuc/scubamuc.github.io/edit/scubamuc/wiki-md/LXD-LXC-Wiki.md)
+
 ----
 
