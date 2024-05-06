@@ -32,16 +32,16 @@ Die LXD Initialisierung erzeugt die Erstkonfiguration mit einem **default** Proj
 `sudo lxc init`
 
 **Initialisierungsabfragen für das "default" Profil**:
-
-- `Would you like to use LXD clustering? (yes/no) [default=no]:`**\*\*no\*\***
-- `Do you want to configure a new storage pool? (yes/no) [default=yes]:`**\*\*yes\*\***
-- `Name of the new storage pool [default=default]:`**\*\*POOLNAME\*\***
-- `Name of the storage backend to use (dir, lvm, zfs) [default=zfs]:`**\*\*zfs\*\***
-- `Would you like to create a new local network bridge? (yes/no) [default=yes]:`**\*\*no\*\***
-- `Would you like LXD to be available over the network? (yes/no) [default=no]:`**\*\*no\*\***
-- `Would you like stale cached images to be updated automatically? (yes/no) [default=yes] :`**\*\*yes\*\***
-- `Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:`**\*\*no\*\***
-
+```text
+- Would you like to use LXD clustering? (yes/no) [default=no]: --> no
+- Do you want to configure a new storage pool? (yes/no) [default=yes]: --> yes
+- Name of the new storage pool [default=default]: --> POOLNAME
+- Name of the storage backend to use (dir, lvm, zfs) [default=zfs]: --> zfs
+- Would you like to create a new local network bridge? (yes/no) [default=yes]: --> no
+- Would you like LXD to be available over the network? (yes/no) [default=no]: --> no
+- Would you like stale cached images to be updated automatically? (yes/no) [default=yes]: --> yes
+- Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]: --> no
+```
 ---
 
 ### **LXD Benutzer hinzufügen**
