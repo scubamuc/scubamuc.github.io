@@ -56,7 +56,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Identical setup to LXD-server -- cold-standby
 * [Bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md) (_IP from DHCP_)
 * Multiple [*synchronised*](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md) LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
-* WOL `ctr-wake` (_weekly_) [container synchronisation](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-copy_container_to_backup_server.md)
+* WOL `ctr-wake` (_weekly_) [container synchronisation](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md)
 * WOL (_manual_) failover
 
 ----
