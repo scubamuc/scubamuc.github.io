@@ -122,7 +122,7 @@ This works fine as [scripted](https://github.com/scubamuc/bash-scripts/blob/scub
 * `lxc image import $PATH/to/$IMAGENAME.tar.gz --alias $IMAGENAME`
 * `lxc launch $IMAGENAME $CONTAINERNAME`
 
-See also [personal LXD-LXC Wiki](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.Wiki.md) (german/english mix)
+See also [personal LXD-LXC Wiki](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.Wiki.md) (just notes)
 
 ----
 
