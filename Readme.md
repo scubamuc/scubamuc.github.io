@@ -106,7 +106,7 @@ This works fine as weekly automatic cronjob (as root) and has the added convenie
 
 * LXC container snapshot [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 * LXC container image from snapshot [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
-* LXC image copy/move to wherever
+* LXC image sync/copy/move to wherever [Syncronise/Copy containers between LXD nodes](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md)
 * LXC image rotate [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) or GUI [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic)
 
 This works fine as [scripted](https://github.com/scubamuc/bash-scripts/blob/scubamuc-wiki/LXC-ContainerBackup.sh) cronjob or [LXDMosaic](https://github.com/turtle0x1/LxdMosaic#-lxdmosaic) schedule. 0 downtime.
