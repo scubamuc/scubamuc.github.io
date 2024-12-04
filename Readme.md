@@ -40,9 +40,9 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) (_[easy setup & automated updates](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)_)
 * [LXD](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) (_multiple LXC containers_)
 * Packages:
- `cockpit, htop, lnav, mc, openssh-server, sysstat, tmux`
+ `cockpit, mc, openssh-server, sysstat, tmux`
 * Snaps: 
- `lxd, nextcloud`
+ `htop, lxd, lnav, nextcloud`
 
 ### LXD-server setup
 * [Bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md) (_IP from DHCP_)
