@@ -23,7 +23,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Ample resources  - (_5+ users_)
 * Low maintenence - (_uptime 24/7_)
 * Redundancy - (_failover, cold-standby & backup_)
-* Multiple services - (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
+* Multiple services - (_Nextcloud, Webserver, FW, VPN, DNS, Proxy, Docker_)
 
 ----
 >**2x Lenovo ThinkCentre M92p Tiny (_refurbished_) - stackable 1xServer & 1xBackup** 
@@ -40,13 +40,13 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) (_[easy setup & automated updates](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)_)
 * [LXD](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) (_multiple LXC containers_)
 * Packages:
- `cockpit, mc, openssh-server, sysstat, tmux`
+ `cockpit, docker.io, mc, openssh-server, sysstat, tmux`
 * Snaps: 
  `htop, lxd, lnav, nextcloud`
 
 ### LXD-server setup
 * [Bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md) (_IP from DHCP_)
-* Multiple LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
+* Multiple LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy, Docker_)
 * Automated rotating snapshots (_daily_) **0 downtime 24/7**
 * Automated [synchronisation to LXD-backup-server](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md) (_weekly_)
 * Automated [rotating backup](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--backup_snap-snapshot.md) to NAS (_monthly_)
@@ -54,7 +54,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 ### LXD-backup-server setup
 * Identical setup to LXD-server -- cold-standby
 * [Bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md) (_IP from DHCP_)
-* Multiple [*synchronised*](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md) LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy_)
+* Multiple [*synchronised*](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md) LXC containers (_Nextcloud, Webserver, FW, VPN, DNS, Proxy, Docker_)
 * WOL `ctr-wake` (_weekly_) [container synchronisation](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.copy_container_to_backup_server.md)
 * WOL (_manual_) failover
 
