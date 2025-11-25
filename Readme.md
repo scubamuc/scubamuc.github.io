@@ -40,7 +40,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) (_[easy setup & automated updates](https://github.com/nextcloud-snap/nextcloud-snap/wiki/install-Nextcloud-snap)_)
 * [LXD](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) (_multiple LXC containers_)
 * Packages:
- `docker.io, mc, openssh-server, sysstat, tmux`
+ `docker.io, mc, openssh-server, sysstat, tmux` 
 * Snaps: 
  `htop, btop, lxd, lnav, nextcloud`
 
@@ -66,6 +66,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Prepare [LXD server](https://documentation.ubuntu.com/lxd/en/latest/) with [Ubuntu Server](https://ubuntu.com/download/server)  and [bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-bridged-network.md)
 * Prepare [LXC container](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) with [Ubuntu Server](https://ubuntu.com/download/server)
 * Install [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-container
+* Nextcloud snap in LXC --> recommends `sudo apt install squashfuse` in LXC host.
 * Set [FQDN](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
 * Nextcloud snap handles [Lets-Encrypt certificate](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--LetsEncrypt_wiki.md#enable-letsencrypt-in-nextcloud-snap) automatically with `nextcloud.enable-https lets-encrypt` 
     * *optionally* handle certificates with [reverse Proxy](https://github.com/nextcloud-snap/nextcloud-snap/wiki/Putting-the-snap-behind-a-reverse-proxy) or [NGINX-Proxy-Manager](https://github.com/nextcloud-snap/nextcloud-snap/wiki/NGINX-proxy-manager)
