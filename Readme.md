@@ -63,7 +63,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 
 ## Install Nextcloud-snap in LXC container on LXD server
 
-* Prepare [LXD server](https://documentation.ubuntu.com/lxd/en/latest/) with [Ubuntu Server](https://ubuntu.com/download/server)  and [bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC-bridged-network.md)
+* Prepare [LXD server](https://documentation.ubuntu.com/lxd/en/latest/) with [Ubuntu Server](https://ubuntu.com/download/server)  and [bridged network](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/LXD-LXC.bridged-network.md)
 * Prepare [LXC container](https://documentation.ubuntu.com/lxd/en/latest/getting_started/) with [Ubuntu Server](https://ubuntu.com/download/server)
 * Install [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap) in LXC-container --> recommends `sudo apt install squashfuse`.
 * Set [FQDN](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/NEXTCLOUD.snap--set_FQDN.md) in `/etc/hosts` in LXC-container
