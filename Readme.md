@@ -6,7 +6,7 @@
 
 for a self hosted [Nextcloud](https://nextcloud.com/) I turned to [Ubuntu Server](https://ubuntu.com/download/server) and [LXD](https://canonical.com/lxd) to create an [LXC container](https://documentation.ubuntu.com/lxd/en/latest/explanation/lxd_lxc/) for [Nextcloud snap](https://github.com/nextcloud-snap/nextcloud-snap). The great community behind Nextcloud snap and Linux together with supported hardware enables anyone to run a 24/7 Nextcloud server. 
 
-My goal is a simple safe and reliable setup with ample resources for 5+ family users, affordable, efficient and low maintenence. My day job is software support for a leading WMS. I'm an avid scuba diver and enjoy Linux and FOSS. I'm a dad and husband thus I'm not keen on spending much of my free time doing server-maintenence.
+My goal is a simple safe and reliable setup with ample resources for 5+ family users, affordable, efficient and low maintenance. My day job is software support for a leading WMS. I'm an avid scuba diver and enjoy Linux and FOSS. I'm a dad and husband thus I'm not keen on spending much of my free time doing server-maintenance.
 
 **Quicklinks**
 * [Official Nextcloud snap wiki](https://github.com/nextcloud-snap/nextcloud-snap/wiki)
@@ -21,7 +21,7 @@ My goal is a simple safe and reliable setup with ample resources for 5+ family u
 * Small [energy footprint](https://github.com/scubamuc/wiki-md/blob/scubamuc-wiki/SYSTEM--calculate_power_consumption.md)
 * Linux compatible
 * Ample resources  - (_5+ users_)
-* Low maintenence - (_uptime 24/7_)
+* Low maintenance - (_uptime 24/7_)
 * Redundancy - (_failover, cold-standby & backup_)
 * Multiple services - (_Nextcloud, Webserver, FW, VPN, DNS, Proxy, Docker_)
 
